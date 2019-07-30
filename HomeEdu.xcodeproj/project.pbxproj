@@ -54,14 +54,102 @@
 		9BACC31022F02AEA008761FC /* HomeEdu */ = {
 			isa = PBXGroup;
 			children = (
-				9BACC31122F02AEA008761FC /* AppDelegate.swift */,
-				9BACC31322F02AEA008761FC /* ViewController.swift */,
-				9BACC31522F02AEA008761FC /* Main.storyboard */,
+				9BACC32722F02EB3008761FC /* Scenes */,
+				9BACC32622F02EA6008761FC /* Extensions */,
+				9BACC32522F02EA1008761FC /* App */,
+				9BACC32422F02E9B008761FC /* Data */,
+				9BACC32322F02E7D008761FC /* Support */,
 				9BACC31822F02AEA008761FC /* Assets.xcassets */,
 				9BACC31A22F02AEA008761FC /* LaunchScreen.storyboard */,
 				9BACC31D22F02AEA008761FC /* Info.plist */,
 			);
 			path = HomeEdu;
+			sourceTree = "<group>";
+		};
+		9BACC32322F02E7D008761FC /* Support */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		9BACC32422F02E9B008761FC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9BACC32922F02EEC008761FC /* Model */,
+				9BACC32822F02EDF008761FC /* Source */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9BACC32522F02EA1008761FC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9BACC31122F02AEA008761FC /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9BACC32622F02EA6008761FC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9BACC32722F02EB3008761FC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9BACC32D22F02F3D008761FC /* Storyboards */,
+				9BACC32C22F02F37008761FC /* Common */,
+				9BACC32B22F02F32008761FC /* Main */,
+				9BACC32A22F02F2C008761FC /* Repo */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9BACC32822F02EDF008761FC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		9BACC32922F02EEC008761FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9BACC32A22F02F2C008761FC /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		9BACC32B22F02F32008761FC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9BACC31322F02AEA008761FC /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9BACC32C22F02F37008761FC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9BACC32D22F02F3D008761FC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9BACC31522F02AEA008761FC /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
