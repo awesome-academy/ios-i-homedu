@@ -12,6 +12,14 @@
 		9BACC31722F02AEA008761FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC31522F02AEA008761FC /* Main.storyboard */; };
 		9BACC31922F02AEA008761FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC31822F02AEA008761FC /* Assets.xcassets */; };
 		9BACC31C22F02AEA008761FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC31A22F02AEA008761FC /* LaunchScreen.storyboard */; };
+		9BACC32F22F038C2008761FC /* StoryBoards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BACC32E22F038C2008761FC /* StoryBoards.swift */; };
+		9BACC33122F03927008761FC /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC33022F03927008761FC /* TabBar.storyboard */; };
+		9BACC33322F03974008761FC /* Xemdiem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC33222F03974008761FC /* Xemdiem.storyboard */; };
+		9BACC33522F03983008761FC /* TKB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC33422F03983008761FC /* TKB.storyboard */; };
+		9BACC33722F03992008761FC /* Taikhoan.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC33622F03992008761FC /* Taikhoan.storyboard */; };
+		9BACC33922F039BA008761FC /* Lichthi.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC33822F039BA008761FC /* Lichthi.storyboard */; };
+		9BACC33B22F039C4008761FC /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC33A22F039C4008761FC /* About.storyboard */; };
+		9BACC34A22F03C6D008761FC /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BACC34922F03C6D008761FC /* TabbarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		9BACC31822F02AEA008761FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BACC31B22F02AEA008761FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BACC31D22F02AEA008761FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BACC32E22F038C2008761FC /* StoryBoards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoards.swift; sourceTree = "<group>"; };
+		9BACC33022F03927008761FC /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		9BACC33222F03974008761FC /* Xemdiem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Xemdiem.storyboard; sourceTree = "<group>"; };
+		9BACC33422F03983008761FC /* TKB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TKB.storyboard; sourceTree = "<group>"; };
+		9BACC33622F03992008761FC /* Taikhoan.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Taikhoan.storyboard; sourceTree = "<group>"; };
+		9BACC33822F039BA008761FC /* Lichthi.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Lichthi.storyboard; sourceTree = "<group>"; };
+		9BACC33A22F039C4008761FC /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
+		9BACC34922F03C6D008761FC /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +148,7 @@
 		9BACC32B22F02F32008761FC /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9BACC34822F03C14008761FC /* TabBar */,
 				9BACC31322F02AEA008761FC /* ViewController.swift */,
 			);
 			path = Main;
@@ -147,9 +164,24 @@
 		9BACC32D22F02F3D008761FC /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				9BACC32E22F038C2008761FC /* StoryBoards.swift */,
 				9BACC31522F02AEA008761FC /* Main.storyboard */,
+				9BACC33022F03927008761FC /* TabBar.storyboard */,
+				9BACC33222F03974008761FC /* Xemdiem.storyboard */,
+				9BACC33422F03983008761FC /* TKB.storyboard */,
+				9BACC33622F03992008761FC /* Taikhoan.storyboard */,
+				9BACC33822F039BA008761FC /* Lichthi.storyboard */,
+				9BACC33A22F039C4008761FC /* About.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9BACC34822F03C14008761FC /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				9BACC34922F03C6D008761FC /* TabbarController.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,8 +242,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BACC33722F03992008761FC /* Taikhoan.storyboard in Resources */,
+				9BACC33322F03974008761FC /* Xemdiem.storyboard in Resources */,
+				9BACC33122F03927008761FC /* TabBar.storyboard in Resources */,
 				9BACC31C22F02AEA008761FC /* LaunchScreen.storyboard in Resources */,
 				9BACC31922F02AEA008761FC /* Assets.xcassets in Resources */,
+				9BACC33B22F039C4008761FC /* About.storyboard in Resources */,
+				9BACC33522F03983008761FC /* TKB.storyboard in Resources */,
+				9BACC33922F039BA008761FC /* Lichthi.storyboard in Resources */,
 				9BACC31722F02AEA008761FC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,6 +261,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BACC32F22F038C2008761FC /* StoryBoards.swift in Sources */,
+				9BACC34A22F03C6D008761FC /* TabbarController.swift in Sources */,
 				9BACC31422F02AEA008761FC /* ViewController.swift in Sources */,
 				9BACC31222F02AEA008761FC /* AppDelegate.swift in Sources */,
 			);
