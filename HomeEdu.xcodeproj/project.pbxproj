@@ -3,11 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		9BA6940222F179460066A6E0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA6940122F179460066A6E0 /* Constant.swift */; };
+		9BA6940522F18CC20066A6E0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA6940422F18CC20066A6E0 /* LoginController.swift */; };
+		9BA6940722F18D630066A6E0 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA6940622F18D630066A6E0 /* CustomView.swift */; };
+		9BA6940922F18D790066A6E0 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA6940822F18D790066A6E0 /* CustomButton.swift */; };
+		9BA6940B22F18D8A0066A6E0 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA6940A22F18D8A0066A6E0 /* CustomTextField.swift */; };
+		9BA6940D22F18F1D0066A6E0 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA6940C22F18F1D0066A6E0 /* UIViewController+.swift */; };
+		9BA6941122F193600066A6E0 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA6941022F193600066A6E0 /* URLs.swift */; };
+		9BA6941322F1943A0066A6E0 /* DataJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA6941222F1943A0066A6E0 /* DataJSON.swift */; };
+		9BA6941522F194590066A6E0 /* SaveInfoStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA6941422F194590066A6E0 /* SaveInfoStudent.swift */; };
 		9BACC31222F02AEA008761FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BACC31122F02AEA008761FC /* AppDelegate.swift */; };
 		9BACC31722F02AEA008761FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC31522F02AEA008761FC /* Main.storyboard */; };
 		9BACC31922F02AEA008761FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC31822F02AEA008761FC /* Assets.xcassets */; };
@@ -20,10 +28,20 @@
 		9BACC33922F039BA008761FC /* ExamSchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC33822F039BA008761FC /* ExamSchedule.storyboard */; };
 		9BACC33B22F039C4008761FC /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC33A22F039C4008761FC /* About.storyboard */; };
 		9BACC34A22F03C6D008761FC /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BACC34922F03C6D008761FC /* TabbarController.swift */; };
+		F2124E0D15FF84DEA9893561 /* Pods_HomeEdu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 782290D506037BE4A11A0163 /* Pods_HomeEdu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		782290D506037BE4A11A0163 /* Pods_HomeEdu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeEdu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA6940122F179460066A6E0 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		9BA6940422F18CC20066A6E0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		9BA6940622F18D630066A6E0 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomView.swift; path = HomeEdu/Scenes/Main/Login/CustomView.swift; sourceTree = SOURCE_ROOT; };
+		9BA6940822F18D790066A6E0 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomButton.swift; path = HomeEdu/Scenes/Main/Login/CustomButton.swift; sourceTree = SOURCE_ROOT; };
+		9BA6940A22F18D8A0066A6E0 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomTextField.swift; path = HomeEdu/Scenes/Main/Login/CustomTextField.swift; sourceTree = SOURCE_ROOT; };
+		9BA6940C22F18F1D0066A6E0 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+.swift"; path = "HomeEdu/Scenes/Main/Login/UIViewController+.swift"; sourceTree = SOURCE_ROOT; };
+		9BA6941022F193600066A6E0 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		9BA6941222F1943A0066A6E0 /* DataJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataJSON.swift; sourceTree = "<group>"; };
+		9BA6941422F194590066A6E0 /* SaveInfoStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SaveInfoStudent.swift; path = HomeEdu/Support/SaveInfoStudent.swift; sourceTree = SOURCE_ROOT; };
 		9BACC30E22F02AEA008761FC /* HomeEdu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeEdu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BACC31122F02AEA008761FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BACC31622F02AEA008761FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,6 +56,8 @@
 		9BACC33822F039BA008761FC /* ExamSchedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExamSchedule.storyboard; sourceTree = "<group>"; };
 		9BACC33A22F039C4008761FC /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		9BACC34922F03C6D008761FC /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		A44A21FDDC99BCF0BDCE41CD /* Pods-HomeEdu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeEdu.debug.xcconfig"; path = "Target Support Files/Pods-HomeEdu/Pods-HomeEdu.debug.xcconfig"; sourceTree = "<group>"; };
+		C8BFE6740BF3755397ED7609 /* Pods-HomeEdu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeEdu.release.xcconfig"; path = "Target Support Files/Pods-HomeEdu/Pods-HomeEdu.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +65,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2124E0D15FF84DEA9893561 /* Pods_HomeEdu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F0696A30AF62E95AB1D2C0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				782290D506037BE4A11A0163 /* Pods_HomeEdu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BA6940322F18CAD0066A6E0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9BA6940422F18CC20066A6E0 /* LoginController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		9BACC30522F02AEA008761FC = {
 			isa = PBXGroup;
 			children = (
 				9BACC31022F02AEA008761FC /* HomeEdu */,
 				9BACC30F22F02AEA008761FC /* Products */,
+				ED79DC88BD41C6FDAF4B5663 /* Pods */,
+				1F0696A30AF62E95AB1D2C0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				9BA6940122F179460066A6E0 /* Constant.swift */,
+				9BA6941022F193600066A6E0 /* URLs.swift */,
+				9BA6941222F1943A0066A6E0 /* DataJSON.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -110,6 +151,7 @@
 		9BACC32622F02EA6008761FC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9BA6940C22F18F1D0066A6E0 /* UIViewController+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -135,6 +177,7 @@
 		9BACC32922F02EEC008761FC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9BA6941422F194590066A6E0 /* SaveInfoStudent.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -149,6 +192,7 @@
 		9BACC32B22F02F32008761FC /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9BA6940322F18CAD0066A6E0 /* Login */,
 				9BACC34822F03C14008761FC /* TabBar */,
 			);
 			path = Main;
@@ -157,6 +201,9 @@
 		9BACC32C22F02F37008761FC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				9BA6940622F18D630066A6E0 /* CustomView.swift */,
+				9BA6940822F18D790066A6E0 /* CustomButton.swift */,
+				9BA6940A22F18D8A0066A6E0 /* CustomTextField.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -184,6 +231,15 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		ED79DC88BD41C6FDAF4B5663 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A44A21FDDC99BCF0BDCE41CD /* Pods-HomeEdu.debug.xcconfig */,
+				C8BFE6740BF3755397ED7609 /* Pods-HomeEdu.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -191,9 +247,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BACC32022F02AEA008761FC /* Build configuration list for PBXNativeTarget "HomeEdu" */;
 			buildPhases = (
+				0B7606E05393AE52A2B0A0AF /* [CP] Check Pods Manifest.lock */,
 				9BACC30A22F02AEA008761FC /* Sources */,
 				9BACC30B22F02AEA008761FC /* Frameworks */,
 				9BACC30C22F02AEA008761FC /* Resources */,
+				29793C3A855C068C299F3795 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,6 +314,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B7606E05393AE52A2B0A0AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HomeEdu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29793C3A855C068C299F3795 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeEdu/Pods-HomeEdu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HomeEdu/Pods-HomeEdu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HomeEdu/Pods-HomeEdu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9BACC30A22F02AEA008761FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,7 +364,15 @@
 				9BACC32F22F038C2008761FC /* StoryBoards.swift in Sources */,
 				9BACC34A22F03C6D008761FC /* TabbarController.swift in Sources */,
 				9BACC31222F02AEA008761FC /* AppDelegate.swift in Sources */,
+				9BA6940722F18D630066A6E0 /* CustomView.swift in Sources */,
+				9BA6941522F194590066A6E0 /* SaveInfoStudent.swift in Sources */,
+				9BA6940B22F18D8A0066A6E0 /* CustomTextField.swift in Sources */,
+				9BA6941122F193600066A6E0 /* URLs.swift in Sources */,
+				9BA6941322F1943A0066A6E0 /* DataJSON.swift in Sources */,
+				9BA6940D22F18F1D0066A6E0 /* UIViewController+.swift in Sources */,
+				9BA6940922F18D790066A6E0 /* CustomButton.swift in Sources */,
 				9BA6940222F179460066A6E0 /* Constant.swift in Sources */,
+				9BA6940522F18CC20066A6E0 /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +516,7 @@
 		};
 		9BACC32122F02AEA008761FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A44A21FDDC99BCF0BDCE41CD /* Pods-HomeEdu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -427,6 +536,7 @@
 		};
 		9BACC32222F02AEA008761FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8BFE6740BF3755397ED7609 /* Pods-HomeEdu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
