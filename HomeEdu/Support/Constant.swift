@@ -12,4 +12,10 @@ enum Constant {
     static let scheduleId = "Schedule"
     static let viewScoreId = "ViewScore"
     static let aboutId = "About"
+    
+    static let accountTitle = "Tài khoản"
+    static let examScheduleTitle = "Lịch thi"
+    static let scheduleTitle = "TKB"
+    static let viewScoreTitle = "Xem điểm"
+    static let aboutTitle = "About"
 }
