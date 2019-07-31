@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		252825B422F16C18006C585B /* HomeduSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252825B322F16C18006C585B /* HomeduSocket.swift */; };
 		9BACC31222F02AEA008761FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BACC31122F02AEA008761FC /* AppDelegate.swift */; };
 		9BACC31422F02AEA008761FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BACC31322F02AEA008761FC /* ViewController.swift */; };
 		9BACC31722F02AEA008761FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC31522F02AEA008761FC /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		252825B322F16C18006C585B /* HomeduSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeduSocket.swift; sourceTree = "<group>"; };
 		9BACC30E22F02AEA008761FC /* HomeEdu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeEdu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BACC31122F02AEA008761FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BACC31322F02AEA008761FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		252825B022F16B59006C585B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				252825B122F16B85006C585B /* Source */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		252825B122F16B85006C585B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				252825B222F16C08006C585B /* Socket */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		252825B222F16C08006C585B /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				252825B322F16C18006C585B /* HomeduSocket.swift */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
 		9BACC30522F02AEA008761FC = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +80,7 @@
 		9BACC31022F02AEA008761FC /* HomeEdu */ = {
 			isa = PBXGroup;
 			children = (
+				252825B022F16B59006C585B /* Data */,
 				9BACC31122F02AEA008761FC /* AppDelegate.swift */,
 				9BACC31322F02AEA008761FC /* ViewController.swift */,
 				9BACC31522F02AEA008761FC /* Main.storyboard */,
@@ -137,6 +164,7 @@
 			files = (
 				9BACC31422F02AEA008761FC /* ViewController.swift in Sources */,
 				9BACC31222F02AEA008761FC /* AppDelegate.swift in Sources */,
+				252825B422F16C18006C585B /* HomeduSocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
