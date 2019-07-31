@@ -6,7 +6,7 @@
 //  Copyright © 2019 Nguyen Cuong. All rights reserved.
 //
 
-enum Constant{
+enum Constant {
     static let accountId = "Account"
     static let examScheduleId = "ExamSchedule"
     static let scheduleId = "Schedule"

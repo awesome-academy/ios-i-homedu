@@ -15,7 +15,7 @@ class TabbarController: UITabBarController {
         setupTabbar()
     }
 
-    func setupTabbar(){
+    func setupTabbar() {
         let account = Storyboards.account
         let examSchedule = Storyboards.examSchedule
         let schedule = Storyboards.schedule
