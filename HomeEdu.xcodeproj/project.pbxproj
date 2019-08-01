@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		254273F422F278240000891A /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254273F322F278240000891A /* Urls.swift */; };
-		2565AE8722F2D33E0003620A /* StudentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565AE8622F2D33E0003620A /* StudentTest.swift */; };
 		2565AE8922F2D4B70003620A /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565AE8822F2D4B70003620A /* UIViewController+.swift */; };
 		25F0CF8522F1E3BE00582ED1 /* HomeduSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F0CF8422F1E3BE00582ED1 /* HomeduSocket.swift */; };
 		85AA66753FD9A9C14601A849 /* Pods_HomeEdu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB863AFE16FD6C8B5A495B82 /* Pods_HomeEdu.framework */; };
@@ -29,7 +28,6 @@
 
 /* Begin PBXFileReference section */
 		254273F322F278240000891A /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
-		2565AE8622F2D33E0003620A /* StudentTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTest.swift; sourceTree = "<group>"; };
 		2565AE8822F2D4B70003620A /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+.swift"; path = "HomeEdu/Extensions/UIViewController/UIViewController+.swift"; sourceTree = SOURCE_ROOT; };
 		25F0CF8422F1E3BE00582ED1 /* HomeduSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeduSocket.swift; path = Source/Socket/HomeduSocket.swift; sourceTree = SOURCE_ROOT; };
 		3F47CA46F1CA5E36A3655AFC /* Pods-HomeEdu.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeEdu.staging.xcconfig"; path = "Target Support Files/Pods-HomeEdu/Pods-HomeEdu.staging.xcconfig"; sourceTree = "<group>"; };
@@ -133,7 +131,6 @@
 			children = (
 				9BA6940122F179460066A6E0 /* Constant.swift */,
 				254273F322F278240000891A /* Urls.swift */,
-				2565AE8622F2D33E0003620A /* StudentTest.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -367,7 +364,6 @@
 				9BACC34A22F03C6D008761FC /* TabbarController.swift in Sources */,
 				2565AE8922F2D4B70003620A /* UIViewController+.swift in Sources */,
 				9BACC31222F02AEA008761FC /* AppDelegate.swift in Sources */,
-				2565AE8722F2D33E0003620A /* StudentTest.swift in Sources */,
 				254273F422F278240000891A /* Urls.swift in Sources */,
 				25F0CF8522F1E3BE00582ED1 /* HomeduSocket.swift in Sources */,
 				9BA6940222F179460066A6E0 /* Constant.swift in Sources */,

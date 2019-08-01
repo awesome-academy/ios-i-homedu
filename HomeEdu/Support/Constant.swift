@@ -31,6 +31,15 @@ enum Constant {
     static let schedule = "new_schedule"
     static let exam = "new_examschedule"
     
+    //General Information
+    #if Staging
+        static let studentId = "16022411"
+    #elseif Production
+        static let studentId = "admin"
+    #elseif Release
+        static let studentId = "admin"
+    #endif
+    
     //Errors
     static let dataErr = "Data don't have any items"
 }

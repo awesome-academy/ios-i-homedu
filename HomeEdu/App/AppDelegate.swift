@@ -32,16 +32,6 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
         }
         center.delegate = self
     }
-    
-    func setStudentIdEnv() {
-        #if Staging
-            studentId = "16022411"
-        #elseif Production
-            studentId = "admin"
-        #elseif Release
-            studentId = "admin"
-        #endif
-    }
 }
 
 
