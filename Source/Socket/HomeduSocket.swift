@@ -28,7 +28,7 @@ final class HomeduSocket {
                 let center = UNUserNotificationCenter.current()
                 socket.on(clientEvent: .connect) { data, ack in
                     let params = [
-                        "student_id": Constant.studentId
+                        "student_id": studentId
                     ]
                     socket.emit(Constant.emitWho, params)
                 }
@@ -36,7 +36,7 @@ final class HomeduSocket {
                     if (data.count > 0) {
                         guard let socketMessage = data[0] as? NSDictionary else { return }
                         guard let message = socketMessage["msg"] as? String else { return }
-                        self.showNotification(center: center, msg: message)
+                        UIViewController.showNotification(center: center, msg: message)
                     } else {
                         print(Constant.dataErr)
                     }
@@ -45,7 +45,7 @@ final class HomeduSocket {
                     if (data.count > 0) {
                         guard let socketMessage = data[0] as? NSDictionary else { return }
                         guard let message = socketMessage["msg"] as? String else { return }
-                        self.showNotification(center: center, msg: message)
+                        UIViewController.showNotification(center: center, msg: message)
                     } else {
                         print(Constant.dataErr)
                     }
@@ -54,32 +54,13 @@ final class HomeduSocket {
                     if (data.count > 0) {
                         guard let socketMessage = data[0] as? NSDictionary else { return }
                         guard let message = socketMessage["msg"] as? String else { return }
-                        self.showNotification(center: center, msg: message)
+                        UIViewController.showNotification(center: center, msg: message)
                     } else {
                         print(Constant.dataErr)
                     }
                 }
                 socket.connect()
             }
-        }
-    }
-    
-    /// Show Notification using Local Notification
-    ///
-    /// - Parameters:
-    ///   - center: UNUserNotificationCenter
-    ///   - msg: message to show
-    func showNotification(center: UNUserNotificationCenter, msg: String) {
-        let content = UNMutableNotificationContent()
-        content.title = Constant.socketTitle
-        content.body = msg
-        content.sound = UNNotificationSound.default
-        let date = Date(timeIntervalSinceNow: 5)
-        let dateComponent = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
-        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponent, repeats: false)
-        let request = UNNotificationRequest(identifier: Constant.socketTitle, content: content, trigger: trigger)
-        center.add(request) { (error) in
-            print(error)
         }
     }
 }

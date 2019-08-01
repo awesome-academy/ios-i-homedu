@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		254273F422F278240000891A /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254273F322F278240000891A /* Urls.swift */; };
+		2565AE8722F2D33E0003620A /* StudentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565AE8622F2D33E0003620A /* StudentTest.swift */; };
+		2565AE8922F2D4B70003620A /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565AE8822F2D4B70003620A /* UIViewController+.swift */; };
 		25F0CF8522F1E3BE00582ED1 /* HomeduSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F0CF8422F1E3BE00582ED1 /* HomeduSocket.swift */; };
 		85AA66753FD9A9C14601A849 /* Pods_HomeEdu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB863AFE16FD6C8B5A495B82 /* Pods_HomeEdu.framework */; };
 		9BA6940222F179460066A6E0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA6940122F179460066A6E0 /* Constant.swift */; };
@@ -27,7 +29,12 @@
 
 /* Begin PBXFileReference section */
 		254273F322F278240000891A /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
+		2565AE8622F2D33E0003620A /* StudentTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentTest.swift; sourceTree = "<group>"; };
+		2565AE8822F2D4B70003620A /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+.swift"; path = "HomeEdu/Extensions/UIViewController/UIViewController+.swift"; sourceTree = SOURCE_ROOT; };
 		25F0CF8422F1E3BE00582ED1 /* HomeduSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeduSocket.swift; path = Source/Socket/HomeduSocket.swift; sourceTree = SOURCE_ROOT; };
+		3F47CA46F1CA5E36A3655AFC /* Pods-HomeEdu.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeEdu.staging.xcconfig"; path = "Target Support Files/Pods-HomeEdu/Pods-HomeEdu.staging.xcconfig"; sourceTree = "<group>"; };
+		4E32C9F869AC96C114A65B78 /* Pods-HomeEdu.testing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeEdu.testing.xcconfig"; path = "Target Support Files/Pods-HomeEdu/Pods-HomeEdu.testing.xcconfig"; sourceTree = "<group>"; };
+		86FF7CBA030B664F8C80DB3D /* Pods-HomeEdu.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeEdu.production.xcconfig"; path = "Target Support Files/Pods-HomeEdu/Pods-HomeEdu.production.xcconfig"; sourceTree = "<group>"; };
 		9BA6940122F179460066A6E0 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		9BACC30E22F02AEA008761FC /* HomeEdu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeEdu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BACC31122F02AEA008761FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2565AE8A22F2D4D80003620A /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2565AE8822F2D4B70003620A /* UIViewController+.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
 		25F0CF8322F1E35A00582ED1 /* Socket */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +88,9 @@
 			children = (
 				E3BFFA2A92691491FC899AFF /* Pods-HomeEdu.debug.xcconfig */,
 				9CD7AB7C67BB50A08B4BECB4 /* Pods-HomeEdu.release.xcconfig */,
+				86FF7CBA030B664F8C80DB3D /* Pods-HomeEdu.production.xcconfig */,
+				4E32C9F869AC96C114A65B78 /* Pods-HomeEdu.testing.xcconfig */,
+				3F47CA46F1CA5E36A3655AFC /* Pods-HomeEdu.staging.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -115,6 +133,7 @@
 			children = (
 				9BA6940122F179460066A6E0 /* Constant.swift */,
 				254273F322F278240000891A /* Urls.swift */,
+				2565AE8622F2D33E0003620A /* StudentTest.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -139,6 +158,7 @@
 		9BACC32622F02EA6008761FC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2565AE8A22F2D4D80003620A /* UIViewController */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -345,7 +365,9 @@
 			files = (
 				9BACC32F22F038C2008761FC /* StoryBoards.swift in Sources */,
 				9BACC34A22F03C6D008761FC /* TabbarController.swift in Sources */,
+				2565AE8922F2D4B70003620A /* UIViewController+.swift in Sources */,
 				9BACC31222F02AEA008761FC /* AppDelegate.swift in Sources */,
+				2565AE8722F2D33E0003620A /* StudentTest.swift in Sources */,
 				254273F422F278240000891A /* Urls.swift in Sources */,
 				25F0CF8522F1E3BE00582ED1 /* HomeduSocket.swift in Sources */,
 				9BA6940222F179460066A6E0 /* Constant.swift in Sources */,
@@ -437,7 +459,7 @@
 		};
 		2565AE7222F292B00003620A /* Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3BFFA2A92691491FC899AFF /* Pods-HomeEdu.debug.xcconfig */;
+			baseConfigurationReference = 3F47CA46F1CA5E36A3655AFC /* Pods-HomeEdu.staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -519,7 +541,7 @@
 		};
 		2565AE7422F292BA0003620A /* Testing */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3BFFA2A92691491FC899AFF /* Pods-HomeEdu.debug.xcconfig */;
+			baseConfigurationReference = 4E32C9F869AC96C114A65B78 /* Pods-HomeEdu.testing.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -601,7 +623,7 @@
 		};
 		2565AE7622F292BF0003620A /* Production */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E3BFFA2A92691491FC899AFF /* Pods-HomeEdu.debug.xcconfig */;
+			baseConfigurationReference = 86FF7CBA030B664F8C80DB3D /* Pods-HomeEdu.production.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
