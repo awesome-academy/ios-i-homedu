@@ -19,9 +19,9 @@ class InfoStudentResponse: Mappable {
     }
     
     func mapping(map: Map) {
-        token <- map[DataJSON.token]
-        success <- map[DataJSON.success]
-        infoStudent <- map[DataJSON.data]
+        token <- map["token"]
+        success <- map["success"]
+        infoStudent <- map["data"]
     }
 }
 
@@ -42,25 +42,25 @@ class InfoStudent: Mappable {
     }
     
     func mapping(map: Map) {
-        fullName <- map[DataJSON.fullname]
-        studentId <- map[DataJSON.studentId]
-        sex <- map[DataJSON.sex]
-        birthday <- map[DataJSON.birthday]
-        vnuMail <- map[DataJSON.email]
-        otherMail <- map[DataJSON.otherMail]
-//        SaveInfoStudent.infoStudent += [fullName,
-//                                        studentId,
-//                                        sex,
-//                                        birthday,
-//                                        vnuMail,
-//                                        otherMail]
+        fullName <- map["fullname"]
+        studentId <- map["student_id"]
+        sex <- map["sex"]
+        birthday <- map["birthday"]
+        vnuMail <- map["email"]
+        otherMail <- map["other_mail"]
+        InfoOfStudent.infoStudent += [fullName,
+                                        studentId,
+                                        sex,
+                                        birthday,
+                                        vnuMail,
+                                        otherMail]
         
-        programType <- map[DataJSON.programType]
-        classStudent <- map[DataJSON.classStudent]
-//        SaveInfoStudent.infoClass += [programType, classStudent]
+        programType <- map["program_type"]
+        classStudent <- map["class"]
+        InfoOfStudent.infoClass += [programType, classStudent]
         
-        nation <- map[DataJSON.nation]
-        address <- map[DataJSON.address]
-//        SaveInfoStudent.infoAdress += [nation, address]
+        nation <- map["nation"]
+        address <- map["address"]
+        InfoOfStudent.infoAdress += [nation, address]
     }
 }

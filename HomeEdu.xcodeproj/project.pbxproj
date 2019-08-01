@@ -15,7 +15,6 @@
 		9BA6940922F18D790066A6E0 /* CustomButtonLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA6940822F18D790066A6E0 /* CustomButtonLogin.swift */; };
 		9BA6940D22F18F1D0066A6E0 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA6940C22F18F1D0066A6E0 /* UIViewController+.swift */; };
 		9BA6941122F193600066A6E0 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA6941022F193600066A6E0 /* URLs.swift */; };
-		9BA6941322F1943A0066A6E0 /* DataJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA6941222F1943A0066A6E0 /* DataJSON.swift */; };
 		9BA6941522F194590066A6E0 /* SaveInfoStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA6941422F194590066A6E0 /* SaveInfoStudent.swift */; };
 		9BACC31222F02AEA008761FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BACC31122F02AEA008761FC /* AppDelegate.swift */; };
 		9BACC31722F02AEA008761FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC31522F02AEA008761FC /* Main.storyboard */; };
@@ -42,7 +41,6 @@
 		9BA6940822F18D790066A6E0 /* CustomButtonLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomButtonLogin.swift; path = HomeEdu/Scenes/Main/Login/CustomButtonLogin.swift; sourceTree = SOURCE_ROOT; };
 		9BA6940C22F18F1D0066A6E0 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+.swift"; path = "HomeEdu/Scenes/Main/Login/UIViewController+.swift"; sourceTree = SOURCE_ROOT; };
 		9BA6941022F193600066A6E0 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
-		9BA6941222F1943A0066A6E0 /* DataJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataJSON.swift; sourceTree = "<group>"; };
 		9BA6941422F194590066A6E0 /* SaveInfoStudent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SaveInfoStudent.swift; path = HomeEdu/Support/SaveInfoStudent.swift; sourceTree = SOURCE_ROOT; };
 		9BACC30E22F02AEA008761FC /* HomeEdu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeEdu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BACC31122F02AEA008761FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				9BA6940122F179460066A6E0 /* Constant.swift */,
-				9BA6941222F1943A0066A6E0 /* DataJSON.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -413,7 +410,6 @@
 				9BA6940722F18D630066A6E0 /* CustomViewUserPass.swift in Sources */,
 				9BA6941522F194590066A6E0 /* SaveInfoStudent.swift in Sources */,
 				9BA6941122F193600066A6E0 /* URLs.swift in Sources */,
-				9BA6941322F1943A0066A6E0 /* DataJSON.swift in Sources */,
 				9BA6940D22F18F1D0066A6E0 /* UIViewController+.swift in Sources */,
 				9B092DA222F283D100C4BCF2 /* InfoStudentResponse.swift in Sources */,
 				9BA6940922F18D790066A6E0 /* CustomButtonLogin.swift in Sources */,

@@ -6,7 +6,7 @@
 //  Copyright © 2019 Nguyen Cuong. All rights reserved.
 //
 
-enum SaveInfoStudent {
+enum InfoOfStudent {
     static var infoStudent = [String]()
     static var infoClass = [String]()
     static var infoAdress = [String]()
