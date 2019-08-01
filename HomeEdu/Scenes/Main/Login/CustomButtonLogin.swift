@@ -12,13 +12,9 @@ import UIKit
     
     @IBInspectable var radius: CGFloat = 0
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
     override func draw(_ rect: CGRect) {
         super.draw(rect)
-        self.layer.cornerRadius = radius
-        self.clipsToBounds = true
+        layer.cornerRadius = radius
+        clipsToBounds = true
     }
 }

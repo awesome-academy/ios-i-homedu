@@ -12,25 +12,21 @@ import UIKit
     
     @IBInspectable var radius: CGFloat = 0
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
     override func draw(_ rect: CGRect) {
         super.draw(rect)
-        self.layer.cornerRadius = radius
-        self.clipsToBounds = true
+        layer.cornerRadius = radius
+        clipsToBounds = true
     }
     
     @IBInspectable var borderWidth: CGFloat = 0.0 {
         didSet {
-            self.layer.borderWidth = borderWidth
+            layer.borderWidth = borderWidth
         }
     }
     
     @IBInspectable var borderColor: UIColor = UIColor.clear {
         didSet {
-            self.layer.borderColor = borderColor.cgColor
+            layer.borderColor = borderColor.cgColor
         }
     }
 }

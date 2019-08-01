@@ -56,7 +56,7 @@ final class LoginViewController: UIViewController {
             "username": userNameTextField.text ?? "",
             "password": passwordTextField.text ?? ""
         ]
-        LoginReqest.shared.loginRequestFromApi(param) {
+        AccountRepository.shared.login(param) {
             self.isLogin = $0
             if self.isLogin {
                 let tabBarSB = Storyboards.tabBar

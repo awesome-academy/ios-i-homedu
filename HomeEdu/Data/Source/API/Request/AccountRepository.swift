@@ -10,17 +10,19 @@ import Foundation
 import Alamofire
 import AlamofireObjectMapper
 
-class LoginReqest {
+class AccountRepository {
 
-    static let shared = LoginReqest()
+    static let shared = AccountRepository()
     
     private init() {
     }
     
-    func loginRequestFromApi(_ param: Parameters,
-                             completion callback: @escaping (Bool) -> Void) {
-        Alamofire.request(URLs.urlLogin, method: .post,
-                          parameters: param, encoding: JSONEncoding.default,
+    func login(_ param: Parameters,
+               completion callback: @escaping (Bool) -> Void) {
+        Alamofire.request(Urls.urlLogin,
+                          method: .post,
+                          parameters: param,
+                          encoding: JSONEncoding.default,
                           headers: [:]).responseObject { (response: DataResponse<InfoStudentResponse>) in
                             let infoStudentResponse = response.result.value
                             callback(infoStudentResponse!.success)

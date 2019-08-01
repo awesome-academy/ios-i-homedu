@@ -6,6 +6,6 @@
 //  Copyright © 2019 Nguyen Cuong. All rights reserved.
 //
 
-enum URLs {
+enum Urls {
     static let urlLogin = "https://homedu.herokuapp.com/api/login"
 }

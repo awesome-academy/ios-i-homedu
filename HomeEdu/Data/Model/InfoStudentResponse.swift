@@ -10,7 +10,6 @@ import Foundation
 import ObjectMapper
 
 class InfoStudentResponse: Mappable {
-    
     var token = ""
     var success = false
     var infoStudent = [InfoStudent]()
@@ -26,7 +25,6 @@ class InfoStudentResponse: Mappable {
 }
 
 class InfoStudent: Mappable {
-
     var fullName = ""
     var studentId = ""
     var birthday = ""
@@ -48,19 +46,9 @@ class InfoStudent: Mappable {
         birthday <- map["birthday"]
         vnuMail <- map["email"]
         otherMail <- map["other_mail"]
-        InfoOfStudent.infoStudent += [fullName,
-                                        studentId,
-                                        sex,
-                                        birthday,
-                                        vnuMail,
-                                        otherMail]
-        
         programType <- map["program_type"]
         classStudent <- map["class"]
-        InfoOfStudent.infoClass += [programType, classStudent]
-        
         nation <- map["nation"]
         address <- map["address"]
-        InfoOfStudent.infoAdress += [nation, address]
     }
 }
