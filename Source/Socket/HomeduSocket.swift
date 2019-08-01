@@ -28,7 +28,7 @@ final class HomeduSocket {
                 let center = UNUserNotificationCenter.current()
                 socket.on(clientEvent: .connect) { data, ack in
                     let params = [
-                        "student_id": User.studentId
+                        "student_id": "16022411"
                     ]
                     socket.emit(Constant.emitWho, params)
                 }
