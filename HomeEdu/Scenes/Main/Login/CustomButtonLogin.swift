@@ -1,5 +1,5 @@
 //
-//  CustomTextField.swift
+//  CustomButton.swift
 //  HomeEdu
 //
 //  Created by Nguyen Cuong on 7/31/19.
@@ -8,10 +8,9 @@
 
 import UIKit
 
-@IBDesignable class CustomTextField: UITextField {
+@IBDesignable class CustomButtonLogin: UIButton {
     
-    @IBInspectable var radios: CGFloat = 0
-    @IBInspectable var boderWidth: CGFloat = 0
+    @IBInspectable var radius: CGFloat = 0
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,8 +18,7 @@ import UIKit
     
     override func draw(_ rect: CGRect) {
         super.draw(rect)
-        self.layer.cornerRadius = radios
+        self.layer.cornerRadius = radius
         self.clipsToBounds = true
-        self.layer.borderWidth = boderWidth
     }
 }

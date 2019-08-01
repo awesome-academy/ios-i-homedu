@@ -8,9 +8,9 @@
 
 import UIKit
 
-@IBDesignable class CustomView: UIView{
+@IBDesignable class CustomViewUserPass: UIView {
     
-    @IBInspectable var radios: CGFloat = 0
+    @IBInspectable var radius: CGFloat = 0
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -18,12 +18,12 @@ import UIKit
     
     override func draw(_ rect: CGRect) {
         super.draw(rect)
-        self.layer.cornerRadius = radios
+        self.layer.cornerRadius = radius
         self.clipsToBounds = true
     }
     
-    @IBInspectable var borderWidth: CGFloat = 0.0{
-        didSet{
+    @IBInspectable var borderWidth: CGFloat = 0.0 {
+        didSet {
             self.layer.borderWidth = borderWidth
         }
     }
@@ -32,9 +32,5 @@ import UIKit
         didSet {
             self.layer.borderColor = borderColor.cgColor
         }
-    }
-    
-    override func prepareForInterfaceBuilder() {
-        super.prepareForInterfaceBuilder()
     }
 }

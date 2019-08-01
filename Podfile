@@ -8,4 +8,6 @@ target 'HomeEdu' do
   # Pods for HomeEdu
   pod 'Alamofire', '~> 4.0'
   pod 'SwiftyJSON', '~> 4.0'
+  pod 'ObjectMapper', '~> 3.4'
+  pod 'AlamofireObjectMapper', '~> 5.2'
 end

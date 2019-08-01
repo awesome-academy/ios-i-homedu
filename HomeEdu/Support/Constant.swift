@@ -19,7 +19,7 @@ enum Constant {
     static let viewScoreTitle = "Xem điểm"
     static let aboutTitle = "About"
     
-    enum alert {
+    enum Alert {
         static let alertOK = "OK"
         static let alertTitle = "Thông Báo"
         static let alertLoginFail = "Bạn đã nhập sai Username hoặc Password"

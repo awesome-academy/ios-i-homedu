@@ -9,12 +9,17 @@
 import UIKit
 
 extension UIViewController {
-    //Tạo thông báo
-    func creatAlert(title:String, message:String){
-        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: Constant.alert.alertOK, style: UIAlertAction.Style.default, handler: { (action) in
+    
+    func creatAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: Constant.Alert.alertOK,
+                                      style: UIAlertAction.Style.default ) { (action) in
             alert.dismiss(animated: true, completion: nil)
-        }))
+        })
+        
         self.present(alert, animated: true, completion: nil)
     }
 }
