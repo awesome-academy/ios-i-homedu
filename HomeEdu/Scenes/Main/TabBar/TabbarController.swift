@@ -10,11 +10,10 @@ import UIKit
 
 class TabbarController: UITabBarController {
 
-    var homeduSocket: HomeduSocket?
+    let homeduSocket = HomeduSocket.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        homeduSocket = HomeduSocket.shared
         setupTabbar()
     }
 

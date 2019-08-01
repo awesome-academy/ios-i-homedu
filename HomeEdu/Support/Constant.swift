@@ -21,7 +21,6 @@ enum Constant {
     static let aboutTitle = "About"
 
     //Socket
-    static let socketURL = "http://homedu.herokuapp.com"
     static let socketTitle = "Message from Homedu"
     
     //Emit Event
@@ -31,9 +30,6 @@ enum Constant {
     static let grade = "new_grade"
     static let schedule = "new_schedule"
     static let exam = "new_examschedule"
-    
-    //General Information
-    static let studentIdDemo = "16022411"
     
     //Errors
     static let dataErr = "Data don't have any items"

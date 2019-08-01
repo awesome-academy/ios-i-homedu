@@ -21,46 +21,40 @@ final class HomeduSocket {
     
     /// Config HomeduSocket to listen event from server
     func configSocket() {
-        if let url = URL(string: Constant.socketURL) {
+        if let url = URL(string: Urls.socketUrl) {
             socketManager = SocketManager(socketURL: url, config: [.log(true), .compress])
             if let manager = socketManager {
                 let socket = manager.defaultSocket
                 let center = UNUserNotificationCenter.current()
                 socket.on(clientEvent: .connect) { data, ack in
                     let params = [
-                        "student_id": Constant.studentIdDemo
+                        "student_id": User.studentId
                     ]
                     socket.emit(Constant.emitWho, params)
                 }
                 socket.on(Constant.grade) { data, ack in
                     if (data.count > 0) {
-                        if let socketMessage = data[0] as? NSDictionary {
-                            if let message = socketMessage["msg"] as? String {
-                                self.showNotification(center: center, msg: message)
-                            }
-                        }
+                        guard let socketMessage = data[0] as? NSDictionary else { return }
+                        guard let message = socketMessage["msg"] as? String else { return }
+                        self.showNotification(center: center, msg: message)
                     } else {
                         print(Constant.dataErr)
                     }
                 }
                 socket.on(Constant.schedule) { data, ack in
                     if (data.count > 0) {
-                        if let socketMessage = data[0] as? NSDictionary {
-                            if let message = socketMessage["msg"] as? String {
-                                self.showNotification(center: center, msg: message)
-                            }
-                        }
+                        guard let socketMessage = data[0] as? NSDictionary else { return }
+                        guard let message = socketMessage["msg"] as? String else { return }
+                        self.showNotification(center: center, msg: message)
                     } else {
                         print(Constant.dataErr)
                     }
                 }
                 socket.on(Constant.exam) { data, ack in
                     if (data.count > 0) {
-                        if let socketMessage = data[0] as? NSDictionary {
-                            if let message = socketMessage["msg"] as? String {
-                                self.showNotification(center: center, msg: message)
-                            }
-                        }
+                        guard let socketMessage = data[0] as? NSDictionary else { return }
+                        guard let message = socketMessage["msg"] as? String else { return }
+                        self.showNotification(center: center, msg: message)
                     } else {
                         print(Constant.dataErr)
                     }

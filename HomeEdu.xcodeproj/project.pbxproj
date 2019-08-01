@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		254273F422F278240000891A /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254273F322F278240000891A /* Urls.swift */; };
 		25F0CF8522F1E3BE00582ED1 /* HomeduSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F0CF8422F1E3BE00582ED1 /* HomeduSocket.swift */; };
 		85AA66753FD9A9C14601A849 /* Pods_HomeEdu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB863AFE16FD6C8B5A495B82 /* Pods_HomeEdu.framework */; };
 		9BA6940222F179460066A6E0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA6940122F179460066A6E0 /* Constant.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		254273F322F278240000891A /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
 		25F0CF8422F1E3BE00582ED1 /* HomeduSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeduSocket.swift; path = Source/Socket/HomeduSocket.swift; sourceTree = SOURCE_ROOT; };
 		9BA6940122F179460066A6E0 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		9BACC30E22F02AEA008761FC /* HomeEdu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeEdu.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				9BA6940122F179460066A6E0 /* Constant.swift */,
+				254273F322F278240000891A /* Urls.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				9BACC32F22F038C2008761FC /* StoryBoards.swift in Sources */,
 				9BACC34A22F03C6D008761FC /* TabbarController.swift in Sources */,
 				9BACC31222F02AEA008761FC /* AppDelegate.swift in Sources */,
+				254273F422F278240000891A /* Urls.swift in Sources */,
 				25F0CF8522F1E3BE00582ED1 /* HomeduSocket.swift in Sources */,
 				9BA6940222F179460066A6E0 /* Constant.swift in Sources */,
 			);
