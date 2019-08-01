@@ -23,8 +23,8 @@ enum Constant {
         static let alertOK = "OK"
         static let alertTitle = "Thông Báo"
         static let alertLoginFail = "Bạn đã nhập sai Username hoặc Password"
-        static let messageMissUsername = "Bạn chưa nhập username"
-        static let messageMissPassword = "Bạn chưa nhập password"
-        static let messageMissUserAndPass = "Bạn chưa nhập username và password"
+        static let messageMissUsername = "Username không hợp lệ"
+        static let messageMissPassword = "Password không hợp lệ"
+        static let messageMissUserAndPass = "Username và Password không hợp lệ"
     }
 }

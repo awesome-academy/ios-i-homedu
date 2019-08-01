@@ -27,27 +27,33 @@ final class LoginViewController: UIViewController {
     }
     
     @IBAction func buttonLogin(_ sender: Any) {
-        if validateButton() {
+        if checkValidInput() {
             requestLogin()
         }
     }
     
-    //Validate button
-    func validateButton() -> Bool {
-        if userNameTextField.text!.isEmpty && passwordTextField.text!.isEmpty {
-            creatAlert(title: Constant.Alert.alertTitle, message: Constant.Alert.messageMissUserAndPass)
-            return false
-        } else if userNameTextField.text!.isEmpty {
-            creatAlert(title: Constant.Alert.alertTitle,
-                       message: Constant.Alert.messageMissUsername)
-            return false
-        } else if passwordTextField.text!.isEmpty {
-            creatAlert(title: Constant.Alert.alertTitle,
-                       message: Constant.Alert.messageMissPassword)
-            return false
-        } else {
-            return true
+    //check button
+    func checkValidInput() -> Bool {
+        let username: String.ValidateType = .username
+        let password: String.ValidateType = .password
+        if let userText = userNameTextField.text, let passText = passwordTextField.text {
+            print("Username " + "\(userText.isValid(username))")
+            print("Password " + "\(userText.isValid(password))")
+            if !userText.isValid(username) &&
+                !passText.isValid(password) {
+                creatAlert(title: Constant.Alert.alertTitle, message: Constant.Alert.messageMissUserAndPass)
+                return false
+            } else if !userText.isValid(username) {
+                creatAlert(title: Constant.Alert.alertTitle,
+                           message: Constant.Alert.messageMissUsername)
+                return false
+            } else if !passText.isValid(password) {
+                creatAlert(title: Constant.Alert.alertTitle,
+                           message: Constant.Alert.messageMissPassword)
+                return false
+            }
         }
+        return false
     }
     
     //Request Server

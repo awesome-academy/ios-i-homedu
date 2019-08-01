@@ -1,5 +1,5 @@
 //
-//  InfoStudentResponse.swift
+//  InfoAccount.swift
 //  HomeEdu
 //
 //  Created by Nguyen Cuong on 8/1/19.
@@ -9,22 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class InfoStudentResponse: Mappable {
-    var token = ""
-    var success = false
-    var infoStudent = [InfoStudent]()
-    
-    required init?(map: Map) {
-    }
-    
-    func mapping(map: Map) {
-        token <- map["token"]
-        success <- map["success"]
-        infoStudent <- map["data"]
-    }
-}
-
-class InfoStudent: Mappable {
+class InfoAccount: Mappable {
     var fullName = ""
     var studentId = ""
     var birthday = ""

@@ -23,7 +23,7 @@ class AccountRepository {
                           method: .post,
                           parameters: param,
                           encoding: JSONEncoding.default,
-                          headers: [:]).responseObject { (response: DataResponse<InfoStudentResponse>) in
+                          headers: [:]).responseObject { (response: DataResponse<InfoResponse>) in
                             let infoStudentResponse = response.result.value
                             callback(infoStudentResponse!.success)
         }
