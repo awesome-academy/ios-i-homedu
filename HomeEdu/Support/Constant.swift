@@ -31,6 +31,9 @@ enum Constant {
     static let schedule = "new_schedule"
     static let exam = "new_examschedule"
     
+    //General Information
+    static let studentId = "16022411"
+    
     //Errors
     static let dataErr = "Data don't have any items"
 }

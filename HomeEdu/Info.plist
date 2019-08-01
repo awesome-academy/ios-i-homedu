@@ -44,5 +44,7 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>Config</key>
+	<string>${CONFIGURATION}</string>
 </dict>
 </plist>
