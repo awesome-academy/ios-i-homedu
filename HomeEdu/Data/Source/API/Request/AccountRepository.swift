@@ -25,7 +25,9 @@ class AccountRepository {
                           encoding: JSONEncoding.default,
                           headers: [:]).responseObject { (response: DataResponse<InfoResponse>) in
                             let infoStudentResponse = response.result.value
-                            callback(infoStudentResponse!.success)
+                            if let success = infoStudentResponse?.success {
+                                callback(success)
+                            }
         }
     }
 }
