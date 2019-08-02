@@ -32,7 +32,9 @@ final class LoginViewController: UIViewController {
         }
     }
     
-    //check button
+    ///check input when user typing or click button
+    ///
+    /// - Returns: True: Input valid, False: Input invalid
     func checkValidInput() -> Bool {
         let username: String.ValidateType = .username
         let password: String.ValidateType = .password
@@ -56,7 +58,7 @@ final class LoginViewController: UIViewController {
         return false
     }
     
-    //Request Server
+    /// User Request Server for Login
     func requestLogin() {
         let param: Parameters = [
             "username": userNameTextField.text ?? "",

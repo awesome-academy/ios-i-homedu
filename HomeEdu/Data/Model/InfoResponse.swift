@@ -23,4 +23,3 @@ class InfoResponse: Mappable {
         infoStudent <- map["data"]
     }
 }
-

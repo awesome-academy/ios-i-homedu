@@ -14,6 +14,10 @@ extension String {
         case password
     }
     
+    /// Check input in textfield
+    ///
+    /// - Parameter validType: type of input
+    /// - Returns: True: Input valid, False: Input invalid
     func isValid(_ validType: ValidateType) -> Bool {
         let format = "SELF MATCHES %@"
         var regex = ""
