@@ -223,7 +223,6 @@
 		9BACC32B22F02F32008761FC /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				9BD6978422F8008400FC9AB2 /* About */,
 				9BA6940322F18CAD0066A6E0 /* Login */,
 				9BACC34822F03C14008761FC /* TabBar */,
 			);
@@ -429,7 +428,6 @@
 				9B092DA222F283D100C4BCF2 /* InfoResponse.swift in Sources */,
 				9BA6940922F18D790066A6E0 /* CustomButtonLogin.swift in Sources */,
 				9BA6940222F179460066A6E0 /* Constant.swift in Sources */,
-				9BD6978622F801D400FC9AB2 /* AboutViewController.swift in Sources */,
 				9B092DA822F2E07D00C4BCF2 /* ValidateString.swift in Sources */,
 				9BA6940522F18CC20066A6E0 /* LoginViewController.swift in Sources */,
 				9B092DA622F2DBC000C4BCF2 /* InfoAccount.swift in Sources */,

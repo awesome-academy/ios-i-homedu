@@ -23,4 +23,8 @@ enum Vietnamese {
         static let messageMissPassword = "Password không hợp lệ"
         static let messageMissUserAndPass = "Username và Password không hợp lệ"
     }
+    
+    enum AboutApp {
+        
+    }
 }

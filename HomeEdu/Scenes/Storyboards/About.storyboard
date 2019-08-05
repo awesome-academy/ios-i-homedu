@@ -213,7 +213,7 @@
     </scenes>
     <resources>
         <image name="about" width="824" height="875"/>
-        <image name="info" width="16" height="16"/>
+        <image name="info" width="96" height="96"/>
         <image name="logo" width="1006" height="238"/>
         <image name="logout" width="793" height="675"/>
     </resources>
