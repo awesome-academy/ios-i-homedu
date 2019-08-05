@@ -25,6 +25,8 @@ enum Vietnamese {
     }
     
     enum AboutApp {
-        
+        static let version = "Phiên bản: 1.0.0"
+        static let contact = "Liên hệ: homedu@gmail.com"
+        static let author = "Sở hữu: Văn Minh & Việt Cường"
     }
 }

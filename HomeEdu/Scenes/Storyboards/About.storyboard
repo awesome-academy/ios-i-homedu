@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="K0h-Fz-aFw">
-                                <rect key="frame" x="28" y="139.5" width="319" height="133.5"/>
+                                <rect key="frame" x="28" y="139.5" width="319.00000000000023" height="133.5"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dOx-va-pAK">
                                 <rect key="frame" x="0.0" y="298" width="375" height="50"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about" translatesAutoresizingMaskIntoConstraints="NO" id="hKS-Nm-F4G">
-                                        <rect key="frame" x="37.5" y="6" width="38" height="38"/>
+                                        <rect key="frame" x="37.5" y="6" width="38.000000000000227" height="38"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="38" id="YXd-by-SQP"/>
                                             <constraint firstAttribute="width" constant="38" id="vI0-LA-JYQ"/>
@@ -42,7 +42,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="buttonAboutApp:" destination="TaL-Ph-JQA" eventType="touchUpInside" id="qsL-6O-idc"/>
+                                            <action selector="buttonAboutApp:" destination="TaL-Ph-JQA" eventType="touchUpInside" id="S0D-Ca-uFv"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -75,7 +75,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="buttonLogout:" destination="TaL-Ph-JQA" eventType="touchUpInside" id="O2S-TP-foJ"/>
+                                            <action selector="buttonLogout:" destination="TaL-Ph-JQA" eventType="touchUpInside" id="iAd-Hh-7Vx"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -108,10 +108,10 @@
             </objects>
             <point key="canvasLocation" x="107" y="96"/>
         </scene>
-        <!--View Controller-->
+        <!--Info About App-->
         <scene sceneID="rZI-D9-b5Z">
             <objects>
-                <viewController storyboardIdentifier="AboutHomeEdu" id="Y30-ea-LcV" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AboutHomeEdu" id="Y30-ea-LcV" customClass="InfoAboutApp" customModule="HomeEdu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jsd-gg-Itc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,15 +120,26 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="66.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="sih-VU-N6o">
-                                        <rect key="frame" x="112.5" y="13.5" width="150" height="40"/>
+                                        <rect key="frame" x="112.5" y="13.5" width="150.00000000000023" height="40"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lmc-VE-idn">
+                                        <rect key="frame" x="5" y="15" width="56.5" height="36.5"/>
+                                        <state key="normal" backgroundImage="buttonBack"/>
+                                        <connections>
+                                            <action selector="buttonBack:" destination="Y30-ea-LcV" eventType="touchUpInside" id="FFi-fK-JXF"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.31050235030000001" green="0.6871269941" blue="0.9725843072" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
+                                    <constraint firstItem="Lmc-VE-idn" firstAttribute="width" secondItem="vfv-HW-Egl" secondAttribute="width" multiplier="0.15" id="6sz-Mu-wHD"/>
                                     <constraint firstItem="sih-VU-N6o" firstAttribute="width" secondItem="vfv-HW-Egl" secondAttribute="width" multiplier="0.4" id="F4n-tj-dVb"/>
                                     <constraint firstItem="sih-VU-N6o" firstAttribute="centerX" secondItem="vfv-HW-Egl" secondAttribute="centerX" id="JcG-Vh-6Oa"/>
                                     <constraint firstItem="sih-VU-N6o" firstAttribute="centerY" secondItem="vfv-HW-Egl" secondAttribute="centerY" id="LPj-gr-56G"/>
+                                    <constraint firstItem="Lmc-VE-idn" firstAttribute="leading" secondItem="vfv-HW-Egl" secondAttribute="leading" constant="5" id="QvE-RD-9eD"/>
                                     <constraint firstItem="sih-VU-N6o" firstAttribute="height" secondItem="vfv-HW-Egl" secondAttribute="height" multiplier="0.6" id="fAg-jw-fsu"/>
+                                    <constraint firstItem="Lmc-VE-idn" firstAttribute="centerY" secondItem="vfv-HW-Egl" secondAttribute="centerY" id="j84-e6-cDO"/>
+                                    <constraint firstItem="Lmc-VE-idn" firstAttribute="height" secondItem="vfv-HW-Egl" secondAttribute="height" multiplier="0.55" id="y2i-zt-vaP"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phiên bản: 1.0.0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TR6-Og-bbr">
@@ -205,14 +216,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1iC-M8-o4F"/>
                     </view>
+                    <connections>
+                        <outlet property="author" destination="c1O-UP-yNW" id="BEc-6z-Hw8"/>
+                        <outlet property="contact" destination="ITR-sI-BD6" id="CVo-vN-jV9"/>
+                        <outlet property="version" destination="TR6-Og-bbr" id="O4z-U1-DCL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Cm-KN-2Ip" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1366" y="99"/>
+            <point key="canvasLocation" x="1365.5999999999999" y="98.50074962518741"/>
         </scene>
     </scenes>
     <resources>
         <image name="about" width="824" height="875"/>
+        <image name="buttonBack" width="1106" height="959"/>
         <image name="info" width="96" height="96"/>
         <image name="logo" width="1006" height="238"/>
         <image name="logout" width="793" height="675"/>

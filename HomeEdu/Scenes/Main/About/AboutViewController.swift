@@ -13,6 +13,7 @@ class AboutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
     @IBAction func buttonAboutApp(_ sender: Any) {
         let aboutSB = Storyboards.about
         let about = aboutSB.instantiateViewController(withIdentifier: "AboutHomeEdu")
