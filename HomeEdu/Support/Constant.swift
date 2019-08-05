@@ -7,6 +7,7 @@
 //
 
 enum Constant {
+    //Tabbar
     static let accountId = "Account"
     static let examScheduleId = "ExamSchedule"
     static let scheduleId = "Schedule"
@@ -18,4 +19,27 @@ enum Constant {
     static let scheduleTitle = "TKB"
     static let viewScoreTitle = "Xem điểm"
     static let aboutTitle = "About"
+
+    //Socket
+    static let socketTitle = "Message from Homedu"
+    
+    //Emit Event
+    static let emitWho = "who"
+    
+    //Listen Event
+    static let grade = "new_grade"
+    static let schedule = "new_schedule"
+    static let exam = "new_examschedule"
+    
+    //General Information
+    #if Staging
+        static let studentId = "16022411"
+    #elseif Production
+        static let studentId = "admin"
+    #elseif Release
+        static let studentId = "admin"
+    #endif
+    
+    //Errors
+    static let dataErr = "Data don't have any items"
 }
