@@ -26,7 +26,7 @@ extension String {
         case .username:
 //          Usernames can consist of lowercase and capitals
 //          Usernames can consist of alphanumeric characters
-//          Usernames can consist of underscore and hyphens and spaces
+//          Usernames can consist of underscore and hyphens
 //          Cannot be two underscores, two hypens or two spaces in a row
 //          Cannot have a underscore, hypen or space at the start or end
             regex = "^[a-zA-Z0-9]+(?:[_-]?[a-zA-Z0-9])*$"
