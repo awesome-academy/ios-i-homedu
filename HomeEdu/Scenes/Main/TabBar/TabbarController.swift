@@ -28,11 +28,11 @@ class TabbarController: UITabBarController {
         let viewScoreController = viewScore.instantiateViewController(withIdentifier: Constant.viewScoreId)
         let aboutController = about.instantiateViewController(withIdentifier: Constant.aboutId)
         
-        viewScoreController.tabBarItem = UITabBarItem(title: Constant.viewScoreTitle, image: nil, tag: 0)
-        scheduleController.tabBarItem = UITabBarItem(title: Constant.scheduleTitle, image: nil, tag: 1)
-        accountController.tabBarItem = UITabBarItem(title: Constant.accountTitle, image: nil, tag: 2)
-        examScheduleController.tabBarItem = UITabBarItem(title: Constant.examScheduleTitle, image: nil, tag: 3)
-        aboutController.tabBarItem = UITabBarItem(title: Constant.aboutTitle, image: nil, tag: 4)
+        viewScoreController.tabBarItem = UITabBarItem(title: Vietnamese.TitleTabBar.viewScoreTitle, image: nil, tag: 0)
+        scheduleController.tabBarItem = UITabBarItem(title: Vietnamese.TitleTabBar.scheduleTitle, image: nil, tag: 1)
+        accountController.tabBarItem = UITabBarItem(title: Vietnamese.TitleTabBar.accountTitle, image: nil, tag: 2)
+        examScheduleController.tabBarItem = UITabBarItem(title: Vietnamese.TitleTabBar.examScheduleTitle, image: nil, tag: 3)
+        aboutController.tabBarItem = UITabBarItem(title: Vietnamese.TitleTabBar.aboutTitle, image: nil, tag: 4)
         self.viewControllers = [viewScoreController, scheduleController, accountController, examScheduleController, aboutController]
     }
 }

@@ -15,7 +15,7 @@ extension UIViewController {
                                       message: message,
                                       preferredStyle: UIAlertController.Style.alert)
         
-        alert.addAction(UIAlertAction(title: Constant.Alert.alertOK,
+        alert.addAction(UIAlertAction(title: Vietnamese.Alert.alertOK,
                                       style: UIAlertAction.Style.default) { (action) in
             alert.dismiss(animated: true, completion: nil)
         })

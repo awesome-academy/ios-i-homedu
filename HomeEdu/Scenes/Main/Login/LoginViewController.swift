@@ -43,19 +43,21 @@ final class LoginViewController: UIViewController {
             print("Password " + "\(userText.isValid(password))")
             if !userText.isValid(username) &&
                 !passText.isValid(password) {
-                creatAlert(title: Constant.Alert.alertTitle, message: Constant.Alert.messageMissUserAndPass)
+                creatAlert(title: Vietnamese.Alert.alertTitle, message: Vietnamese.Alert.messageMissUserAndPass)
                 return false
-            } else if !userText.isValid(username) {
-                creatAlert(title: Constant.Alert.alertTitle,
-                           message: Constant.Alert.messageMissUsername)
+            }
+            if !userText.isValid(username) {
+                creatAlert(title: Vietnamese.Alert.alertTitle,
+                           message: Vietnamese.Alert.messageMissUsername)
                 return false
-            } else if !passText.isValid(password) {
-                creatAlert(title: Constant.Alert.alertTitle,
-                           message: Constant.Alert.messageMissPassword)
+            }
+            if !passText.isValid(password) {
+                creatAlert(title: Vietnamese.Alert.alertTitle,
+                           message: Vietnamese.Alert.messageMissPassword)
                 return false
             }
         }
-        return false
+        return true
     }
     
     /// User Request Server for Login
@@ -71,8 +73,8 @@ final class LoginViewController: UIViewController {
                 let tabBar = tabBarSB.instantiateViewController(withIdentifier: "TabBar")
                 self.navigationController?.pushViewController(tabBar, animated: true)
             } else {
-                self.creatAlert(title: Constant.Alert.alertTitle,
-                           message: Constant.Alert.alertLoginFail)
+                self.creatAlert(title: Vietnamese.Alert.alertTitle,
+                           message: Vietnamese.Alert.alertLoginFail)
             }
         }
     }

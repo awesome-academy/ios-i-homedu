@@ -29,6 +29,7 @@
 		9BACC33922F039BA008761FC /* ExamSchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC33822F039BA008761FC /* ExamSchedule.storyboard */; };
 		9BACC33B22F039C4008761FC /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC33A22F039C4008761FC /* About.storyboard */; };
 		9BACC34A22F03C6D008761FC /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BACC34922F03C6D008761FC /* TabbarController.swift */; };
+		9BD6978922F80C1600FC9AB2 /* Vietnamese.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD6978822F80C1600FC9AB2 /* Vietnamese.swift */; };
 		F2124E0D15FF84DEA9893561 /* Pods_HomeEdu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 782290D506037BE4A11A0163 /* Pods_HomeEdu.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		9BACC33822F039BA008761FC /* ExamSchedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExamSchedule.storyboard; sourceTree = "<group>"; };
 		9BACC33A22F039C4008761FC /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		9BACC34922F03C6D008761FC /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		9BD6978822F80C1600FC9AB2 /* Vietnamese.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vietnamese.swift; sourceTree = "<group>"; };
 		A44A21FDDC99BCF0BDCE41CD /* Pods-HomeEdu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeEdu.debug.xcconfig"; path = "Target Support Files/Pods-HomeEdu/Pods-HomeEdu.debug.xcconfig"; sourceTree = "<group>"; };
 		C8BFE6740BF3755397ED7609 /* Pods-HomeEdu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeEdu.release.xcconfig"; path = "Target Support Files/Pods-HomeEdu/Pods-HomeEdu.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +153,7 @@
 		9BACC32322F02E7D008761FC /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				9BD6978722F80BF100FC9AB2 /* Language */,
 				9BA6940122F179460066A6E0 /* Constant.swift */,
 			);
 			path = Support;
@@ -256,6 +259,14 @@
 				9BACC34922F03C6D008761FC /* TabbarController.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		9BD6978722F80BF100FC9AB2 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				9BD6978822F80C1600FC9AB2 /* Vietnamese.swift */,
+			);
+			path = Language;
 			sourceTree = "<group>";
 		};
 		ED79DC88BD41C6FDAF4B5663 /* Pods */ = {
@@ -410,6 +421,7 @@
 				9B092D9D22F2823E00C4BCF2 /* AccountRepository.swift in Sources */,
 				9BACC34A22F03C6D008761FC /* TabbarController.swift in Sources */,
 				9BACC31222F02AEA008761FC /* AppDelegate.swift in Sources */,
+				9BD6978922F80C1600FC9AB2 /* Vietnamese.swift in Sources */,
 				9BA6940722F18D630066A6E0 /* CustomViewUserPass.swift in Sources */,
 				9BA6941122F193600066A6E0 /* Urls.swift in Sources */,
 				9BA6940D22F18F1D0066A6E0 /* UIViewController+.swift in Sources */,

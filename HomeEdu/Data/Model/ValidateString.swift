@@ -29,7 +29,7 @@ extension String {
 //          Usernames can consist of underscore and hyphens and spaces
 //          Cannot be two underscores, two hypens or two spaces in a row
 //          Cannot have a underscore, hypen or space at the start or end
-            regex = "/^[a-zA-Z0-9]+([a-zA-Z0-9](_|-| )[a-zA-Z0-9])*[a-zA-Z0-9]+$/"
+            regex = "^[a-zA-Z0-9]+(?:[_-]?[a-zA-Z0-9])*$"
         case .password:
 //          Minimum 8 characters at least 1 Uppercase Alphabet, 1 Lowercase
             regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$"
