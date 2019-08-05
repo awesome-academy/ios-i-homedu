@@ -30,11 +30,16 @@ class TabbarController: UITabBarController {
         let viewScoreController = viewScore.instantiateViewController(withIdentifier: Constant.viewScoreId)
         let aboutController = about.instantiateViewController(withIdentifier: Constant.aboutId)
         
-        viewScoreController.tabBarItem = UITabBarItem(title: Constant.viewScoreTitle, image: nil, tag: 0)
-        scheduleController.tabBarItem = UITabBarItem(title: Constant.scheduleTitle, image: nil, tag: 1)
-        accountController.tabBarItem = UITabBarItem(title: Constant.accountTitle, image: nil, tag: 2)
-        examScheduleController.tabBarItem = UITabBarItem(title: Constant.examScheduleTitle, image: nil, tag: 3)
-        aboutController.tabBarItem = UITabBarItem(title: Constant.aboutTitle, image: nil, tag: 4)
+        viewScoreController.tabBarItem = UITabBarItem(title: NSLocalizedString(Constant.TitleTabBar.viewScoreTitle, comment: ""),
+                                                      image: nil, tag: 0)
+        scheduleController.tabBarItem = UITabBarItem(title: NSLocalizedString(Constant.TitleTabBar.scheduleTitle, comment: ""),
+                                                     image: nil, tag: 1)
+        accountController.tabBarItem = UITabBarItem(title: NSLocalizedString(Constant.TitleTabBar.accountTitle, comment: ""),
+                                                    image: nil, tag: 2)
+        examScheduleController.tabBarItem = UITabBarItem(title: NSLocalizedString(Constant.TitleTabBar.examScheduleTitle, comment: ""),
+                                                         image: nil, tag: 3)
+        aboutController.tabBarItem = UITabBarItem(title: NSLocalizedString(Constant.TitleTabBar.aboutTitle, comment: ""),
+                                                  image: nil, tag: 4)
         self.viewControllers = [viewScoreController, scheduleController, accountController, examScheduleController, aboutController]
     }
 }

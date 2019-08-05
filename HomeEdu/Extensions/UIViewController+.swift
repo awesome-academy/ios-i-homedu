@@ -29,4 +29,15 @@ extension UIViewController {
             print(error)
         }
     }
+    
+    func createAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title,
+                                      message: message,
+                                      preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString(Constant.Alert.alertOK, comment: ""),
+                                      style: UIAlertAction.Style.default) { (action) in
+                                        alert.dismiss(animated: true, completion: nil)
+        })
+        self.present(alert, animated: true, completion: nil)
+    }
 }

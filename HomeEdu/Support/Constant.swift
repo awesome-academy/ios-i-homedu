@@ -14,11 +14,25 @@ enum Constant {
     static let viewScoreId = "ViewScore"
     static let aboutId = "About"
     
-    static let accountTitle = "Tài khoản"
-    static let examScheduleTitle = "Lịch thi"
-    static let scheduleTitle = "TKB"
-    static let viewScoreTitle = "Xem điểm"
-    static let aboutTitle = "About"
+    //Tabbar Title
+    enum TitleTabBar {
+        static let accountTitle = "common.account.title"
+        static let examScheduleTitle = "common.examSchedule.title"
+        static let scheduleTitle = "common.schedule.title"
+        static let viewScoreTitle = "common.viewScore.title"
+        static let aboutTitle = "common.about.title"
+    }
+    
+    //Alert
+    enum Alert {
+        static let alertOK = "common.ok.alert"
+        static let alertTitle = "common.title.alert"
+        static let alertLoginFail = "common.loginFail.alert"
+        static let usernameError = "common.usernameError.alert"
+        static let passwordError = "common.passwordError.alert"
+        static let userAndPassError = "common.userPassError.alert"
+        static let internetError = "common.internetError.alert"
+    }
 
     //Socket
     static let socketTitle = "Message from Homedu"
