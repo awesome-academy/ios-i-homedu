@@ -19,3 +19,7 @@
 "common.passwordError.alert" = "Password không hợp lệ";
 "common.userPassError.alert" = "Username và Password không hợp lệ";
 "common.internetError.alert" = "Vui lòng kiểm tra lại kết nối";
+
+"common.version.aboutHomedu" = "Phiên bản: 1.0.0";
+"common.contact.aboutHomedu" = "Liên hệ: homedu@gmail.com";
+"common.author.aboutHomedu" = "Sở hữu: Văn Minh & Việt Cường";

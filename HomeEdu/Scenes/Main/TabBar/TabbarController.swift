@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import Reusable
 
 class TabbarController: UITabBarController {
-
+    
     let homeduSocket = HomeduSocket.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideNavigationBar()
         setupTabbar()
     }
 
@@ -42,4 +44,8 @@ class TabbarController: UITabBarController {
                                                   image: nil, tag: 4)
         self.viewControllers = [viewScoreController, scheduleController, accountController, examScheduleController, aboutController]
     }
+}
+
+extension TabbarController: StoryboardSceneBased {
+    static let sceneStoryboard = Storyboards.tabBar
 }

@@ -33,7 +33,14 @@ enum Constant {
         static let userAndPassError = "common.userPassError.alert"
         static let internetError = "common.internetError.alert"
     }
-
+    
+    //About HomeEdu
+    enum AboutHomedu {
+        static let version = "common.version.aboutHomedu"
+        static let contact = "common.contact.aboutHomedu"
+        static let author = "common.author.aboutHomedu"
+    }
+    
     //Socket
     static let socketTitle = "Message from Homedu"
     
