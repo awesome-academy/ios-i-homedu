@@ -9,8 +9,7 @@
 import UIKit
 import Reusable
 
-class AboutHomeEdu: UIViewController, StoryboardSceneBased {
-    static let sceneStoryboard = Storyboards.about
+class AboutHomeEdu: UIViewController {
     
     @IBOutlet weak var aboutVersion: UILabel!
     @IBOutlet weak var aboutContact: UILabel!
@@ -29,4 +28,8 @@ class AboutHomeEdu: UIViewController, StoryboardSceneBased {
     @IBAction func buttonBack(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+}
+
+extension AboutHomeEdu: StoryboardSceneBased {
+    static let sceneStoryboard = Storyboards.about
 }

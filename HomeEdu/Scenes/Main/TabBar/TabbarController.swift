@@ -9,9 +9,8 @@
 import UIKit
 import Reusable
 
-class TabbarController: UITabBarController, StoryboardSceneBased {
+class TabbarController: UITabBarController {
     
-    static let sceneStoryboard = Storyboards.tabBar
     let homeduSocket = HomeduSocket.shared
     
     override func viewDidLoad() {
@@ -45,4 +44,8 @@ class TabbarController: UITabBarController, StoryboardSceneBased {
                                                   image: nil, tag: 4)
         self.viewControllers = [viewScoreController, scheduleController, accountController, examScheduleController, aboutController]
     }
+}
+
+extension TabbarController: StoryboardSceneBased {
+    static let sceneStoryboard = Storyboards.tabBar
 }
