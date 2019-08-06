@@ -14,6 +14,7 @@
 		2527441822F96950002F1694 /* SubjectSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527441722F96950002F1694 /* SubjectSchedule.swift */; };
 		2527441A22F96966002F1694 /* ExamScheduleNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527441922F96966002F1694 /* ExamScheduleNotification.swift */; };
 		2565AE8922F2D4B70003620A /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565AE8822F2D4B70003620A /* UIViewController+.swift */; };
+		2578F98422F91A840002CCDC /* ExamScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2578F98322F91A840002CCDC /* ExamScheduleController.swift */; };
 		25F0CF8522F1E3BE00582ED1 /* HomeduSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F0CF8422F1E3BE00582ED1 /* HomeduSocket.swift */; };
 		85AA66753FD9A9C14601A849 /* Pods_HomeEdu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB863AFE16FD6C8B5A495B82 /* Pods_HomeEdu.framework */; };
 		9B648A8422F861E4006BC8F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B648A8622F861E4006BC8F8 /* Localizable.strings */; };
@@ -51,6 +52,9 @@
 		2527441722F96950002F1694 /* SubjectSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectSchedule.swift; sourceTree = "<group>"; };
 		2527441922F96966002F1694 /* ExamScheduleNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamScheduleNotification.swift; sourceTree = "<group>"; };
 		2565AE8822F2D4B70003620A /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+.swift"; path = "HomeEdu/Extensions/UIViewController+.swift"; sourceTree = SOURCE_ROOT; };
+		254273F322F278240000891A /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
+		2565AE8822F2D4B70003620A /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+.swift"; path = "HomeEdu/Extensions/UIViewController/UIViewController+.swift"; sourceTree = SOURCE_ROOT; };
+		2578F98322F91A840002CCDC /* ExamScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamScheduleController.swift; sourceTree = "<group>"; };
 		25F0CF8422F1E3BE00582ED1 /* HomeduSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeduSocket.swift; path = Source/Socket/HomeduSocket.swift; sourceTree = SOURCE_ROOT; };
 		3F47CA46F1CA5E36A3655AFC /* Pods-HomeEdu.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeEdu.staging.xcconfig"; path = "Target Support Files/Pods-HomeEdu/Pods-HomeEdu.staging.xcconfig"; sourceTree = "<group>"; };
 		4E32C9F869AC96C114A65B78 /* Pods-HomeEdu.testing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeEdu.testing.xcconfig"; path = "Target Support Files/Pods-HomeEdu/Pods-HomeEdu.testing.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +113,14 @@
 				2527441522F9693B002F1694 /* ExamResponse.swift */,
 				2527441722F96950002F1694 /* SubjectSchedule.swift */,
 				2527441922F96966002F1694 /* ExamScheduleNotification.swift */,
+			);
+			path = ExamSchedule;
+			sourceTree = "<group>";
+		};
+		2578F98022F919F90002CCDC /* ExamSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				2578F98322F91A840002CCDC /* ExamScheduleController.swift */,
 			);
 			path = ExamSchedule;
 			sourceTree = "<group>";
@@ -271,6 +283,7 @@
 			children = (
 				9BBA734322F9258500A426E5 /* About */,
 				9BA1B16622F83BA10007C6FE /* Login */,
+				2578F98022F919F90002CCDC /* ExamSchedule */,
 				9BACC34822F03C14008761FC /* TabBar */,
 			);
 			path = Main;
@@ -457,6 +470,7 @@
 				9BACC34A22F03C6D008761FC /* TabbarController.swift in Sources */,
 				2565AE8922F2D4B70003620A /* UIViewController+.swift in Sources */,
 				9BA1B17D22F83D280007C6FE /* ValidateString.swift in Sources */,
+				2578F98422F91A840002CCDC /* ExamScheduleController.swift in Sources */,
 				9BACC31222F02AEA008761FC /* AppDelegate.swift in Sources */,
 				25F0CF8522F1E3BE00582ED1 /* HomeduSocket.swift in Sources */,
 				2527440F22F96862002F1694 /* Date+.swift in Sources */,
