@@ -44,7 +44,7 @@ extension UIViewController {
         let start = subjectSchedule.start
         
         // Get standard value
-        let dateParser = Date().parse("\(date) \(start):05:00")
+        let dateParser = Date().parse("\(date) \(start):00:00")
         let message = getMessage(name: name, id: id, room: room, start: start)
         
         // Set content for the notification
