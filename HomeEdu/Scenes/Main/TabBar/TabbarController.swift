@@ -25,7 +25,7 @@ class TabbarController: UITabBarController {
     /// Setup local notification for exam schedule
     func setupNotification() {
         let headers: HTTPHeaders = [
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWNjZXNzIjp0cnVlLCJtZXNzYWdlIjoiTG9hZGVkIGFjY291bnQiLCJkYXRhIjpbeyJfaWQiOiI1ZDQyYjUwYTIxZWFlMDM0ZGM2YWJjMzciLCJ1c2VybmFtZSI6ImFkbWluIiwicGFzc3dvcmQiOiIkMmEkMTAkdnVDRnBGWHBJc01UQ01VdnpOTXlNT1JpcEYxNjZxQTIwcUhiYzlueThMTUlRWXpGTTJRbHkiLCJzdHVkZW50X2lkIjoiYWRtaW4iLCJiaXJ0aGRheSI6IjE5OTgtMDMtMDEiLCJzZXgiOiJOYW0iLCJmdWxsbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB2bnUuZWR1LnZuIiwib3RoZXJfZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJwcm9ncmFtX3R5cGUiOiJD4butIG5ow6JuIiwiY2xhc3MiOiJRSC0yMDE2LWkvQ1EtQy1BLUNMQzIiLCJuYXRpb24iOiJWaeG7h3QgTmFtIiwiYWRkcmVzcyI6IlRQLiBIw6AgTuG7mWkifV0sImlhdCI6MTU2NDk3Njk1N30.ZofUzu94ynk3AEQsbQ-jyDwRyHXG4doQGzrSC4J5pFE"
+            "Authorization": Constant.authorizationToken
         ]
         APIServices.getExamSchedule(url: Urls.examScheduleUrl, method: .post, headers: headers) { (response) in
             guard let data = response.data, !data.isEmpty else { return }
