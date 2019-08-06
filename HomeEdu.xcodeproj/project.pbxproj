@@ -7,10 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		254273F422F278240000891A /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254273F322F278240000891A /* Urls.swift */; };
 		2565AE8922F2D4B70003620A /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565AE8822F2D4B70003620A /* UIViewController+.swift */; };
 		25F0CF8522F1E3BE00582ED1 /* HomeduSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F0CF8422F1E3BE00582ED1 /* HomeduSocket.swift */; };
 		85AA66753FD9A9C14601A849 /* Pods_HomeEdu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB863AFE16FD6C8B5A495B82 /* Pods_HomeEdu.framework */; };
+		9B648A8422F861E4006BC8F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B648A8622F861E4006BC8F8 /* Localizable.strings */; };
+		9BA1B16C22F83BA20007C6FE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA1B16822F83BA10007C6FE /* LoginViewController.swift */; };
+		9BA1B16D22F83BA20007C6FE /* CustomButtonLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA1B16922F83BA10007C6FE /* CustomButtonLogin.swift */; };
+		9BA1B16E22F83BA20007C6FE /* CustomUserPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA1B16A22F83BA10007C6FE /* CustomUserPasswordView.swift */; };
+		9BA1B17622F83CE00007C6FE /* AccountRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA1B17422F83CE00007C6FE /* AccountRequest.swift */; };
+		9BA1B17722F83CE00007C6FE /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA1B17522F83CE00007C6FE /* Urls.swift */; };
+		9BA1B17B22F83D280007C6FE /* InfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA1B17822F83D280007C6FE /* InfoResponse.swift */; };
+		9BA1B17C22F83D280007C6FE /* InfoAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA1B17922F83D280007C6FE /* InfoAccount.swift */; };
+		9BA1B17D22F83D280007C6FE /* ValidateString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA1B17A22F83D280007C6FE /* ValidateString.swift */; };
+		9BA1B18022F83FA80007C6FE /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA1B17F22F83FA80007C6FE /* String+.swift */; };
 		9BA6940222F179460066A6E0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA6940122F179460066A6E0 /* Constant.swift */; };
 		9BACC31222F02AEA008761FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BACC31122F02AEA008761FC /* AppDelegate.swift */; };
 		9BACC31722F02AEA008761FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC31522F02AEA008761FC /* Main.storyboard */; };
@@ -27,12 +36,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		254273F322F278240000891A /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
-		2565AE8822F2D4B70003620A /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+.swift"; path = "HomeEdu/Extensions/UIViewController/UIViewController+.swift"; sourceTree = SOURCE_ROOT; };
+		2565AE8822F2D4B70003620A /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+.swift"; path = "HomeEdu/Extensions/UIViewController+.swift"; sourceTree = SOURCE_ROOT; };
 		25F0CF8422F1E3BE00582ED1 /* HomeduSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeduSocket.swift; path = Source/Socket/HomeduSocket.swift; sourceTree = SOURCE_ROOT; };
 		3F47CA46F1CA5E36A3655AFC /* Pods-HomeEdu.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeEdu.staging.xcconfig"; path = "Target Support Files/Pods-HomeEdu/Pods-HomeEdu.staging.xcconfig"; sourceTree = "<group>"; };
 		4E32C9F869AC96C114A65B78 /* Pods-HomeEdu.testing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeEdu.testing.xcconfig"; path = "Target Support Files/Pods-HomeEdu/Pods-HomeEdu.testing.xcconfig"; sourceTree = "<group>"; };
 		86FF7CBA030B664F8C80DB3D /* Pods-HomeEdu.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeEdu.production.xcconfig"; path = "Target Support Files/Pods-HomeEdu/Pods-HomeEdu.production.xcconfig"; sourceTree = "<group>"; };
+		9B648A7A22F860BD006BC8F8 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Main.strings; sourceTree = "<group>"; };
+		9B648A7B22F860BD006BC8F8 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		9B648A8522F861E4006BC8F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9B648A8722F861E5006BC8F8 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9BA1B16822F83BA10007C6FE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9BA1B16922F83BA10007C6FE /* CustomButtonLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButtonLogin.swift; sourceTree = "<group>"; };
+		9BA1B16A22F83BA10007C6FE /* CustomUserPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUserPasswordView.swift; sourceTree = "<group>"; };
+		9BA1B17422F83CE00007C6FE /* AccountRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountRequest.swift; sourceTree = "<group>"; };
+		9BA1B17522F83CE00007C6FE /* Urls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
+		9BA1B17822F83D280007C6FE /* InfoResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoResponse.swift; sourceTree = "<group>"; };
+		9BA1B17922F83D280007C6FE /* InfoAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoAccount.swift; sourceTree = "<group>"; };
+		9BA1B17A22F83D280007C6FE /* ValidateString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateString.swift; sourceTree = "<group>"; };
+		9BA1B17F22F83FA80007C6FE /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		9BA6940122F179460066A6E0 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		9BACC30E22F02AEA008761FC /* HomeEdu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeEdu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BACC31122F02AEA008761FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,14 +86,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2565AE8A22F2D4D80003620A /* UIViewController */ = {
-			isa = PBXGroup;
-			children = (
-				2565AE8822F2D4B70003620A /* UIViewController+.swift */,
-			);
-			path = UIViewController;
-			sourceTree = "<group>";
-		};
 		25F0CF8322F1E35A00582ED1 /* Socket */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +104,31 @@
 				3F47CA46F1CA5E36A3655AFC /* Pods-HomeEdu.staging.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		9BA1B16622F83BA10007C6FE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9BA1B16822F83BA10007C6FE /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9BA1B17222F83CE00007C6FE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9BA1B17322F83CE00007C6FE /* Request */,
+				9BA1B17522F83CE00007C6FE /* Urls.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		9BA1B17322F83CE00007C6FE /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				9BA1B17422F83CE00007C6FE /* AccountRequest.swift */,
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 		9BACC30522F02AEA008761FC = {
@@ -122,6 +160,7 @@
 				9BACC31822F02AEA008761FC /* Assets.xcassets */,
 				9BACC31A22F02AEA008761FC /* LaunchScreen.storyboard */,
 				9BACC31D22F02AEA008761FC /* Info.plist */,
+				9B648A8622F861E4006BC8F8 /* Localizable.strings */,
 			);
 			path = HomeEdu;
 			sourceTree = "<group>";
@@ -130,7 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				9BA6940122F179460066A6E0 /* Constant.swift */,
-				254273F322F278240000891A /* Urls.swift */,
 			);
 			path = Support;
 			sourceTree = "<group>";
@@ -155,7 +193,8 @@
 		9BACC32622F02EA6008761FC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				2565AE8A22F2D4D80003620A /* UIViewController */,
+				2565AE8822F2D4B70003620A /* UIViewController+.swift */,
+				9BA1B17F22F83FA80007C6FE /* String+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -174,6 +213,7 @@
 		9BACC32822F02EDF008761FC /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				9BA1B17222F83CE00007C6FE /* API */,
 				25F0CF8322F1E35A00582ED1 /* Socket */,
 			);
 			path = Source;
@@ -182,6 +222,9 @@
 		9BACC32922F02EEC008761FC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9BA1B17922F83D280007C6FE /* InfoAccount.swift */,
+				9BA1B17822F83D280007C6FE /* InfoResponse.swift */,
+				9BA1B17A22F83D280007C6FE /* ValidateString.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -196,6 +239,7 @@
 		9BACC32B22F02F32008761FC /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9BA1B16622F83BA10007C6FE /* Login */,
 				9BACC34822F03C14008761FC /* TabBar */,
 			);
 			path = Main;
@@ -204,6 +248,8 @@
 		9BACC32C22F02F37008761FC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				9BA1B16A22F83BA10007C6FE /* CustomUserPasswordView.swift */,
+				9BA1B16922F83BA10007C6FE /* CustomButtonLogin.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -283,6 +329,7 @@
 			knownRegions = (
 				en,
 				Base,
+				vi,
 			);
 			mainGroup = 9BACC30522F02AEA008761FC;
 			productRefGroup = 9BACC30F22F02AEA008761FC /* Products */;
@@ -304,6 +351,7 @@
 				9BACC33122F03927008761FC /* TabBar.storyboard in Resources */,
 				9BACC31C22F02AEA008761FC /* LaunchScreen.storyboard in Resources */,
 				9BACC31922F02AEA008761FC /* Assets.xcassets in Resources */,
+				9B648A8422F861E4006BC8F8 /* Localizable.strings in Resources */,
 				9BACC33B22F039C4008761FC /* About.storyboard in Resources */,
 				9BACC33522F03983008761FC /* Schedule.storyboard in Resources */,
 				9BACC33922F039BA008761FC /* ExamSchedule.storyboard in Resources */,
@@ -360,23 +408,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA1B16C22F83BA20007C6FE /* LoginViewController.swift in Sources */,
 				9BACC32F22F038C2008761FC /* StoryBoards.swift in Sources */,
+				9BA1B16D22F83BA20007C6FE /* CustomButtonLogin.swift in Sources */,
+				9BA1B17622F83CE00007C6FE /* AccountRequest.swift in Sources */,
 				9BACC34A22F03C6D008761FC /* TabbarController.swift in Sources */,
 				2565AE8922F2D4B70003620A /* UIViewController+.swift in Sources */,
+				9BA1B17D22F83D280007C6FE /* ValidateString.swift in Sources */,
 				9BACC31222F02AEA008761FC /* AppDelegate.swift in Sources */,
-				254273F422F278240000891A /* Urls.swift in Sources */,
 				25F0CF8522F1E3BE00582ED1 /* HomeduSocket.swift in Sources */,
+				9BA1B18022F83FA80007C6FE /* String+.swift in Sources */,
+				9BA1B17C22F83D280007C6FE /* InfoAccount.swift in Sources */,
+				9BA1B17722F83CE00007C6FE /* Urls.swift in Sources */,
 				9BA6940222F179460066A6E0 /* Constant.swift in Sources */,
+				9BA1B17B22F83D280007C6FE /* InfoResponse.swift in Sources */,
+				9BA1B16E22F83BA20007C6FE /* CustomUserPasswordView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		9B648A8622F861E4006BC8F8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B648A8522F861E4006BC8F8 /* en */,
+				9B648A8722F861E5006BC8F8 /* vi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		9BACC31522F02AEA008761FC /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9BACC31622F02AEA008761FC /* Base */,
+				9B648A7A22F860BD006BC8F8 /* vi */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -385,6 +451,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				9BACC31B22F02AEA008761FC /* Base */,
+				9B648A7B22F860BD006BC8F8 /* vi */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -396,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -478,6 +546,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -560,6 +629,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -642,6 +712,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -703,6 +774,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
