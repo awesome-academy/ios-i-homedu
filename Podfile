@@ -8,7 +8,7 @@ target 'HomeEdu' do
   # Pods for HomeEdu
   pod 'Socket.IO-Client-Swift'
   pod 'Alamofire', '~> 4.0'
-  pod 'SwiftyJSON', '~> 4.0'
   pod 'ObjectMapper', '~> 3.4'
   pod 'AlamofireObjectMapper', '~> 5.2'
+  pod 'Reusable', '~> 4.0.2'
 end

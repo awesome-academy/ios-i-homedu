@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Reusable
 
 class AboutViewController: UIViewController {
 
@@ -16,8 +17,7 @@ class AboutViewController: UIViewController {
     }
     
     @IBAction func buttonAbout(_ sender: Any) {
-        let aboutSB = Storyboards.about
-        let about = aboutSB.instantiateViewController(withIdentifier: "AboutHomeEdu")
+        let about = AboutHomeEdu.instantiate()
         self.navigationController?.pushViewController(about, animated: true)
     }
     

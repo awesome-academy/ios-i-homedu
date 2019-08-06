@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import Reusable
 
-class AboutHomeEdu: UIViewController {
-
+class AboutHomeEdu: UIViewController, StoryboardSceneBased {
+    static let sceneStoryboard = Storyboards.about
+    
     @IBOutlet weak var aboutVersion: UILabel!
     @IBOutlet weak var aboutContact: UILabel!
     @IBOutlet weak var aboutAuthor: UILabel!

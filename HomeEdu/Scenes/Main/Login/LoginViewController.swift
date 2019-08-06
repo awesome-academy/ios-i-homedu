@@ -9,7 +9,6 @@
 import UIKit
 import Alamofire
 
-
 final class LoginViewController: UIViewController {
     
     @IBOutlet private weak var userNameTextField: UITextField!
@@ -71,8 +70,7 @@ final class LoginViewController: UIViewController {
             self.isConnect = $1
             if self.isConnect {
                 if self.isLogin {
-                    let tabBarSB = Storyboards.tabBar
-                    let tabBar = tabBarSB.instantiateViewController(withIdentifier: "TabBar")
+                    let tabBar = TabbarController.instantiate()
                     self.navigationController?.pushViewController(tabBar, animated: true)
                 } else {
                     self.createAlert(title: NSLocalizedString(Constant.Alert.alertTitle, comment: ""),

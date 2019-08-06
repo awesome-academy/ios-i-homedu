@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import Reusable
 
-class TabbarController: UITabBarController {
-
+class TabbarController: UITabBarController, StoryboardSceneBased {
+    
+    static let sceneStoryboard = Storyboards.tabBar
     let homeduSocket = HomeduSocket.shared
     
     override func viewDidLoad() {
