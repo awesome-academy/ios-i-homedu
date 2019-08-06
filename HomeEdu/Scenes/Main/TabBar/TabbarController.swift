@@ -14,6 +14,7 @@ class TabbarController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideNavigationBar()
         setupTabbar()
     }
 

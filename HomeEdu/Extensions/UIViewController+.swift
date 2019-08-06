@@ -40,4 +40,8 @@ extension UIViewController {
         })
         self.present(alert, animated: true, completion: nil)
     }
+    
+    func hideNavigationBar() {
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
 }
