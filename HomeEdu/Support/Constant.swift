@@ -34,6 +34,17 @@ enum Constant {
         static let internetError = "common.internetError.alert"
     }
     
+    //Information Account
+    enum InfoAccount {
+        static let heightSection = 45
+        static let infoStudentTitle = "Thông tin sinh viên"
+        static let infoStudent = ["Mã sinh viên:", "Họ và tên:", "Ngày sinh:", "Giới tính:", "VNU mail:", "Mail khác:"]
+        static let infoClasstTitle = "Thông tin nhập học"
+        static let infoClass = ["Chương trình đào tạo:", "Lớp quản lý:"]
+        static let infoAdressTitle = "Quê quán"
+        static let infoAdress = ["Quốc tịch:", "Địa chỉ:"]
+    }
+    
     //About HomeEdu
     enum AboutHomedu {
         static let version = "common.version.aboutHomedu"

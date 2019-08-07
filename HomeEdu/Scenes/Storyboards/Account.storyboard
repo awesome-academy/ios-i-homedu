@@ -10,20 +10,69 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Account View Controller-->
         <scene sceneID="tc2-Ia-Jgl">
             <objects>
-                <viewController storyboardIdentifier="Account" id="fAf-wx-O2T" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="BFS-lM-Qg5">
+                <viewController storyboardIdentifier="Account" id="fAf-wx-O2T" customClass="AccountViewController" customModule="HomeEdu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Jc-8A-0pu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.57568838749999995" green="1" blue="0.6259995143" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <viewLayoutGuide key="safeArea" id="FHO-Q3-IFE"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6u-1l-1zd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="66.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Uts-ei-vUV">
+                                        <rect key="frame" x="112.5" y="13.5" width="150" height="40"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ruZ-CV-e8M">
+                                        <rect key="frame" x="337" y="18.5" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="VFp-I9-bXO"/>
+                                            <constraint firstAttribute="height" constant="30" id="rXY-dK-6vi"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="edit"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.19780386320000001" green="0.68509332310000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="Uts-ei-vUV" firstAttribute="centerY" secondItem="C6u-1l-1zd" secondAttribute="centerY" id="1oC-gT-xLO"/>
+                                    <constraint firstItem="Uts-ei-vUV" firstAttribute="height" secondItem="C6u-1l-1zd" secondAttribute="height" multiplier="0.6" id="CNL-o8-69r"/>
+                                    <constraint firstItem="ruZ-CV-e8M" firstAttribute="centerY" secondItem="C6u-1l-1zd" secondAttribute="centerY" id="CuU-xE-VKi"/>
+                                    <constraint firstItem="Uts-ei-vUV" firstAttribute="centerX" secondItem="C6u-1l-1zd" secondAttribute="centerX" id="hY8-rx-jOJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="ruZ-CV-e8M" secondAttribute="trailing" constant="8" id="sAR-nT-Tf1"/>
+                                    <constraint firstItem="Uts-ei-vUV" firstAttribute="width" secondItem="C6u-1l-1zd" secondAttribute="width" multiplier="0.4" id="uuV-Cw-nnP"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3vG-ec-h9I">
+                                <rect key="frame" x="0.0" y="86.5" width="375" height="580.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="C6u-1l-1zd" firstAttribute="centerX" secondItem="Ngc-Uh-qLu" secondAttribute="centerX" id="5YK-Sp-rmk"/>
+                            <constraint firstItem="C6u-1l-1zd" firstAttribute="width" secondItem="3Jc-8A-0pu" secondAttribute="width" id="7vX-NX-HwD"/>
+                            <constraint firstItem="3vG-ec-h9I" firstAttribute="trailing" secondItem="Ngc-Uh-qLu" secondAttribute="trailing" id="HBg-6Z-Jxp"/>
+                            <constraint firstItem="Ngc-Uh-qLu" firstAttribute="bottom" secondItem="3vG-ec-h9I" secondAttribute="bottom" id="Kdx-mP-rN0"/>
+                            <constraint firstItem="C6u-1l-1zd" firstAttribute="top" secondItem="Ngc-Uh-qLu" secondAttribute="top" id="Ph7-Yh-pET"/>
+                            <constraint firstItem="3vG-ec-h9I" firstAttribute="leading" secondItem="Ngc-Uh-qLu" secondAttribute="leading" id="WKP-5N-OVc"/>
+                            <constraint firstItem="3vG-ec-h9I" firstAttribute="top" secondItem="C6u-1l-1zd" secondAttribute="bottom" id="ld1-1J-ylB"/>
+                            <constraint firstItem="C6u-1l-1zd" firstAttribute="height" secondItem="3Jc-8A-0pu" secondAttribute="height" multiplier="1/10" id="vIg-e9-QAu"/>
+                            <constraint firstItem="C6u-1l-1zd" firstAttribute="leading" secondItem="Ngc-Uh-qLu" secondAttribute="leading" id="ziH-Ed-XeJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ngc-Uh-qLu"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="3vG-ec-h9I" id="Mnu-7D-sut"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gHG-GJ-WPj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="148" y="66"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="edit" width="929" height="929"/>
+        <image name="logo" width="1006" height="238"/>
+    </resources>
 </document>
