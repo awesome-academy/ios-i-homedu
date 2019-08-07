@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2527440F22F96862002F1694 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527440E22F96862002F1694 /* Date+.swift */; };
+		2527441122F968EC002F1694 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527441022F968EC002F1694 /* APIServices.swift */; };
+		2527441422F96927002F1694 /* ExamSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527441322F96927002F1694 /* ExamSchedule.swift */; };
+		2527441622F9693B002F1694 /* ExamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527441522F9693B002F1694 /* ExamResponse.swift */; };
+		2527441822F96950002F1694 /* SubjectSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527441722F96950002F1694 /* SubjectSchedule.swift */; };
+		2527441A22F96966002F1694 /* ExamScheduleNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527441922F96966002F1694 /* ExamScheduleNotification.swift */; };
 		2565AE8922F2D4B70003620A /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565AE8822F2D4B70003620A /* UIViewController+.swift */; };
 		25F0CF8522F1E3BE00582ED1 /* HomeduSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F0CF8422F1E3BE00582ED1 /* HomeduSocket.swift */; };
 		85AA66753FD9A9C14601A849 /* Pods_HomeEdu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB863AFE16FD6C8B5A495B82 /* Pods_HomeEdu.framework */; };
@@ -38,6 +44,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2527440E22F96862002F1694 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		2527441022F968EC002F1694 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
+		2527441322F96927002F1694 /* ExamSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamSchedule.swift; sourceTree = "<group>"; };
+		2527441522F9693B002F1694 /* ExamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamResponse.swift; sourceTree = "<group>"; };
+		2527441722F96950002F1694 /* SubjectSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectSchedule.swift; sourceTree = "<group>"; };
+		2527441922F96966002F1694 /* ExamScheduleNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamScheduleNotification.swift; sourceTree = "<group>"; };
 		2565AE8822F2D4B70003620A /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+.swift"; path = "HomeEdu/Extensions/UIViewController+.swift"; sourceTree = SOURCE_ROOT; };
 		25F0CF8422F1E3BE00582ED1 /* HomeduSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeduSocket.swift; path = Source/Socket/HomeduSocket.swift; sourceTree = SOURCE_ROOT; };
 		3F47CA46F1CA5E36A3655AFC /* Pods-HomeEdu.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeEdu.staging.xcconfig"; path = "Target Support Files/Pods-HomeEdu/Pods-HomeEdu.staging.xcconfig"; sourceTree = "<group>"; };
@@ -90,6 +102,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2527441222F96911002F1694 /* ExamSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				2527441322F96927002F1694 /* ExamSchedule.swift */,
+				2527441522F9693B002F1694 /* ExamResponse.swift */,
+				2527441722F96950002F1694 /* SubjectSchedule.swift */,
+				2527441922F96966002F1694 /* ExamScheduleNotification.swift */,
+			);
+			path = ExamSchedule;
+			sourceTree = "<group>";
+		};
 		25F0CF8322F1E35A00582ED1 /* Socket */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +146,7 @@
 			children = (
 				9BA1B17322F83CE00007C6FE /* Request */,
 				9BA1B17522F83CE00007C6FE /* Urls.swift */,
+				2527441022F968EC002F1694 /* APIServices.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -199,6 +223,7 @@
 			children = (
 				2565AE8822F2D4B70003620A /* UIViewController+.swift */,
 				9BA1B17F22F83FA80007C6FE /* String+.swift */,
+				2527440E22F96862002F1694 /* Date+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -226,6 +251,7 @@
 		9BACC32922F02EEC008761FC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2527441222F96911002F1694 /* ExamSchedule */,
 				9BA1B17922F83D280007C6FE /* InfoAccount.swift */,
 				9BA1B17822F83D280007C6FE /* InfoResponse.swift */,
 				9BA1B17A22F83D280007C6FE /* ValidateString.swift */,
@@ -423,22 +449,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BA1B16C22F83BA20007C6FE /* LoginViewController.swift in Sources */,
+				2527441422F96927002F1694 /* ExamSchedule.swift in Sources */,
 				9BACC32F22F038C2008761FC /* StoryBoards.swift in Sources */,
 				9BA1B16D22F83BA20007C6FE /* CustomButtonLogin.swift in Sources */,
 				9BA1B17622F83CE00007C6FE /* AccountRequest.swift in Sources */,
+				2527441822F96950002F1694 /* SubjectSchedule.swift in Sources */,
 				9BACC34A22F03C6D008761FC /* TabbarController.swift in Sources */,
 				2565AE8922F2D4B70003620A /* UIViewController+.swift in Sources */,
 				9BA1B17D22F83D280007C6FE /* ValidateString.swift in Sources */,
 				9BACC31222F02AEA008761FC /* AppDelegate.swift in Sources */,
 				25F0CF8522F1E3BE00582ED1 /* HomeduSocket.swift in Sources */,
+				2527440F22F96862002F1694 /* Date+.swift in Sources */,
 				9BA1B18022F83FA80007C6FE /* String+.swift in Sources */,
 				9BA1B17C22F83D280007C6FE /* InfoAccount.swift in Sources */,
 				9BA1B17722F83CE00007C6FE /* Urls.swift in Sources */,
+				2527441122F968EC002F1694 /* APIServices.swift in Sources */,
 				9BA6940222F179460066A6E0 /* Constant.swift in Sources */,
 				9BA1B17B22F83D280007C6FE /* InfoResponse.swift in Sources */,
 				9BBA734722F925BE00A426E5 /* AboutHomeEdu.swift in Sources */,
 				9BBA734522F925A300A426E5 /* AboutViewController.swift in Sources */,
 				9BA1B16E22F83BA20007C6FE /* CustomUserPasswordView.swift in Sources */,
+				2527441622F9693B002F1694 /* ExamResponse.swift in Sources */,
+				2527441A22F96966002F1694 /* ExamScheduleNotification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

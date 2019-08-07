@@ -8,15 +8,35 @@
 
 import UIKit
 import Reusable
+import Alamofire
 
 class TabbarController: UITabBarController {
     
     let homeduSocket = HomeduSocket.shared
+    var subjectSchedules = [SubjectSchedule]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         hideNavigationBar()
         setupTabbar()
+        setupNotification()
+    }
+    
+    /// Setup local notification for exam schedule
+    func setupNotification() {
+        let headers: HTTPHeaders = [
+            "Authorization": Constant.authorizationToken
+        ]
+        APIServices.getExamSchedule(url: Urls.examScheduleUrl, method: .post, headers: headers) { (response) in
+            guard let data = response.data, !data.isEmpty else { return }
+            if (data.count > 0) {
+                guard let examSchedules = data[0].examSchedule else { return }
+                for subject in examSchedules {
+                    self.subjectSchedules.append(subject)
+                }
+                ExamScheduleNotification.setupNotification(schedule: self.subjectSchedules)
+            }
+        }
     }
 
     func setupTabbar() {
