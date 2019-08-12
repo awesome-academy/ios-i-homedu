@@ -41,6 +41,11 @@ enum Constant {
         static let author = "common.author.aboutHomedu"
     }
     
+    //WeekDay
+    enum WeekDay: Int {
+        case sunday = 1, monday, tuesday, wednesday, thursday, friday, saturday
+    }
+    
     //Socket
     static let socketTitle = "Message from Homedu"
     
@@ -66,4 +71,7 @@ enum Constant {
     
     //Errors
     static let dataErr = "Data don't have any items"
+    
+    //TableView
+    static let reloadTitle = "Reloading..."
 }

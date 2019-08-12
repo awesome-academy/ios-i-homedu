@@ -12,8 +12,8 @@ import Alamofire
 
 class TabbarController: UITabBarController {
     
-    let homeduSocket = HomeduSocket.shared
-    var subjectSchedules = [SubjectSchedule]()
+    private let homeduSocket = HomeduSocket.shared
+    private var subjectSchedules = [SubjectSchedule]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,18 +24,13 @@ class TabbarController: UITabBarController {
     
     /// Setup local notification for exam schedule
     func setupNotification() {
-        let headers: HTTPHeaders = [
-            "Authorization": Constant.authorizationToken
-        ]
-        APIServices.getExamSchedule(url: Urls.examScheduleUrl, method: .post, headers: headers) { (response) in
+        APIServices.getInformation(url: Urls.examScheduleUrl) { (response: Response<ExamSchedule>) in
             guard let data = response.data, !data.isEmpty else { return }
-            if (data.count > 0) {
-                guard let examSchedules = data[0].examSchedule else { return }
-                for subject in examSchedules {
-                    self.subjectSchedules.append(subject)
-                }
-                ExamScheduleNotification.setupNotification(schedule: self.subjectSchedules)
+            guard let examSchedules = data[0].examSchedule else { return }
+            for subject in examSchedules {
+                self.subjectSchedules.append(subject)
             }
+            ExamScheduleNotification.setupNotification(schedule: self.subjectSchedules)
         }
     }
 

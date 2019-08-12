@@ -9,10 +9,10 @@
 import Foundation
 import ObjectMapper
 
-class ExamResponse: Mappable {
+class Response<T: Mappable>: Mappable {
     var success: Int?
     var message: String?
-    var data: [ExamSchedule]?
+    var data: [T]?
     
     required init?(map: Map) { }
     

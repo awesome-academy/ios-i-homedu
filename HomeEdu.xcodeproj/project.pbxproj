@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2507F42C2303AE8F0004D3D0 /* LearningScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2507F42A2303AE8F0004D3D0 /* LearningScheduleCell.swift */; };
+		2507F42D2303AE8F0004D3D0 /* LearningScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2507F42B2303AE8F0004D3D0 /* LearningScheduleCell.xib */; };
+		251B483322FD50C300F5FD20 /* LearningScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251B483222FD50C300F5FD20 /* LearningScheduleController.swift */; };
+		251B483722FD523A00F5FD20 /* LearningSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251B483622FD523A00F5FD20 /* LearningSchedule.swift */; };
+		251B483922FD534B00F5FD20 /* DaySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251B483822FD534B00F5FD20 /* DaySchedule.swift */; };
+		251B483B22FD53EA00F5FD20 /* TimeSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251B483A22FD53EA00F5FD20 /* TimeSchedule.swift */; };
+		251B483F22FD61A200F5FD20 /* CustomCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251B483E22FD61A200F5FD20 /* CustomCalendarView.swift */; };
 		2527440F22F96862002F1694 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527440E22F96862002F1694 /* Date+.swift */; };
 		2527441122F968EC002F1694 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527441022F968EC002F1694 /* APIServices.swift */; };
 		2527441422F96927002F1694 /* ExamSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527441322F96927002F1694 /* ExamSchedule.swift */; };
-		2527441622F9693B002F1694 /* ExamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527441522F9693B002F1694 /* ExamResponse.swift */; };
 		2527441822F96950002F1694 /* SubjectSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527441722F96950002F1694 /* SubjectSchedule.swift */; };
 		2527441A22F96966002F1694 /* ExamScheduleNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527441922F96966002F1694 /* ExamScheduleNotification.swift */; };
+		255BD33722FD4642007AF2C2 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255BD33622FD4642007AF2C2 /* Response.swift */; };
 		2565AE8922F2D4B70003620A /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2565AE8822F2D4B70003620A /* UIViewController+.swift */; };
-		2578F98422F91A840002CCDC /* ExamScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2578F98322F91A840002CCDC /* ExamScheduleController.swift */; };
+		25727BE522FA6E9500D52A9D /* ExamScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25727BE422FA6E9500D52A9D /* ExamScheduleController.swift */; };
+		25727BE922FA6F3800D52A9D /* ExamScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25727BE722FA6F3800D52A9D /* ExamScheduleCell.swift */; };
+		25727BEA22FA6F3800D52A9D /* ExamScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25727BE822FA6F3800D52A9D /* ExamScheduleCell.xib */; };
+		2592D1E822FAA52D00285C88 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2592D1E722FAA52D00285C88 /* Int+.swift */; };
 		25F0CF8522F1E3BE00582ED1 /* HomeduSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F0CF8422F1E3BE00582ED1 /* HomeduSocket.swift */; };
 		85AA66753FD9A9C14601A849 /* Pods_HomeEdu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB863AFE16FD6C8B5A495B82 /* Pods_HomeEdu.framework */; };
 		9B648A8422F861E4006BC8F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B648A8622F861E4006BC8F8 /* Localizable.strings */; };
@@ -45,16 +55,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2507F42A2303AE8F0004D3D0 /* LearningScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningScheduleCell.swift; sourceTree = "<group>"; };
+		2507F42B2303AE8F0004D3D0 /* LearningScheduleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LearningScheduleCell.xib; sourceTree = "<group>"; };
+		251B483222FD50C300F5FD20 /* LearningScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningScheduleController.swift; sourceTree = "<group>"; };
+		251B483622FD523A00F5FD20 /* LearningSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningSchedule.swift; sourceTree = "<group>"; };
+		251B483822FD534B00F5FD20 /* DaySchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySchedule.swift; sourceTree = "<group>"; };
+		251B483A22FD53EA00F5FD20 /* TimeSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSchedule.swift; sourceTree = "<group>"; };
+		251B483E22FD61A200F5FD20 /* CustomCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCalendarView.swift; sourceTree = "<group>"; };
 		2527440E22F96862002F1694 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		2527441022F968EC002F1694 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
 		2527441322F96927002F1694 /* ExamSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamSchedule.swift; sourceTree = "<group>"; };
-		2527441522F9693B002F1694 /* ExamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamResponse.swift; sourceTree = "<group>"; };
 		2527441722F96950002F1694 /* SubjectSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectSchedule.swift; sourceTree = "<group>"; };
 		2527441922F96966002F1694 /* ExamScheduleNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamScheduleNotification.swift; sourceTree = "<group>"; };
+		255BD33622FD4642007AF2C2 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		2565AE8822F2D4B70003620A /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+.swift"; path = "HomeEdu/Extensions/UIViewController+.swift"; sourceTree = SOURCE_ROOT; };
-		254273F322F278240000891A /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
-		2565AE8822F2D4B70003620A /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIViewController+.swift"; path = "HomeEdu/Extensions/UIViewController/UIViewController+.swift"; sourceTree = SOURCE_ROOT; };
-		2578F98322F91A840002CCDC /* ExamScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamScheduleController.swift; sourceTree = "<group>"; };
+		25727BE422FA6E9500D52A9D /* ExamScheduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamScheduleController.swift; sourceTree = "<group>"; };
+		25727BE722FA6F3800D52A9D /* ExamScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamScheduleCell.swift; sourceTree = "<group>"; };
+		25727BE822FA6F3800D52A9D /* ExamScheduleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExamScheduleCell.xib; sourceTree = "<group>"; };
+		2592D1E722FAA52D00285C88 /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
 		25F0CF8422F1E3BE00582ED1 /* HomeduSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeduSocket.swift; path = Source/Socket/HomeduSocket.swift; sourceTree = SOURCE_ROOT; };
 		3F47CA46F1CA5E36A3655AFC /* Pods-HomeEdu.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeEdu.staging.xcconfig"; path = "Target Support Files/Pods-HomeEdu/Pods-HomeEdu.staging.xcconfig"; sourceTree = "<group>"; };
 		4E32C9F869AC96C114A65B78 /* Pods-HomeEdu.testing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeEdu.testing.xcconfig"; path = "Target Support Files/Pods-HomeEdu/Pods-HomeEdu.testing.xcconfig"; sourceTree = "<group>"; };
@@ -106,23 +124,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2507F4292303AE6F0004D3D0 /* LearningScheduleCell */ = {
+			isa = PBXGroup;
+			children = (
+				2507F42A2303AE8F0004D3D0 /* LearningScheduleCell.swift */,
+				2507F42B2303AE8F0004D3D0 /* LearningScheduleCell.xib */,
+			);
+			path = LearningScheduleCell;
+			sourceTree = "<group>";
+		};
+		251B483122FD509F00F5FD20 /* LearningShedule */ = {
+			isa = PBXGroup;
+			children = (
+				251B483222FD50C300F5FD20 /* LearningScheduleController.swift */,
+			);
+			path = LearningShedule;
+			sourceTree = "<group>";
+		};
+		251B483422FD520E00F5FD20 /* LearningSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				251B483622FD523A00F5FD20 /* LearningSchedule.swift */,
+				251B483822FD534B00F5FD20 /* DaySchedule.swift */,
+				251B483A22FD53EA00F5FD20 /* TimeSchedule.swift */,
+			);
+			path = LearningSchedule;
+			sourceTree = "<group>";
+		};
 		2527441222F96911002F1694 /* ExamSchedule */ = {
 			isa = PBXGroup;
 			children = (
 				2527441322F96927002F1694 /* ExamSchedule.swift */,
-				2527441522F9693B002F1694 /* ExamResponse.swift */,
 				2527441722F96950002F1694 /* SubjectSchedule.swift */,
 				2527441922F96966002F1694 /* ExamScheduleNotification.swift */,
 			);
 			path = ExamSchedule;
 			sourceTree = "<group>";
 		};
-		2578F98022F919F90002CCDC /* ExamSchedule */ = {
+		255BD33522FD4632007AF2C2 /* Response */ = {
 			isa = PBXGroup;
 			children = (
-				2578F98322F91A840002CCDC /* ExamScheduleController.swift */,
+				255BD33622FD4642007AF2C2 /* Response.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		25727BE322FA6E7B00D52A9D /* ExamSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				25727BE422FA6E9500D52A9D /* ExamScheduleController.swift */,
 			);
 			path = ExamSchedule;
+			sourceTree = "<group>";
+		};
+		25727BE622FA6EC600D52A9D /* ExamScheduleCell */ = {
+			isa = PBXGroup;
+			children = (
+				25727BE722FA6F3800D52A9D /* ExamScheduleCell.swift */,
+				25727BE822FA6F3800D52A9D /* ExamScheduleCell.xib */,
+			);
+			path = ExamScheduleCell;
 			sourceTree = "<group>";
 		};
 		25F0CF8322F1E35A00582ED1 /* Socket */ = {
@@ -156,6 +217,7 @@
 		9BA1B17222F83CE00007C6FE /* API */ = {
 			isa = PBXGroup;
 			children = (
+				255BD33522FD4632007AF2C2 /* Response */,
 				9BA1B17322F83CE00007C6FE /* Request */,
 				9BA1B17522F83CE00007C6FE /* Urls.swift */,
 				2527441022F968EC002F1694 /* APIServices.swift */,
@@ -236,6 +298,7 @@
 				2565AE8822F2D4B70003620A /* UIViewController+.swift */,
 				9BA1B17F22F83FA80007C6FE /* String+.swift */,
 				2527440E22F96862002F1694 /* Date+.swift */,
+				2592D1E722FAA52D00285C88 /* Int+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -263,6 +326,7 @@
 		9BACC32922F02EEC008761FC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				251B483422FD520E00F5FD20 /* LearningSchedule */,
 				2527441222F96911002F1694 /* ExamSchedule */,
 				9BA1B17922F83D280007C6FE /* InfoAccount.swift */,
 				9BA1B17822F83D280007C6FE /* InfoResponse.swift */,
@@ -274,6 +338,8 @@
 		9BACC32A22F02F2C008761FC /* Repo */ = {
 			isa = PBXGroup;
 			children = (
+				2507F4292303AE6F0004D3D0 /* LearningScheduleCell */,
+				25727BE622FA6EC600D52A9D /* ExamScheduleCell */,
 			);
 			path = Repo;
 			sourceTree = "<group>";
@@ -281,9 +347,10 @@
 		9BACC32B22F02F32008761FC /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				251B483122FD509F00F5FD20 /* LearningShedule */,
+				25727BE322FA6E7B00D52A9D /* ExamSchedule */,
 				9BBA734322F9258500A426E5 /* About */,
 				9BA1B16622F83BA10007C6FE /* Login */,
-				2578F98022F919F90002CCDC /* ExamSchedule */,
 				9BACC34822F03C14008761FC /* TabBar */,
 			);
 			path = Main;
@@ -294,6 +361,7 @@
 			children = (
 				9BA1B16A22F83BA10007C6FE /* CustomUserPasswordView.swift */,
 				9BA1B16922F83BA10007C6FE /* CustomButtonLogin.swift */,
+				251B483E22FD61A200F5FD20 /* CustomCalendarView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -350,6 +418,7 @@
 				9BACC30B22F02AEA008761FC /* Frameworks */,
 				9BACC30C22F02AEA008761FC /* Resources */,
 				D8BA7BEFCFAB9CA8D968F93B /* [CP] Embed Pods Frameworks */,
+				25F8688022FBF8A400496FAA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -401,8 +470,10 @@
 			files = (
 				9BACC33722F03992008761FC /* Account.storyboard in Resources */,
 				9BACC33322F03974008761FC /* ViewScore.storyboard in Resources */,
+				2507F42D2303AE8F0004D3D0 /* LearningScheduleCell.xib in Resources */,
 				9BACC33122F03927008761FC /* TabBar.storyboard in Resources */,
 				9BACC31C22F02AEA008761FC /* LaunchScreen.storyboard in Resources */,
+				25727BEA22FA6F3800D52A9D /* ExamScheduleCell.xib in Resources */,
 				9BACC31922F02AEA008761FC /* Assets.xcassets in Resources */,
 				9B648A8422F861E4006BC8F8 /* Localizable.strings in Resources */,
 				9BACC33B22F039C4008761FC /* About.storyboard in Resources */,
@@ -415,6 +486,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		25F8688022FBF8A400496FAA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		5D8B3D8C7DBD9AF697037D80 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -470,21 +558,29 @@
 				9BACC34A22F03C6D008761FC /* TabbarController.swift in Sources */,
 				2565AE8922F2D4B70003620A /* UIViewController+.swift in Sources */,
 				9BA1B17D22F83D280007C6FE /* ValidateString.swift in Sources */,
-				2578F98422F91A840002CCDC /* ExamScheduleController.swift in Sources */,
 				9BACC31222F02AEA008761FC /* AppDelegate.swift in Sources */,
+				251B483722FD523A00F5FD20 /* LearningSchedule.swift in Sources */,
+				25727BE922FA6F3800D52A9D /* ExamScheduleCell.swift in Sources */,
 				25F0CF8522F1E3BE00582ED1 /* HomeduSocket.swift in Sources */,
 				2527440F22F96862002F1694 /* Date+.swift in Sources */,
+				251B483922FD534B00F5FD20 /* DaySchedule.swift in Sources */,
+				255BD33722FD4642007AF2C2 /* Response.swift in Sources */,
 				9BA1B18022F83FA80007C6FE /* String+.swift in Sources */,
+				251B483B22FD53EA00F5FD20 /* TimeSchedule.swift in Sources */,
+				2507F42C2303AE8F0004D3D0 /* LearningScheduleCell.swift in Sources */,
 				9BA1B17C22F83D280007C6FE /* InfoAccount.swift in Sources */,
+				2592D1E822FAA52D00285C88 /* Int+.swift in Sources */,
 				9BA1B17722F83CE00007C6FE /* Urls.swift in Sources */,
+				251B483322FD50C300F5FD20 /* LearningScheduleController.swift in Sources */,
 				2527441122F968EC002F1694 /* APIServices.swift in Sources */,
 				9BA6940222F179460066A6E0 /* Constant.swift in Sources */,
 				9BA1B17B22F83D280007C6FE /* InfoResponse.swift in Sources */,
 				9BBA734722F925BE00A426E5 /* AboutHomeEdu.swift in Sources */,
+				25727BE522FA6E9500D52A9D /* ExamScheduleController.swift in Sources */,
 				9BBA734522F925A300A426E5 /* AboutViewController.swift in Sources */,
 				9BA1B16E22F83BA20007C6FE /* CustomUserPasswordView.swift in Sources */,
-				2527441622F9693B002F1694 /* ExamResponse.swift in Sources */,
 				2527441A22F96966002F1694 /* ExamScheduleNotification.swift in Sources */,
+				251B483F22FD61A200F5FD20 /* CustomCalendarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
