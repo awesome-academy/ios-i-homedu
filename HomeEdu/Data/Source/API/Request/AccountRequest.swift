@@ -18,7 +18,7 @@ class AccountRequest {
     }
     
     func login(_ param: Parameters,
-               completion callback: @escaping (Bool,Bool) -> Void) {
+               completion callback: @escaping (Bool, Bool) -> Void) {
         Alamofire.request(Urls.urlLogin,
                           method: .post,
                           parameters: param,

@@ -8,19 +8,25 @@
 
 import Foundation
 import Alamofire
+import ObjectMapper
 import AlamofireObjectMapper
 
-class APIServices {
+final class APIServices {
     
-    /// API to get exam schedule
+    static let studentRepository = StudentRepository(local: StudentLocalDataSource())
+    
+    /// API to get information
     ///
     /// - Parameters:
     ///   - url: API url
     ///   - method: HTTP Method
     ///   - headers: HTTP Headers
     ///   - callback: post process after get data
-    static func getExamSchedule(url: URLConvertible, method: HTTPMethod, headers: HTTPHeaders, callback: @escaping (ExamResponse) -> Void) {
-        Alamofire.request(Urls.examScheduleUrl, method: .post, parameters: [:], encoding: JSONEncoding.default, headers: headers).responseObject { (response: DataResponse<ExamResponse>) in
+    static func getExamSchedule<T: Mappable>(url: URLConvertible, callback: @escaping (T) -> Void) {
+        let headers: HTTPHeaders = [
+            "Authorization": studentRepository.getToken()
+        ]
+        Alamofire.request(Urls.examScheduleUrl, method: .post, parameters: [:], encoding: JSONEncoding.default, headers: headers).responseObject { (response: DataResponse<T>) in
             guard let dataResponse = response.result.value else { return }
             callback(dataResponse)
         }

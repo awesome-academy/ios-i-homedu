@@ -14,6 +14,7 @@ final class HomeduSocket {
     
     static let shared = HomeduSocket()
     var socketManager: SocketManager?
+    let studentRepository = StudentRepository(local: StudentLocalDataSource())
     
     init() {
         configSocket()
@@ -26,14 +27,14 @@ final class HomeduSocket {
             if let manager = socketManager {
                 let socket = manager.defaultSocket
                 let center = UNUserNotificationCenter.current()
-                socket.on(clientEvent: .connect) { data, ack in
+                socket.on(clientEvent: .connect) { _, _ in
                     let params = [
-                        "student_id": Constant.studentId
+                        "student_id": self.studentRepository.getStudentId()
                     ]
                     socket.emit(Constant.emitWho, params)
                 }
-                socket.on(Constant.grade) { data, ack in
-                    if (data.count > 0) {
+                socket.on(Constant.grade) { data, _ in
+                    if !data.isEmpty {
                         guard let socketMessage = data[0] as? NSDictionary else { return }
                         guard let message = socketMessage["msg"] as? String else { return }
                         UIViewController.showNotification(center: center, msg: message)
@@ -41,8 +42,8 @@ final class HomeduSocket {
                         print(Constant.dataErr)
                     }
                 }
-                socket.on(Constant.schedule) { data, ack in
-                    if (data.count > 0) {
+                socket.on(Constant.schedule) { data, _ in
+                    if !data.isEmpty {
                         guard let socketMessage = data[0] as? NSDictionary else { return }
                         guard let message = socketMessage["msg"] as? String else { return }
                         UIViewController.showNotification(center: center, msg: message)
@@ -50,8 +51,8 @@ final class HomeduSocket {
                         print(Constant.dataErr)
                     }
                 }
-                socket.on(Constant.exam) { data, ack in
-                    if (data.count > 0) {
+                socket.on(Constant.exam) { data, _ in
+                    if !data.isEmpty {
                         guard let socketMessage = data[0] as? NSDictionary else { return }
                         guard let message = socketMessage["msg"] as? String else { return }
                         UIViewController.showNotification(center: center, msg: message)
@@ -64,4 +65,3 @@ final class HomeduSocket {
         }
     }
 }
-

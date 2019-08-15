@@ -37,7 +37,6 @@ extension String {
         return NSPredicate(format: format, regex).evaluate(with: self)
     }
     
-    
     /// Convert string to integer number
     ///
     /// - Returns: integer number of string input
