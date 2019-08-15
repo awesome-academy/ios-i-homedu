@@ -22,11 +22,11 @@ final class APIServices {
     ///   - method: HTTP Method
     ///   - headers: HTTP Headers
     ///   - callback: post process after get data
-    static func getExamSchedule<T: Mappable>(url: URLConvertible, callback: @escaping (T) -> Void) {
+    static func getInformation<T: Mappable>(url: URLConvertible, callback: @escaping (T) -> Void) {
         let headers: HTTPHeaders = [
             "Authorization": studentRepository.getToken()
         ]
-        Alamofire.request(Urls.examScheduleUrl, method: .post, parameters: [:], encoding: JSONEncoding.default, headers: headers).responseObject { (response: DataResponse<T>) in
+        Alamofire.request(url, method: .post, parameters: [:], encoding: JSONEncoding.default, headers: headers).responseObject { (response: DataResponse<T>) in
             guard let dataResponse = response.result.value else { return }
             callback(dataResponse)
         }

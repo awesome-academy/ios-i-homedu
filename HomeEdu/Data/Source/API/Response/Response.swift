@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class Response<T>: Mappable {
+class Response<T: Mappable>: Mappable {
     var success: Int?
     var message: String?
     var data: [T]?
@@ -22,4 +22,3 @@ class Response<T>: Mappable {
         data <- map["data"]
     }
 }
-

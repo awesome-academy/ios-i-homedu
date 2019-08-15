@@ -57,7 +57,7 @@ class ExamScheduleController: UIViewController {
     }
     
     func getExamSchedule(callback: @escaping () -> Void) {
-        APIServices.getExamSchedule(url: Urls.examScheduleUrl) { (response: Response<ExamSchedule>) in
+        APIServices.getInformation(url: Urls.examScheduleUrl) { (response: Response<ExamSchedule>) in
             guard let data = response.data, !data.isEmpty else { return }
             var subjectScheduleTemp = [SubjectSchedule]()
             guard let examSchedules = data[0].examSchedule else { return }
