@@ -1,18 +1,18 @@
 //
-//  ExamResponse.swift
+//  Response.swift
 //  HomeEdu
 //
-//  Created by Minh Mon on 8/1/19.
+//  Created by Minh Mon on 8/15/19.
 //  Copyright © 2019 Nguyen Cuong. All rights reserved.
 //
 
 import Foundation
 import ObjectMapper
 
-class ExamResponse: Mappable {
+class Response<T>: Mappable {
     var success: Int?
     var message: String?
-    var data: [ExamSchedule]?
+    var data: [T]?
     
     required init?(map: Map) { }
     
@@ -22,3 +22,4 @@ class ExamResponse: Mappable {
         data <- map["data"]
     }
 }
+

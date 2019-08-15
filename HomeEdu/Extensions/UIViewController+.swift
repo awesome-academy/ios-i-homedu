@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import UserNotifications
+import SAProgressHUB
 
 extension UIViewController {    
     /// Show Notification using Local Notification
@@ -78,10 +79,26 @@ extension UIViewController {
         Sắp tới có môn thi
         Môn: \(name)
         Phòng: \(room)
-        Giờ bắt đầu: \(start)
+        Giờ bắt đầu: \(start)h
         Số báo danh: \(id)
         """
         return message
+    }
+    
+    
+    /// Show progress loading data
+    ///
+    /// - Parameter hub: input progress hub
+    func showIndicator(hub: SAProgressHUB) {
+        hub.show(in: self.view, title: "Coming...", isUserInteractionEnabled: true)
+    }
+    
+    
+    /// Hide progress loading data
+    ///
+    /// - Parameter hub: input progress hub
+    func hideIndicator(hub: SAProgressHUB) {
+        hub.dismiss(in: self.view)
     }
     
     func createAlert(title: String, message: String) {
@@ -89,7 +106,7 @@ extension UIViewController {
                                       message: message,
                                       preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: NSLocalizedString(Constant.Alert.alertOK, comment: ""),
-                                      style: UIAlertAction.Style.default) { (action) in
+                                      style: UIAlertAction.Style.default) { (_) in
                                         alert.dismiss(animated: true, completion: nil)
         })
         self.present(alert, animated: true, completion: nil)

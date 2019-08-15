@@ -66,4 +66,7 @@ enum Constant {
     
     //Errors
     static let dataErr = "Data don't have any items"
+    
+    //TableView
+    static let reloadTitle = "Reloading..."
 }
