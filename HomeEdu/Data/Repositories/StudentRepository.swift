@@ -8,7 +8,7 @@
 
 import Foundation
 
-class StudentRepository : LocalProtocol{    
+class StudentRepository : LocalProtocol {
     var local: LocalProtocol?
     
     init(local: LocalProtocol) {
@@ -22,6 +22,6 @@ class StudentRepository : LocalProtocol{
     
     func getToken() -> String {
         guard let studentLocal = local else { return "" }
-        return studentLocal.getStudentId()
+        return studentLocal.getToken()
     }
 }
