@@ -30,7 +30,7 @@ class InfoAccount: Mappable {
         sex <- map["sex"]
         birthday <- map["birthday"]
         vnuMail <- map["email"]
-        otherMail <- map["other_mail"]
+        otherMail <- map["other_email"]
         programType <- map["program_type"]
         classStudent <- map["class"]
         nation <- map["nation"]

@@ -41,6 +41,16 @@ enum Constant {
         static let author = "common.author.aboutHomedu"
     }
     
+    //Info Student
+    enum Information {
+        static let infoStudentTitle = "Thông tin sinh viên"
+        static let infoClassTitle = "Thông tin nhập học"
+        static let infoAdressTitle = "Quê quán"
+        static let infoStudent = ["Mã sinh viên:", "Họ và tên:", "Ngày sinh:", "Giới tính:", "VNU mail:", "Mail khác:"]
+        static let infoClass = ["Chương trình đào tạo:", "Lớp quản lý:"]
+        static let infoAdress = ["Quốc tịch:", "Địa chỉ:"]
+    }
+    
     //Socket
     static let socketTitle = "Message from Homedu"
     
@@ -51,18 +61,6 @@ enum Constant {
     static let grade = "new_grade"
     static let schedule = "new_schedule"
     static let exam = "new_examschedule"
-    
-    //General Information
-    #if Staging
-        static let studentId = "16022411"
-        static let authorizationToken = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWNjZXNzIjp0cnVlLCJtZXNzYWdlIjoiTG9hZGVkIGFjY291bnQiLCJkYXRhIjpbeyJfaWQiOiI1ZDQyYjUwYTIxZWFlMDM0ZGM2YWJjMzciLCJ1c2VybmFtZSI6ImFkbWluIiwicGFzc3dvcmQiOiIkMmEkMTAkdnVDRnBGWHBJc01UQ01VdnpOTXlNT1JpcEYxNjZxQTIwcUhiYzlueThMTUlRWXpGTTJRbHkiLCJzdHVkZW50X2lkIjoiYWRtaW4iLCJiaXJ0aGRheSI6IjE5OTgtMDMtMDEiLCJzZXgiOiJOYW0iLCJmdWxsbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB2bnUuZWR1LnZuIiwib3RoZXJfZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJwcm9ncmFtX3R5cGUiOiJD4butIG5ow6JuIiwiY2xhc3MiOiJRSC0yMDE2LWkvQ1EtQy1BLUNMQzIiLCJuYXRpb24iOiJWaeG7h3QgTmFtIiwiYWRkcmVzcyI6IlRQLiBIw6AgTuG7mWkifV0sImlhdCI6MTU2NDk3Njk1N30.ZofUzu94ynk3AEQsbQ-jyDwRyHXG4doQGzrSC4J5pFE"
-    #elseif Production
-        static let studentId = "admin"
-        static let authorizationToken = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWNjZXNzIjp0cnVlLCJtZXNzYWdlIjoiTG9hZGVkIGFjY291bnQiLCJkYXRhIjpbeyJfaWQiOiI1ZDQyYjUwYTIxZWFlMDM0ZGM2YWJjMzciLCJ1c2VybmFtZSI6ImFkbWluIiwicGFzc3dvcmQiOiIkMmEkMTAkdnVDRnBGWHBJc01UQ01VdnpOTXlNT1JpcEYxNjZxQTIwcUhiYzlueThMTUlRWXpGTTJRbHkiLCJzdHVkZW50X2lkIjoiYWRtaW4iLCJiaXJ0aGRheSI6IjE5OTgtMDMtMDEiLCJzZXgiOiJOYW0iLCJmdWxsbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB2bnUuZWR1LnZuIiwib3RoZXJfZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJwcm9ncmFtX3R5cGUiOiJD4butIG5ow6JuIiwiY2xhc3MiOiJRSC0yMDE2LWkvQ1EtQy1BLUNMQzIiLCJuYXRpb24iOiJWaeG7h3QgTmFtIiwiYWRkcmVzcyI6IlRQLiBIw6AgTuG7mWkifV0sImlhdCI6MTU2NDk3Njk1N30.ZofUzu94ynk3AEQsbQ-jyDwRyHXG4doQGzrSC4J5pFE"
-    #elseif Release
-        static let studentId = "admin"
-        static let authorizationToken = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWNjZXNzIjp0cnVlLCJtZXNzYWdlIjoiTG9hZGVkIGFjY291bnQiLCJkYXRhIjpbeyJfaWQiOiI1ZDQyYjUwYTIxZWFlMDM0ZGM2YWJjMzciLCJ1c2VybmFtZSI6ImFkbWluIiwicGFzc3dvcmQiOiIkMmEkMTAkdnVDRnBGWHBJc01UQ01VdnpOTXlNT1JpcEYxNjZxQTIwcUhiYzlueThMTUlRWXpGTTJRbHkiLCJzdHVkZW50X2lkIjoiYWRtaW4iLCJiaXJ0aGRheSI6IjE5OTgtMDMtMDEiLCJzZXgiOiJOYW0iLCJmdWxsbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbkB2bnUuZWR1LnZuIiwib3RoZXJfZW1haWwiOiJhZG1pbkBnbWFpbC5jb20iLCJwcm9ncmFtX3R5cGUiOiJD4butIG5ow6JuIiwiY2xhc3MiOiJRSC0yMDE2LWkvQ1EtQy1BLUNMQzIiLCJuYXRpb24iOiJWaeG7h3QgTmFtIiwiYWRkcmVzcyI6IlRQLiBIw6AgTuG7mWkifV0sImlhdCI6MTU2NDk3Njk1N30.ZofUzu94ynk3AEQsbQ-jyDwRyHXG4doQGzrSC4J5pFE"
-    #endif
     
     //Errors
     static let dataErr = "Data don't have any items"

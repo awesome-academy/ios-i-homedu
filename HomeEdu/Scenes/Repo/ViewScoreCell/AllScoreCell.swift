@@ -52,4 +52,3 @@ final class AllScoreCell: UITableViewCell, NibReusable {
         }
     }
 }
-

@@ -15,9 +15,11 @@ final class LoginViewController: UIViewController {
     @IBOutlet private weak var passwordTextField: UITextField!
     private var isLogin = false
     private var isConnect = false
+    private var dataAccount: InfoResponse?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideNavigationBar()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -68,6 +70,12 @@ final class LoginViewController: UIViewController {
         AccountRequest.shared.login(param) {
             self.isLogin = $0
             self.isConnect = $1
+            self.dataAccount = $2
+            guard let data = self.dataAccount else { return }
+            let token = data.token
+            let studentId = data.studentId
+            UserDefaults.standard.set(token, forKey: "Authorization")
+            UserDefaults.standard.set(studentId, forKey: "StudentID")
             if self.isConnect {
                 if self.isLogin {
                     let tabBar = TabbarController.instantiate()

@@ -11,6 +11,7 @@ enum Urls {
     static let urlLogin = endPoint + "/api/login"
     static let urlViewScoreProgess = endPoint + "/api/grade"
     static let urlViewScore = endPoint + "/api/points"
+    static let urlInfoStudent = endPoint + "/api/userinfor"
     static let socketUrl = "http://homedu.herokuapp.com"
     static let examScheduleUrl = "http://homedu.herokuapp.com/api/exam"
 }
