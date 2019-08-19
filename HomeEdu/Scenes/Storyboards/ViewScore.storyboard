@@ -10,20 +10,108 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Score View Controller-->
         <scene sceneID="ibO-fd-GFn">
             <objects>
-                <viewController storyboardIdentifier="ViewScore" id="x9a-4r-Jc5" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lFf-4p-Lzi">
+                <viewController storyboardIdentifier="ViewScore" id="x9a-4r-Jc5" customClass="ScoreViewController" customModule="HomeEdu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ymc-QN-tfF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.3586588483" green="0.63995519280000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <viewLayoutGuide key="safeArea" id="94B-nD-Eio"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="68x-vd-akh">
+                                <rect key="frame" x="19" y="25" width="337" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="f0z-DQ-c1r"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Quá trình"/>
+                                    <segment title="Tất cả"/>
+                                </segments>
+                                <connections>
+                                    <action selector="switchViewScore:" destination="x9a-4r-Jc5" eventType="valueChanged" id="fhl-9A-G09"/>
+                                </connections>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vJq-49-974">
+                                <rect key="frame" x="0.0" y="62" width="375" height="605"/>
+                                <connections>
+                                    <segue destination="Nfj-df-ZyI" kind="embed" id="hSy-m0-gRM"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kpr-Y6-CC7">
+                                <rect key="frame" x="0.0" y="62" width="375" height="605"/>
+                                <connections>
+                                    <segue destination="R0q-Op-xBl" kind="embed" id="qyx-vn-rCc"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="F4t-UL-Dev" firstAttribute="bottom" secondItem="Kpr-Y6-CC7" secondAttribute="bottom" id="5ZD-K2-MbW"/>
+                            <constraint firstItem="Kpr-Y6-CC7" firstAttribute="leading" secondItem="F4t-UL-Dev" secondAttribute="leading" id="GFA-GR-Qni"/>
+                            <constraint firstItem="vJq-49-974" firstAttribute="leading" secondItem="F4t-UL-Dev" secondAttribute="leading" id="IEB-de-9qL"/>
+                            <constraint firstItem="68x-vd-akh" firstAttribute="top" secondItem="F4t-UL-Dev" secondAttribute="top" constant="5" id="M2C-KE-8Bb"/>
+                            <constraint firstItem="F4t-UL-Dev" firstAttribute="bottom" secondItem="vJq-49-974" secondAttribute="bottom" id="c8d-qu-prc"/>
+                            <constraint firstItem="68x-vd-akh" firstAttribute="leading" secondItem="F4t-UL-Dev" secondAttribute="leading" constant="19" id="eJj-u0-8xu"/>
+                            <constraint firstItem="F4t-UL-Dev" firstAttribute="trailing" secondItem="Kpr-Y6-CC7" secondAttribute="trailing" id="hoh-AL-6GO"/>
+                            <constraint firstItem="vJq-49-974" firstAttribute="top" secondItem="68x-vd-akh" secondAttribute="bottom" constant="7" id="jF7-tg-dDp"/>
+                            <constraint firstItem="Kpr-Y6-CC7" firstAttribute="top" secondItem="68x-vd-akh" secondAttribute="bottom" constant="7" id="ktX-W9-X5O"/>
+                            <constraint firstItem="F4t-UL-Dev" firstAttribute="trailing" secondItem="68x-vd-akh" secondAttribute="trailing" constant="19" id="rS8-bH-O3L"/>
+                            <constraint firstItem="F4t-UL-Dev" firstAttribute="trailing" secondItem="vJq-49-974" secondAttribute="trailing" id="ywG-XY-9yE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="F4t-UL-Dev"/>
                     </view>
+                    <connections>
+                        <outlet property="viewAllScore" destination="Kpr-Y6-CC7" id="CKL-SR-C6c"/>
+                        <outlet property="viewEachTerm" destination="vJq-49-974" id="lYL-5f-Wao"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f7F-VX-lNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-100" y="74"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gB9-sj-sLT">
+            <objects>
+                <viewController id="Nfj-df-ZyI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a05-Xm-47F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="605"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QmX-pQ-HH7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="786" y="940"/>
+        </scene>
+        <!--Score Progress View-->
+        <scene sceneID="ckl-YY-1hw">
+            <objects>
+                <viewController id="R0q-Op-xBl" customClass="ScoreProgressView" customModule="HomeEdu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IJM-O2-8Yd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="605"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bEi-kP-Kmm">
+                                <rect key="frame" x="0.0" y="20" width="375" height="585"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bEi-kP-Kmm" firstAttribute="bottom" secondItem="kv5-rl-3B7" secondAttribute="bottom" id="C1P-HJ-ONs"/>
+                            <constraint firstItem="bEi-kP-Kmm" firstAttribute="trailing" secondItem="kv5-rl-3B7" secondAttribute="trailing" id="MPT-4j-Yea"/>
+                            <constraint firstItem="bEi-kP-Kmm" firstAttribute="leading" secondItem="kv5-rl-3B7" secondAttribute="leading" id="VPu-iF-LyT"/>
+                            <constraint firstItem="bEi-kP-Kmm" firstAttribute="top" secondItem="kv5-rl-3B7" secondAttribute="top" id="oHq-ej-lbL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kv5-rl-3B7"/>
+                    </view>
+                    <connections>
+                        <outlet property="scoreProgressTableView" destination="bEi-kP-Kmm" id="ODH-d4-JLD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uU1-rB-d2b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-914" y="940"/>
         </scene>
     </scenes>
 </document>

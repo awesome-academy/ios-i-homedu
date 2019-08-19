@@ -24,7 +24,7 @@ class TabbarController: UITabBarController {
     
     /// Setup local notification for exam schedule
     func setupNotification() {
-        APIServices.getExamSchedule(url: Urls.examScheduleUrl) { (response: Response<ExamSchedule>) in
+        APIServices.getInformation(url: Urls.examScheduleUrl) { (response: Response<ExamSchedule>) in
             guard let data = response.data, !data.isEmpty else { return }
             guard let examSchedules = data[0].examSchedule else { return }
             for subject in examSchedules {

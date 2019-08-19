@@ -48,6 +48,12 @@
 		9BACC34A22F03C6D008761FC /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BACC34922F03C6D008761FC /* TabbarController.swift */; };
 		9BBA734522F925A300A426E5 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBA734422F925A300A426E5 /* AboutViewController.swift */; };
 		9BBA734722F925BE00A426E5 /* AboutHomeEdu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBA734622F925BE00A426E5 /* AboutHomeEdu.swift */; };
+		9BFB93BF23055A4D0001BAD0 /* ScoreProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFB93BD23055A4D0001BAD0 /* ScoreProgressView.swift */; };
+		9BFB93C023055A4D0001BAD0 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFB93BE23055A4D0001BAD0 /* ScoreViewController.swift */; };
+		9BFB93C423055AC00001BAD0 /* ScoreProgessValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFB93C223055AC00001BAD0 /* ScoreProgessValue.swift */; };
+		9BFB93C523055AC00001BAD0 /* ScoreProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFB93C323055AC00001BAD0 /* ScoreProgress.swift */; };
+		9BFB93C923055B4B0001BAD0 /* ScoreProgessCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BFB93C723055B4B0001BAD0 /* ScoreProgessCell.xib */; };
+		9BFB93CA23055B4B0001BAD0 /* ScoreProgessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFB93C823055B4B0001BAD0 /* ScoreProgessCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +105,12 @@
 		9BACC34922F03C6D008761FC /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		9BBA734422F925A300A426E5 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		9BBA734622F925BE00A426E5 /* AboutHomeEdu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutHomeEdu.swift; sourceTree = "<group>"; };
+		9BFB93BD23055A4D0001BAD0 /* ScoreProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreProgressView.swift; sourceTree = "<group>"; };
+		9BFB93BE23055A4D0001BAD0 /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		9BFB93C223055AC00001BAD0 /* ScoreProgessValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreProgessValue.swift; sourceTree = "<group>"; };
+		9BFB93C323055AC00001BAD0 /* ScoreProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreProgress.swift; sourceTree = "<group>"; };
+		9BFB93C723055B4B0001BAD0 /* ScoreProgessCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScoreProgessCell.xib; sourceTree = "<group>"; };
+		9BFB93C823055B4B0001BAD0 /* ScoreProgessCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreProgessCell.swift; sourceTree = "<group>"; };
 		9CD7AB7C67BB50A08B4BECB4 /* Pods-HomeEdu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeEdu.release.xcconfig"; path = "Target Support Files/Pods-HomeEdu/Pods-HomeEdu.release.xcconfig"; sourceTree = "<group>"; };
 		BB863AFE16FD6C8B5A495B82 /* Pods_HomeEdu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HomeEdu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3BFFA2A92691491FC899AFF /* Pods-HomeEdu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeEdu.debug.xcconfig"; path = "Target Support Files/Pods-HomeEdu/Pods-HomeEdu.debug.xcconfig"; sourceTree = "<group>"; };
@@ -310,6 +322,7 @@
 		9BACC32922F02EEC008761FC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9BFB93C123055A9B0001BAD0 /* ViewScore */,
 				2527441222F96911002F1694 /* ExamSchedule */,
 				9BA1B17922F83D280007C6FE /* InfoAccount.swift */,
 				9BA1B17822F83D280007C6FE /* InfoResponse.swift */,
@@ -321,6 +334,7 @@
 		9BACC32A22F02F2C008761FC /* Repo */ = {
 			isa = PBXGroup;
 			children = (
+				9BFB93C623055B340001BAD0 /* ViewScoreCell */,
 				25727BE622FA6EC600D52A9D /* ExamScheduleCell */,
 			);
 			path = Repo;
@@ -329,6 +343,7 @@
 		9BACC32B22F02F32008761FC /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9BFB93BC23055A1D0001BAD0 /* ViewScore */,
 				25727BE322FA6E7B00D52A9D /* ExamSchedule */,
 				9BBA734322F9258500A426E5 /* About */,
 				9BA1B16622F83BA10007C6FE /* Login */,
@@ -376,6 +391,33 @@
 				9BBA734622F925BE00A426E5 /* AboutHomeEdu.swift */,
 			);
 			path = About;
+			sourceTree = "<group>";
+		};
+		9BFB93BC23055A1D0001BAD0 /* ViewScore */ = {
+			isa = PBXGroup;
+			children = (
+				9BFB93BE23055A4D0001BAD0 /* ScoreViewController.swift */,
+				9BFB93BD23055A4D0001BAD0 /* ScoreProgressView.swift */,
+			);
+			path = ViewScore;
+			sourceTree = "<group>";
+		};
+		9BFB93C123055A9B0001BAD0 /* ViewScore */ = {
+			isa = PBXGroup;
+			children = (
+				9BFB93C323055AC00001BAD0 /* ScoreProgress.swift */,
+				9BFB93C223055AC00001BAD0 /* ScoreProgessValue.swift */,
+			);
+			path = ViewScore;
+			sourceTree = "<group>";
+		};
+		9BFB93C623055B340001BAD0 /* ViewScoreCell */ = {
+			isa = PBXGroup;
+			children = (
+				9BFB93C823055B4B0001BAD0 /* ScoreProgessCell.swift */,
+				9BFB93C723055B4B0001BAD0 /* ScoreProgessCell.xib */,
+			);
+			path = ViewScoreCell;
 			sourceTree = "<group>";
 		};
 		EFEC22411F70878F35E1D05F /* Frameworks */ = {
@@ -452,6 +494,7 @@
 				9BACC33322F03974008761FC /* ViewScore.storyboard in Resources */,
 				9BACC33122F03927008761FC /* TabBar.storyboard in Resources */,
 				9BACC31C22F02AEA008761FC /* LaunchScreen.storyboard in Resources */,
+				9BFB93C923055B4B0001BAD0 /* ScoreProgessCell.xib in Resources */,
 				25727BEA22FA6F3800D52A9D /* ExamScheduleCell.xib in Resources */,
 				9BACC31922F02AEA008761FC /* Assets.xcassets in Resources */,
 				9B648A8422F861E4006BC8F8 /* Localizable.strings in Resources */,
@@ -534,6 +577,8 @@
 				9BA1B16D22F83BA20007C6FE /* CustomButtonLogin.swift in Sources */,
 				9BA1B17622F83CE00007C6FE /* AccountRequest.swift in Sources */,
 				2527441822F96950002F1694 /* SubjectSchedule.swift in Sources */,
+				9BFB93BF23055A4D0001BAD0 /* ScoreProgressView.swift in Sources */,
+				9BFB93C523055AC00001BAD0 /* ScoreProgress.swift in Sources */,
 				9BACC34A22F03C6D008761FC /* TabbarController.swift in Sources */,
 				25688B4823053F9A00DAF406 /* LocalProtocol.swift in Sources */,
 				2565AE8922F2D4B70003620A /* UIViewController+.swift in Sources */,
@@ -541,11 +586,13 @@
 				9BACC31222F02AEA008761FC /* AppDelegate.swift in Sources */,
 				25727BE922FA6F3800D52A9D /* ExamScheduleCell.swift in Sources */,
 				25688B4623053F5F00DAF406 /* StudentRepository.swift in Sources */,
+				9BFB93C423055AC00001BAD0 /* ScoreProgessValue.swift in Sources */,
 				25F0CF8522F1E3BE00582ED1 /* HomeduSocket.swift in Sources */,
 				2527440F22F96862002F1694 /* Date+.swift in Sources */,
 				25688B4323053D0000DAF406 /* Response.swift in Sources */,
 				25688B4B23053FE000DAF406 /* StudentLocalDataSource.swift in Sources */,
 				9BA1B18022F83FA80007C6FE /* String+.swift in Sources */,
+				9BFB93C023055A4D0001BAD0 /* ScoreViewController.swift in Sources */,
 				9BA1B17C22F83D280007C6FE /* InfoAccount.swift in Sources */,
 				2592D1E822FAA52D00285C88 /* Int+.swift in Sources */,
 				9BA1B17722F83CE00007C6FE /* Urls.swift in Sources */,
@@ -554,6 +601,7 @@
 				9BA1B17B22F83D280007C6FE /* InfoResponse.swift in Sources */,
 				9BBA734722F925BE00A426E5 /* AboutHomeEdu.swift in Sources */,
 				25727BE522FA6E9500D52A9D /* ExamScheduleController.swift in Sources */,
+				9BFB93CA23055B4B0001BAD0 /* ScoreProgessCell.swift in Sources */,
 				9BBA734522F925A300A426E5 /* AboutViewController.swift in Sources */,
 				9BA1B16E22F83BA20007C6FE /* CustomUserPasswordView.swift in Sources */,
 				2527441A22F96966002F1694 /* ExamScheduleNotification.swift in Sources */,
