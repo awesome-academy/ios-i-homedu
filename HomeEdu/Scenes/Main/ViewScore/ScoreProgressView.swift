@@ -10,7 +10,7 @@ import UIKit
 import Reusable
 import SAProgressHUB
 
-class ScoreProgressView: UIViewController {
+final class ScoreProgressView: UIViewController {
     @IBOutlet weak var scoreProgressTableView: UITableView!
     private var saveScoreProgess = [ScoreProgressValue]()
     var loading = SAProgressHUB(type: .lottie, style: .blurBackground)
@@ -38,14 +38,14 @@ class ScoreProgressView: UIViewController {
         }
     }
     
-    func getScoreProgess(callback: @escaping () -> Void) {
+    func getScoreProgess(completion: @escaping () -> Void) {
         APIServices.getInformation(url: Urls.urlViewScoreProgess) { (response: Response<ScoreProgress>) in
             guard let data = response.data, !data.isEmpty else { return }
-            guard let terms = data[0].terms, !terms.isEmpty else { return }
+            let terms = data[0].terms
             for term in terms {
                 self.saveScoreProgess.append(term)
             }
-            callback()
+            completion()
         }
     }
 }

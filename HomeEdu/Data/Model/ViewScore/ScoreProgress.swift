@@ -11,7 +11,7 @@ import ObjectMapper
 
 final class ScoreProgress: Mappable {
     var studentId: String?
-    var terms: [ScoreProgressValue]?
+    var terms = [ScoreProgressValue]()
     
     required init?(map: Map) {
     }
