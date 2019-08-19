@@ -8,22 +8,13 @@
 
 import UIKit
 
-class ScoreViewController: UIViewController {
+final class ScoreViewController: UIViewController {
 
-    @IBOutlet weak var viewEachTerm: UIView!
-    @IBOutlet weak var viewAllScore: UIView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+    @IBOutlet weak private var viewEachTerm: UIView!
+    @IBOutlet weak private var viewAllScore: UIView!
     
     @IBAction func switchViewScore(_ sender: UISegmentedControl) {
-        if sender.selectedSegmentIndex == 0 {
-            viewEachTerm.alpha = 0
-            viewAllScore.alpha = 1
-        } else {
-            viewEachTerm.alpha = 1
-            viewAllScore.alpha = 0
-        }
+        viewEachTerm.alpha = sender.selectedSegmentIndex == 0 ? 0 : 1
+        viewAllScore.alpha = sender.selectedSegmentIndex == 0 ? 1 : 0
     }
 }
