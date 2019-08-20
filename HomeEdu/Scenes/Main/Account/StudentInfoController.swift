@@ -63,6 +63,17 @@ final class StudentInfoController: UIViewController {
             completion()
         }
     }
+    
+    @IBAction func buttonEditInfo(_ sender: Any) {
+        let editInfoView = EditStudentInfo.instantiate()
+        editInfoView.changeInfoValue(fullname: studentInfoValue[1],
+                                     birthday: studentInfoValue[2],
+                                     sex: studentInfoValue[3],
+                                     otherMail: studentInfoValue[5],
+                                     nation: addressInfoValue[0],
+                                     address: addressInfoValue[1])
+        self.navigationController?.pushViewController(editInfoView, animated: true)
+    }
 }
 
 extension StudentInfoController: UITableViewDataSource, UITableViewDelegate {

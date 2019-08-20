@@ -26,12 +26,17 @@ enum Constant {
     //Alert
     enum Alert {
         static let alertOK = "common.ok.alert"
+        static let alertNO = "common.no.alert"
         static let alertTitle = "common.title.alert"
         static let alertLoginFail = "common.loginFail.alert"
         static let usernameError = "common.usernameError.alert"
         static let passwordError = "common.passwordError.alert"
         static let userAndPassError = "common.userPassError.alert"
         static let internetError = "common.internetError.alert"
+        static let editInfoFail = "common.editInfoFail.alert"
+        static let editInfoSuccess = "common.editInfoSuccess.alert"
+        static let editInfo = "common.editInfo.alert"
+        static let editInfoError = "common.editInfoError.alert"
     }
     
     //About HomeEdu

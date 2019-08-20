@@ -13,6 +13,7 @@
 "common.about.title" = "About";
 
 "common.ok.alert" = "Đồng ý";
+"common.no.alert" = "Từ chối";
 "common.title.alert" = "Thông Báo";
 "common.loginFail.alert" = "Bạn đã nhập sai Username hoặc Password";
 "common.usernameError.alert" = "Username không hợp lệ";
@@ -23,3 +24,8 @@
 "common.version.aboutHomedu" = "Phiên bản: 1.0.0";
 "common.contact.aboutHomedu" = "Liên hệ: homedu@gmail.com";
 "common.author.aboutHomedu" = "Sở hữu: Văn Minh & Việt Cường";
+
+"common.editInfoFail.alert" = "Thay đổi thông tin thất bại";
+"common.editInfo.alert" = "Bạn có muốn thay đổi thông tin ?";
+"common.editInfoError.alert" = "Không có thông tin thay đổi";
+"common.editInfoSuccess.alert" = "Thay đổi thông tin thành công";
