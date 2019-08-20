@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Learning Schedule Controller-->
+        <scene sceneID="QY2-WM-GvO">
+            <objects>
+                <viewController storyboardIdentifier="Schedule" id="zas-z2-dED" customClass="LearningScheduleController" customModule="HomeEdu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aSE-Yr-GKo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gPD-0U-Zmc">
+                                <rect key="frame" x="0.0" y="20" width="375" height="64.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="IIP-Bl-GGi">
+                                        <rect key="frame" x="112.5" y="13" width="150" height="39"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.031088806688785553" green="0.69484776258468628" blue="0.98186641931533813" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="IIP-Bl-GGi" firstAttribute="width" secondItem="gPD-0U-Zmc" secondAttribute="width" multiplier="40%" id="6Yo-jG-Gw6"/>
+                                    <constraint firstItem="IIP-Bl-GGi" firstAttribute="height" secondItem="gPD-0U-Zmc" secondAttribute="height" multiplier="60%" id="PXk-Ho-gV4"/>
+                                    <constraint firstItem="IIP-Bl-GGi" firstAttribute="centerY" secondItem="gPD-0U-Zmc" secondAttribute="centerY" id="ch1-FV-vpV"/>
+                                    <constraint firstItem="IIP-Bl-GGi" firstAttribute="centerX" secondItem="gPD-0U-Zmc" secondAttribute="centerX" id="kVI-m8-TMl"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tj6-fN-XOb" customClass="CustomCalendarView" customModule="HomeEdu" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="84.5" width="375" height="291.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gfa-5q-uWw">
+                                <rect key="frame" x="0.0" y="376" width="375" height="291"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tj6-fN-XOb" firstAttribute="top" secondItem="gPD-0U-Zmc" secondAttribute="bottom" id="3kJ-zs-McO"/>
+                            <constraint firstItem="Gfa-5q-uWw" firstAttribute="leading" secondItem="cp8-RB-aLl" secondAttribute="leading" id="9Wx-yH-No9"/>
+                            <constraint firstItem="gPD-0U-Zmc" firstAttribute="width" secondItem="cp8-RB-aLl" secondAttribute="width" id="DQe-TK-HzD"/>
+                            <constraint firstItem="tj6-fN-XOb" firstAttribute="height" secondItem="cp8-RB-aLl" secondAttribute="height" multiplier="45%" id="ER7-o1-OcK"/>
+                            <constraint firstItem="gPD-0U-Zmc" firstAttribute="top" secondItem="cp8-RB-aLl" secondAttribute="top" id="IsP-fn-Wqh"/>
+                            <constraint firstItem="tj6-fN-XOb" firstAttribute="leading" secondItem="cp8-RB-aLl" secondAttribute="leading" id="P3N-hj-m6o"/>
+                            <constraint firstItem="gPD-0U-Zmc" firstAttribute="height" secondItem="cp8-RB-aLl" secondAttribute="height" multiplier="10%" id="WDa-vr-gpH"/>
+                            <constraint firstItem="gPD-0U-Zmc" firstAttribute="leading" secondItem="cp8-RB-aLl" secondAttribute="leading" id="cB6-jJ-lcU"/>
+                            <constraint firstItem="cp8-RB-aLl" firstAttribute="bottom" secondItem="Gfa-5q-uWw" secondAttribute="bottom" id="iEr-tj-Tz1"/>
+                            <constraint firstItem="tj6-fN-XOb" firstAttribute="width" secondItem="cp8-RB-aLl" secondAttribute="width" id="phy-jS-dUa"/>
+                            <constraint firstItem="cp8-RB-aLl" firstAttribute="trailing" secondItem="Gfa-5q-uWw" secondAttribute="trailing" id="q8P-TS-xNV"/>
+                            <constraint firstItem="Gfa-5q-uWw" firstAttribute="top" secondItem="tj6-fN-XOb" secondAttribute="bottom" id="rzL-nj-jbS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cp8-RB-aLl"/>
+                    </view>
+                    <connections>
+                        <outlet property="calendarView" destination="tj6-fN-XOb" id="lXU-GZ-wAI"/>
+                        <outlet property="timeScheduleTable" destination="Gfa-5q-uWw" id="cla-OY-Kds"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qgT-Dm-KTc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="93"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="1006" height="238"/>
+    </resources>
+</document>
