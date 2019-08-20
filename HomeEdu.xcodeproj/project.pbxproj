@@ -21,6 +21,14 @@
 		25727BE922FA6F3800D52A9D /* ExamScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25727BE722FA6F3800D52A9D /* ExamScheduleCell.swift */; };
 		25727BEA22FA6F3800D52A9D /* ExamScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25727BE822FA6F3800D52A9D /* ExamScheduleCell.xib */; };
 		2592D1E822FAA52D00285C88 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2592D1E722FAA52D00285C88 /* Int+.swift */; };
+		25A5262D230B9D81002D0E35 /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25A5262C230B9D81002D0E35 /* Schedule.storyboard */; };
+		25A5262F230B9D8C002D0E35 /* CustomCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A5262E230B9D8C002D0E35 /* CustomCalendarView.swift */; };
+		25A52634230B9D9F002D0E35 /* LearningScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A52632230B9D9F002D0E35 /* LearningScheduleCell.swift */; };
+		25A52635230B9D9F002D0E35 /* LearningScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25A52633230B9D9F002D0E35 /* LearningScheduleCell.xib */; };
+		25A5263A230B9DB1002D0E35 /* TimeSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A52637230B9DB1002D0E35 /* TimeSchedule.swift */; };
+		25A5263B230B9DB1002D0E35 /* DaySchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A52638230B9DB1002D0E35 /* DaySchedule.swift */; };
+		25A5263C230B9DB1002D0E35 /* LearningSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A52639230B9DB1002D0E35 /* LearningSchedule.swift */; };
+		25A5263E230B9F7D002D0E35 /* LearningScheduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A5263D230B9F7D002D0E35 /* LearningScheduleController.swift */; };
 		25F0CF8522F1E3BE00582ED1 /* HomeduSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F0CF8422F1E3BE00582ED1 /* HomeduSocket.swift */; };
 		85AA66753FD9A9C14601A849 /* Pods_HomeEdu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB863AFE16FD6C8B5A495B82 /* Pods_HomeEdu.framework */; };
 		9B59B42B230A3476007E7B72 /* AllScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B59B42A230A3476007E7B72 /* AllScoreView.swift */; };
@@ -47,7 +55,6 @@
 		9BACC32F22F038C2008761FC /* StoryBoards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BACC32E22F038C2008761FC /* StoryBoards.swift */; };
 		9BACC33122F03927008761FC /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC33022F03927008761FC /* TabBar.storyboard */; };
 		9BACC33322F03974008761FC /* ViewScore.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC33222F03974008761FC /* ViewScore.storyboard */; };
-		9BACC33522F03983008761FC /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC33422F03983008761FC /* Schedule.storyboard */; };
 		9BACC33722F03992008761FC /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC33622F03992008761FC /* Account.storyboard */; };
 		9BACC33922F039BA008761FC /* ExamSchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC33822F039BA008761FC /* ExamSchedule.storyboard */; };
 		9BACC33B22F039C4008761FC /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC33A22F039C4008761FC /* About.storyboard */; };
@@ -80,6 +87,14 @@
 		25727BE722FA6F3800D52A9D /* ExamScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamScheduleCell.swift; sourceTree = "<group>"; };
 		25727BE822FA6F3800D52A9D /* ExamScheduleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExamScheduleCell.xib; sourceTree = "<group>"; };
 		2592D1E722FAA52D00285C88 /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
+		25A5262C230B9D81002D0E35 /* Schedule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
+		25A5262E230B9D8C002D0E35 /* CustomCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCalendarView.swift; sourceTree = "<group>"; };
+		25A52632230B9D9F002D0E35 /* LearningScheduleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearningScheduleCell.swift; sourceTree = "<group>"; };
+		25A52633230B9D9F002D0E35 /* LearningScheduleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LearningScheduleCell.xib; sourceTree = "<group>"; };
+		25A52637230B9DB1002D0E35 /* TimeSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSchedule.swift; sourceTree = "<group>"; };
+		25A52638230B9DB1002D0E35 /* DaySchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaySchedule.swift; sourceTree = "<group>"; };
+		25A52639230B9DB1002D0E35 /* LearningSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearningSchedule.swift; sourceTree = "<group>"; };
+		25A5263D230B9F7D002D0E35 /* LearningScheduleController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LearningScheduleController.swift; sourceTree = "<group>"; };
 		25F0CF8422F1E3BE00582ED1 /* HomeduSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeduSocket.swift; path = Source/Socket/HomeduSocket.swift; sourceTree = SOURCE_ROOT; };
 		3F47CA46F1CA5E36A3655AFC /* Pods-HomeEdu.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeEdu.staging.xcconfig"; path = "Target Support Files/Pods-HomeEdu/Pods-HomeEdu.staging.xcconfig"; sourceTree = "<group>"; };
 		4E32C9F869AC96C114A65B78 /* Pods-HomeEdu.testing.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeEdu.testing.xcconfig"; path = "Target Support Files/Pods-HomeEdu/Pods-HomeEdu.testing.xcconfig"; sourceTree = "<group>"; };
@@ -113,7 +128,6 @@
 		9BACC32E22F038C2008761FC /* StoryBoards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoards.swift; sourceTree = "<group>"; };
 		9BACC33022F03927008761FC /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		9BACC33222F03974008761FC /* ViewScore.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewScore.storyboard; sourceTree = "<group>"; };
-		9BACC33422F03983008761FC /* Schedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
 		9BACC33622F03992008761FC /* Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		9BACC33822F039BA008761FC /* ExamSchedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExamSchedule.storyboard; sourceTree = "<group>"; };
 		9BACC33A22F039C4008761FC /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
@@ -196,6 +210,33 @@
 				25727BE822FA6F3800D52A9D /* ExamScheduleCell.xib */,
 			);
 			path = ExamScheduleCell;
+			sourceTree = "<group>";
+		};
+		25A52630230B9D95002D0E35 /* LearningShedule */ = {
+			isa = PBXGroup;
+			children = (
+				25A5263D230B9F7D002D0E35 /* LearningScheduleController.swift */,
+			);
+			path = LearningShedule;
+			sourceTree = "<group>";
+		};
+		25A52631230B9D9F002D0E35 /* LearningScheduleCell */ = {
+			isa = PBXGroup;
+			children = (
+				25A52632230B9D9F002D0E35 /* LearningScheduleCell.swift */,
+				25A52633230B9D9F002D0E35 /* LearningScheduleCell.xib */,
+			);
+			path = LearningScheduleCell;
+			sourceTree = "<group>";
+		};
+		25A52636230B9DB1002D0E35 /* LearningSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				25A52637230B9DB1002D0E35 /* TimeSchedule.swift */,
+				25A52638230B9DB1002D0E35 /* DaySchedule.swift */,
+				25A52639230B9DB1002D0E35 /* LearningSchedule.swift */,
+			);
+			path = LearningSchedule;
 			sourceTree = "<group>";
 		};
 		25F0CF8322F1E35A00582ED1 /* Socket */ = {
@@ -366,6 +407,7 @@
 		9BACC32922F02EEC008761FC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				25A52636230B9DB1002D0E35 /* LearningSchedule */,
 				9B6D1D35230A4DD6006ABE12 /* Account */,
 				9BFB93C123055A9B0001BAD0 /* ViewScore */,
 				2527441222F96911002F1694 /* ExamSchedule */,
@@ -376,6 +418,7 @@
 		9BACC32A22F02F2C008761FC /* Repo */ = {
 			isa = PBXGroup;
 			children = (
+				25A52631230B9D9F002D0E35 /* LearningScheduleCell */,
 				9B4091FB230A7F35004C13B9 /* InfoStudentCell */,
 				9BFB93C623055B340001BAD0 /* ViewScoreCell */,
 				25727BE622FA6EC600D52A9D /* ExamScheduleCell */,
@@ -386,6 +429,7 @@
 		9BACC32B22F02F32008761FC /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				25A52630230B9D95002D0E35 /* LearningShedule */,
 				9B4091F8230A7D5F004C13B9 /* Account */,
 				9BFB93BC23055A1D0001BAD0 /* ViewScore */,
 				25727BE322FA6E7B00D52A9D /* ExamSchedule */,
@@ -399,6 +443,7 @@
 		9BACC32C22F02F37008761FC /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				25A5262E230B9D8C002D0E35 /* CustomCalendarView.swift */,
 				9BA1B16A22F83BA10007C6FE /* CustomUserPasswordView.swift */,
 				9BA1B16922F83BA10007C6FE /* CustomButtonLogin.swift */,
 			);
@@ -412,7 +457,7 @@
 				9BACC31522F02AEA008761FC /* Main.storyboard */,
 				9BACC33022F03927008761FC /* TabBar.storyboard */,
 				9BACC33222F03974008761FC /* ViewScore.storyboard */,
-				9BACC33422F03983008761FC /* Schedule.storyboard */,
+				25A5262C230B9D81002D0E35 /* Schedule.storyboard */,
 				9BACC33622F03992008761FC /* Account.storyboard */,
 				9BACC33822F039BA008761FC /* ExamSchedule.storyboard */,
 				9BACC33A22F039C4008761FC /* About.storyboard */,
@@ -548,10 +593,11 @@
 				9BFB93C923055B4B0001BAD0 /* ScoreProgessCell.xib in Resources */,
 				25727BEA22FA6F3800D52A9D /* ExamScheduleCell.xib in Resources */,
 				9BACC31922F02AEA008761FC /* Assets.xcassets in Resources */,
+				25A5262D230B9D81002D0E35 /* Schedule.storyboard in Resources */,
 				9B648A8422F861E4006BC8F8 /* Localizable.strings in Resources */,
 				9BACC33B22F039C4008761FC /* About.storyboard in Resources */,
-				9BACC33522F03983008761FC /* Schedule.storyboard in Resources */,
 				9BACC33922F039BA008761FC /* ExamSchedule.storyboard in Resources */,
+				25A52635230B9D9F002D0E35 /* LearningScheduleCell.xib in Resources */,
 				9BACC31722F02AEA008761FC /* Main.storyboard in Resources */,
 				9B59B435230A3624007E7B72 /* AllScoreCell.xib in Resources */,
 				9BD0081F230AD1A0007E9A95 /* StudentInfoCell.xib in Resources */,
@@ -629,12 +675,17 @@
 				9BACC32F22F038C2008761FC /* StoryBoards.swift in Sources */,
 				9BA1B16D22F83BA20007C6FE /* CustomButtonLogin.swift in Sources */,
 				9BA1B17622F83CE00007C6FE /* AccountRequest.swift in Sources */,
+				25A5263A230B9DB1002D0E35 /* TimeSchedule.swift in Sources */,
 				2527441822F96950002F1694 /* SubjectSchedule.swift in Sources */,
 				9B59B431230A351E007E7B72 /* ScoreTerm.swift in Sources */,
+				25A5263C230B9DB1002D0E35 /* LearningSchedule.swift in Sources */,
 				9BFB93BF23055A4D0001BAD0 /* ScoreProgressView.swift in Sources */,
 				9BFB93C523055AC00001BAD0 /* ScoreProgress.swift in Sources */,
+				25A5263B230B9DB1002D0E35 /* DaySchedule.swift in Sources */,
 				9BACC34A22F03C6D008761FC /* TabbarController.swift in Sources */,
 				25688B4823053F9A00DAF406 /* LocalProtocol.swift in Sources */,
+				25A52634230B9D9F002D0E35 /* LearningScheduleCell.swift in Sources */,
+				25A5262F230B9D8C002D0E35 /* CustomCalendarView.swift in Sources */,
 				2565AE8922F2D4B70003620A /* UIViewController+.swift in Sources */,
 				9BD0081B230ACD23007E9A95 /* StudentInfoController.swift in Sources */,
 				9BACC31222F02AEA008761FC /* AppDelegate.swift in Sources */,
@@ -644,6 +695,7 @@
 				25F0CF8522F1E3BE00582ED1 /* HomeduSocket.swift in Sources */,
 				2527440F22F96862002F1694 /* Date+.swift in Sources */,
 				9BD0081E230AD1A0007E9A95 /* StudentInfoCell.swift in Sources */,
+				25A5263E230B9F7D002D0E35 /* LearningScheduleController.swift in Sources */,
 				9B59B43B230A3C6E007E7B72 /* DetailScore.swift in Sources */,
 				25688B4323053D0000DAF406 /* Response.swift in Sources */,
 				25688B4B23053FE000DAF406 /* StudentLocalDataSource.swift in Sources */,
