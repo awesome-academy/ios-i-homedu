@@ -1,9 +1,0 @@
-
-/* Class = "UITextField"; placeholder = "Username"; ObjectID = "VKE-9d-KLc"; */
-"VKE-9d-KLc.placeholder" = "Username";
-
-/* Class = "UIButton"; normalTitle = "Đăng nhập"; ObjectID = "cHv-aF-DGz"; */
-"cHv-aF-DGz.normalTitle" = "Đăng nhập";
-
-/* Class = "UITextField"; placeholder = "Password"; ObjectID = "xks-H9-X8M"; */
-"xks-H9-X8M.placeholder" = "Password";
