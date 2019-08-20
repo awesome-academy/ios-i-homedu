@@ -12,4 +12,6 @@ target 'HomeEdu' do
   pod 'AlamofireObjectMapper', '~> 5.2'
   pod 'Reusable', '~> 4.0.2'
   pod 'SAProgressHUB'
+  pod 'MBCalendarKit'
+  pod 'Then'
 end
