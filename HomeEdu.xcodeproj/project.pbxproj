@@ -54,6 +54,9 @@
 		9BACC34A22F03C6D008761FC /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BACC34922F03C6D008761FC /* TabbarController.swift */; };
 		9BBA734522F925A300A426E5 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBA734422F925A300A426E5 /* AboutViewController.swift */; };
 		9BBA734722F925BE00A426E5 /* AboutHomeEdu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBA734622F925BE00A426E5 /* AboutHomeEdu.swift */; };
+		9BD0081B230ACD23007E9A95 /* StudentInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0081A230ACD23007E9A95 /* StudentInfoController.swift */; };
+		9BD0081E230AD1A0007E9A95 /* StudentInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0081C230AD1A0007E9A95 /* StudentInfoCell.swift */; };
+		9BD0081F230AD1A0007E9A95 /* StudentInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BD0081D230AD1A0007E9A95 /* StudentInfoCell.xib */; };
 		9BFB93BF23055A4D0001BAD0 /* ScoreProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFB93BD23055A4D0001BAD0 /* ScoreProgressView.swift */; };
 		9BFB93C023055A4D0001BAD0 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFB93BE23055A4D0001BAD0 /* ScoreViewController.swift */; };
 		9BFB93C423055AC00001BAD0 /* ScoreProgessValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFB93C223055AC00001BAD0 /* ScoreProgessValue.swift */; };
@@ -117,6 +120,9 @@
 		9BACC34922F03C6D008761FC /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		9BBA734422F925A300A426E5 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		9BBA734622F925BE00A426E5 /* AboutHomeEdu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutHomeEdu.swift; sourceTree = "<group>"; };
+		9BD0081A230ACD23007E9A95 /* StudentInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInfoController.swift; sourceTree = "<group>"; };
+		9BD0081C230AD1A0007E9A95 /* StudentInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInfoCell.swift; sourceTree = "<group>"; };
+		9BD0081D230AD1A0007E9A95 /* StudentInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StudentInfoCell.xib; sourceTree = "<group>"; };
 		9BFB93BD23055A4D0001BAD0 /* ScoreProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreProgressView.swift; sourceTree = "<group>"; };
 		9BFB93BE23055A4D0001BAD0 /* ScoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		9BFB93C223055AC00001BAD0 /* ScoreProgessValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreProgessValue.swift; sourceTree = "<group>"; };
@@ -212,11 +218,28 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9B4091F8230A7D5F004C13B9 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				9BD0081A230ACD23007E9A95 /* StudentInfoController.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		9B4091FB230A7F35004C13B9 /* InfoStudentCell */ = {
+			isa = PBXGroup;
+			children = (
+				9BD0081C230AD1A0007E9A95 /* StudentInfoCell.swift */,
+				9BD0081D230AD1A0007E9A95 /* StudentInfoCell.xib */,
+			);
+			path = InfoStudentCell;
+			sourceTree = "<group>";
+		};
 		9B6D1D35230A4DD6006ABE12 /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				9BA1B17922F83D280007C6FE /* InfoAccount.swift */,
 				9BA1B17822F83D280007C6FE /* InfoResponse.swift */,
+				9BA1B17922F83D280007C6FE /* InfoAccount.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -353,6 +376,7 @@
 		9BACC32A22F02F2C008761FC /* Repo */ = {
 			isa = PBXGroup;
 			children = (
+				9B4091FB230A7F35004C13B9 /* InfoStudentCell */,
 				9BFB93C623055B340001BAD0 /* ViewScoreCell */,
 				25727BE622FA6EC600D52A9D /* ExamScheduleCell */,
 			);
@@ -362,6 +386,7 @@
 		9BACC32B22F02F32008761FC /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				9B4091F8230A7D5F004C13B9 /* Account */,
 				9BFB93BC23055A1D0001BAD0 /* ViewScore */,
 				25727BE322FA6E7B00D52A9D /* ExamSchedule */,
 				9BBA734322F9258500A426E5 /* About */,
@@ -529,6 +554,7 @@
 				9BACC33922F039BA008761FC /* ExamSchedule.storyboard in Resources */,
 				9BACC31722F02AEA008761FC /* Main.storyboard in Resources */,
 				9B59B435230A3624007E7B72 /* AllScoreCell.xib in Resources */,
+				9BD0081F230AD1A0007E9A95 /* StudentInfoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,12 +636,14 @@
 				9BACC34A22F03C6D008761FC /* TabbarController.swift in Sources */,
 				25688B4823053F9A00DAF406 /* LocalProtocol.swift in Sources */,
 				2565AE8922F2D4B70003620A /* UIViewController+.swift in Sources */,
+				9BD0081B230ACD23007E9A95 /* StudentInfoController.swift in Sources */,
 				9BACC31222F02AEA008761FC /* AppDelegate.swift in Sources */,
 				25727BE922FA6F3800D52A9D /* ExamScheduleCell.swift in Sources */,
 				25688B4623053F5F00DAF406 /* StudentRepository.swift in Sources */,
 				9BFB93C423055AC00001BAD0 /* ScoreProgessValue.swift in Sources */,
 				25F0CF8522F1E3BE00582ED1 /* HomeduSocket.swift in Sources */,
 				2527440F22F96862002F1694 /* Date+.swift in Sources */,
+				9BD0081E230AD1A0007E9A95 /* StudentInfoCell.swift in Sources */,
 				9B59B43B230A3C6E007E7B72 /* DetailScore.swift in Sources */,
 				25688B4323053D0000DAF406 /* Response.swift in Sources */,
 				25688B4B23053FE000DAF406 /* StudentLocalDataSource.swift in Sources */,

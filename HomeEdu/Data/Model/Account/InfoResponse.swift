@@ -12,14 +12,13 @@ import ObjectMapper
 final class InfoResponse: Mappable {
     var token = ""
     var success = false
-    var infoStudent = [InfoAccount]()
-    
+    var studentId = ""
     required init?(map: Map) {
     }
     
     func mapping(map: Map) {
         token <- map["token"]
         success <- map["success"]
-        infoStudent <- map["data"]
+        studentId <- map["student_id"]
     }
 }

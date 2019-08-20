@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import ObjectMapper
 import Alamofire
 import AlamofireObjectMapper
 
@@ -18,26 +19,28 @@ class AccountRequest {
     }
     
     func login(_ param: Parameters,
-               completion callback: @escaping (Bool, Bool) -> Void) {
+               completion callback: @escaping (Bool, Bool, InfoResponse) -> Void) {
         Alamofire.request(Urls.urlLogin,
                           method: .post,
                           parameters: param,
                           encoding: JSONEncoding.default,
-                          headers: [:]).responseObject { (response: DataResponse<InfoResponse>) in
-                            self.reachabilityManager?.startListening()
-                            self.reachabilityManager?.listener = { _ in
-                                var statusInternet = false
-                                if let isNetworkReachable = self.reachabilityManager?.isReachable,
-                                    isNetworkReachable == true {
-                                    statusInternet = true
-                                    let infoStudentResponse = response.result.value
-                                    if let success = infoStudentResponse?.success {
-                                        callback(success, statusInternet)
-                                    }
-                                } else {
-                                    callback(false, statusInternet)
-                                }
-                            }
+                          headers: [:])
+            .responseObject { (response: DataResponse<InfoResponse>) in
+                self.reachabilityManager?.startListening()
+                self.reachabilityManager?.listener = { _ in
+                    var statusInternet = false
+                    guard let dataResponse = response.result.value else { return }
+                    if let isNetworkReachable = self.reachabilityManager?.isReachable,
+                        isNetworkReachable == true {
+                        statusInternet = true
+                        let infoStudentResponse = response.result.value
+                        if let success = infoStudentResponse?.success {
+                            callback(success, statusInternet, dataResponse)
+                        }
+                    } else {
+                        callback(false, statusInternet, dataResponse)
+                    }
+                }
         }
     }
 }
