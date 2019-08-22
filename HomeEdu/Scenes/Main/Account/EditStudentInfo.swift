@@ -113,11 +113,11 @@ class EditStudentInfo: UIViewController {
     
     func requestEditInfo(completion: @escaping () -> Void) {
         let paras = Param(fullname: fullnameTextField.text ?? "",
-                            birthday: birthdayTextField.text ?? "",
-                            sex: sexValueChange,
-                            otherMail: otherMailTextField.text ?? "",
-                            nation: nationTextField.text ?? "",
-                            address: addressTextField.text ?? "")
+                          birthday: birthdayTextField.text ?? "",
+                          sex: sexValueChange,
+                          otherMail: otherMailTextField.text ?? "",
+                          nation: nationTextField.text ?? "",
+                          address: addressTextField.text ?? "")
         APIServices.putEditInfo(paras.exportToParameters()) {
             self.isConnect = $0
             self.isSuccessEdit = $1
@@ -125,14 +125,13 @@ class EditStudentInfo: UIViewController {
                 if self.isSuccessEdit {
                     self.createAlert(title: NSLocalizedString(Constant.Alert.alertTitle, comment: ""),
                                      message: NSLocalizedString(Constant.Alert.editInfoSuccess, comment: ""))
-                    self.isChange = true
-                } else {
-                    self.createAlert(title: NSLocalizedString(Constant.Alert.alertTitle, comment: ""),
-                                     message: NSLocalizedString(Constant.Alert.editInfoFail, comment: ""))
+                    return
                 }
-            } else {
-                self.internetNotConnect()
+                self.createAlert(title: NSLocalizedString(Constant.Alert.alertTitle, comment: ""),
+                                 message: NSLocalizedString(Constant.Alert.editInfoFail, comment: ""))
+                return
             }
+            self.internetNotConnect()
             completion()
         }
     }

@@ -62,6 +62,7 @@
 		9BACC33B22F039C4008761FC /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC33A22F039C4008761FC /* About.storyboard */; };
 		9BACC34A22F03C6D008761FC /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BACC34922F03C6D008761FC /* TabbarController.swift */; };
 		9BB24C2E230E5E4700F5E75F /* Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB24C2D230E5E4700F5E75F /* Param.swift */; };
+		9BB24C30230E84C900F5E75F /* InternetConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB24C2F230E84C900F5E75F /* InternetConnectivity.swift */; };
 		9BBA734522F925A300A426E5 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBA734422F925A300A426E5 /* AboutViewController.swift */; };
 		9BBA734722F925BE00A426E5 /* AboutHomeEdu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBA734622F925BE00A426E5 /* AboutHomeEdu.swift */; };
 		9BD0081B230ACD23007E9A95 /* StudentInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0081A230ACD23007E9A95 /* StudentInfoController.swift */; };
@@ -138,6 +139,7 @@
 		9BACC33A22F039C4008761FC /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		9BACC34922F03C6D008761FC /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
 		9BB24C2D230E5E4700F5E75F /* Param.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Param.swift; sourceTree = "<group>"; };
+		9BB24C2F230E84C900F5E75F /* InternetConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnectivity.swift; sourceTree = "<group>"; };
 		9BBA734422F925A300A426E5 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		9BBA734622F925BE00A426E5 /* AboutHomeEdu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutHomeEdu.swift; sourceTree = "<group>"; };
 		9BD0081A230ACD23007E9A95 /* StudentInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInfoController.swift; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 			children = (
 				9BA1B17422F83CE00007C6FE /* AccountRequest.swift */,
 				9BB24C2D230E5E4700F5E75F /* Param.swift */,
+				9BB24C2F230E84C900F5E75F /* InternetConnectivity.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -694,6 +697,7 @@
 				25A5263B230B9DB1002D0E35 /* DaySchedule.swift in Sources */,
 				9BACC34A22F03C6D008761FC /* TabbarController.swift in Sources */,
 				25688B4823053F9A00DAF406 /* LocalProtocol.swift in Sources */,
+				9BB24C30230E84C900F5E75F /* InternetConnectivity.swift in Sources */,
 				25A52634230B9D9F002D0E35 /* LearningScheduleCell.swift in Sources */,
 				25A5262F230B9D8C002D0E35 /* CustomCalendarView.swift in Sources */,
 				2565AE8922F2D4B70003620A /* UIViewController+.swift in Sources */,
