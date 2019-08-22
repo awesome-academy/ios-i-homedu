@@ -36,7 +36,7 @@ final class Param {
             "fullname": fullname,
             "birthday": birthday,
             "sex": sex,
-            "otherMail": otherMail,
+            "other_email": otherMail,
             "nation": nation,
             "address": address
         ]

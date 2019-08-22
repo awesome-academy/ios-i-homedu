@@ -14,7 +14,6 @@ import AlamofireObjectMapper
 class AccountRequest {
 
     static let shared = AccountRequest()
-    let reachabilityManager = NetworkReachabilityManager()
     private init() {
     }
     
@@ -26,21 +25,15 @@ class AccountRequest {
                           encoding: JSONEncoding.default,
                           headers: [:])
             .responseObject { (response: DataResponse<InfoResponse>) in
-                self.reachabilityManager?.startListening()
-                self.reachabilityManager?.listener = { _ in
-                    var statusInternet = false
                     guard let dataResponse = response.result.value else { return }
-                    if let isNetworkReachable = self.reachabilityManager?.isReachable,
-                        isNetworkReachable == true {
-                        statusInternet = true
+                    if InternetConnectivity.isConnectedToInternet() {
                         let infoStudentResponse = response.result.value
                         if let success = infoStudentResponse?.success {
-                            callback(success, statusInternet, dataResponse)
+                            callback(true, success, dataResponse)
                         }
                     } else {
-                        callback(false, statusInternet, dataResponse)
+                        callback(false, false, dataResponse)
                     }
-                }
         }
     }
 }
