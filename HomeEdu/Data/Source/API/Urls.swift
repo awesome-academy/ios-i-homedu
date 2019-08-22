@@ -12,6 +12,7 @@ enum Urls {
     static let urlViewScoreProgess = endPoint + "/api/grade"
     static let urlViewScore = endPoint + "/api/points"
     static let urlInfoStudent = endPoint + "/api/userinfor"
+    static let urlEditInfoStudent = endPoint + "/api/edituser"
     static let socketUrl = endPoint
     static let examScheduleUrl = endPoint + "/api/exam"
     static let learningScheduleUrl = endPoint + "/api/schedule"

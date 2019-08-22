@@ -17,6 +17,8 @@ final class StudentInfoController: UIViewController {
     private var studentInfoValue = [String]()
     private var classInfoValue = [String]()
     private var addressInfoValue = [String]()
+    private var infoStudent: InfoAccount?
+    private let editInfoView = EditStudentInfo.instantiate()
     
     enum SectionInfo {
         static let heightSection: CGFloat = 40
@@ -29,6 +31,15 @@ final class StudentInfoController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getPointAtFirstTime()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if editInfoView.isChange {
+            studentInfoValue.removeAll()
+            classInfoValue.removeAll()
+            addressInfoValue.removeAll()
+            getPointAtFirstTime()
+        }
     }
     
     private func configView() {
@@ -50,6 +61,7 @@ final class StudentInfoController: UIViewController {
         APIServices.getInformation(url: Urls.urlInfoStudent) { (response: Response<InfoAccount>) in
             guard let data = response.data, !data.isEmpty else { return }
             let result = data[0]
+            self.infoStudent = result
             self.studentInfoValue.append(result.studentId)
             self.studentInfoValue.append(result.fullName)
             self.studentInfoValue.append(result.birthday)
@@ -62,6 +74,11 @@ final class StudentInfoController: UIViewController {
             self.addressInfoValue.append(result.address)
             completion()
         }
+    }
+    
+    @IBAction func buttonEditInfo(_ sender: Any) {
+        editInfoView.studentInfoChange = infoStudent
+        self.navigationController?.pushViewController(editInfoView, animated: true)
     }
 }
 

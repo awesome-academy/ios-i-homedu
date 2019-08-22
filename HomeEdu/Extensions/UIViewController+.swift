@@ -85,15 +85,13 @@ extension UIViewController {
         return message
     }
     
-    
     /// Show progress loading data
     ///
     /// - Parameter hub: input progress hub
     func showIndicator(hub: SAProgressHUB) {
         hub.show(in: self.view, title: "Coming...", isUserInteractionEnabled: true)
     }
-    
-    
+
     /// Hide progress loading data
     ///
     /// - Parameter hub: input progress hub
@@ -114,5 +112,10 @@ extension UIViewController {
     
     func hideNavigationBar() {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
+    func internetNotConnect() {
+        self.createAlert(title: NSLocalizedString(Constant.Alert.alertTitle, comment: ""),
+                         message: NSLocalizedString(Constant.Alert.internetError, comment: ""))
     }
 }

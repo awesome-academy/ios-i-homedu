@@ -39,6 +39,8 @@
 		9B59B435230A3624007E7B72 /* AllScoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B59B433230A3624007E7B72 /* AllScoreCell.xib */; };
 		9B59B43B230A3C6E007E7B72 /* DetailScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B59B43A230A3C6E007E7B72 /* DetailScore.swift */; };
 		9B648A8422F861E4006BC8F8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B648A8622F861E4006BC8F8 /* Localizable.strings */; };
+		9B8209E2230D07E600128607 /* InfoEditResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8209E1230D07E600128607 /* InfoEditResponse.swift */; };
+		9B8209E4230D082E00128607 /* EditStudentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8209E3230D082E00128607 /* EditStudentInfo.swift */; };
 		9BA1B16C22F83BA20007C6FE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA1B16822F83BA10007C6FE /* LoginViewController.swift */; };
 		9BA1B16D22F83BA20007C6FE /* CustomButtonLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA1B16922F83BA10007C6FE /* CustomButtonLogin.swift */; };
 		9BA1B16E22F83BA20007C6FE /* CustomUserPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA1B16A22F83BA10007C6FE /* CustomUserPasswordView.swift */; };
@@ -59,6 +61,8 @@
 		9BACC33922F039BA008761FC /* ExamSchedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC33822F039BA008761FC /* ExamSchedule.storyboard */; };
 		9BACC33B22F039C4008761FC /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BACC33A22F039C4008761FC /* About.storyboard */; };
 		9BACC34A22F03C6D008761FC /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BACC34922F03C6D008761FC /* TabbarController.swift */; };
+		9BB24C2E230E5E4700F5E75F /* Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB24C2D230E5E4700F5E75F /* Param.swift */; };
+		9BB24C30230E84C900F5E75F /* InternetConnectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB24C2F230E84C900F5E75F /* InternetConnectivity.swift */; };
 		9BBA734522F925A300A426E5 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBA734422F925A300A426E5 /* AboutViewController.swift */; };
 		9BBA734722F925BE00A426E5 /* AboutHomeEdu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBA734622F925BE00A426E5 /* AboutHomeEdu.swift */; };
 		9BD0081B230ACD23007E9A95 /* StudentInfoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD0081A230ACD23007E9A95 /* StudentInfoController.swift */; };
@@ -110,6 +114,8 @@
 		9B648A7B22F860BD006BC8F8 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		9B648A8522F861E4006BC8F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9B648A8722F861E5006BC8F8 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9B8209E1230D07E600128607 /* InfoEditResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoEditResponse.swift; sourceTree = "<group>"; };
+		9B8209E3230D082E00128607 /* EditStudentInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditStudentInfo.swift; sourceTree = "<group>"; };
 		9BA1B16822F83BA10007C6FE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9BA1B16922F83BA10007C6FE /* CustomButtonLogin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButtonLogin.swift; sourceTree = "<group>"; };
 		9BA1B16A22F83BA10007C6FE /* CustomUserPasswordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUserPasswordView.swift; sourceTree = "<group>"; };
@@ -132,6 +138,8 @@
 		9BACC33822F039BA008761FC /* ExamSchedule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExamSchedule.storyboard; sourceTree = "<group>"; };
 		9BACC33A22F039C4008761FC /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		9BACC34922F03C6D008761FC /* TabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		9BB24C2D230E5E4700F5E75F /* Param.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Param.swift; sourceTree = "<group>"; };
+		9BB24C2F230E84C900F5E75F /* InternetConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnectivity.swift; sourceTree = "<group>"; };
 		9BBA734422F925A300A426E5 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		9BBA734622F925BE00A426E5 /* AboutHomeEdu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutHomeEdu.swift; sourceTree = "<group>"; };
 		9BD0081A230ACD23007E9A95 /* StudentInfoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentInfoController.swift; sourceTree = "<group>"; };
@@ -263,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				9BD0081A230ACD23007E9A95 /* StudentInfoController.swift */,
+				9B8209E3230D082E00128607 /* EditStudentInfo.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -281,6 +290,7 @@
 			children = (
 				9BA1B17822F83D280007C6FE /* InfoResponse.swift */,
 				9BA1B17922F83D280007C6FE /* InfoAccount.swift */,
+				9B8209E1230D07E600128607 /* InfoEditResponse.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -296,10 +306,10 @@
 		9BA1B17222F83CE00007C6FE /* API */ = {
 			isa = PBXGroup;
 			children = (
-				25688B4123053CEC00DAF406 /* Response */,
-				9BA1B17322F83CE00007C6FE /* Request */,
 				9BA1B17522F83CE00007C6FE /* Urls.swift */,
 				2527441022F968EC002F1694 /* APIServices.swift */,
+				25688B4123053CEC00DAF406 /* Response */,
+				9BA1B17322F83CE00007C6FE /* Request */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -308,6 +318,8 @@
 			isa = PBXGroup;
 			children = (
 				9BA1B17422F83CE00007C6FE /* AccountRequest.swift */,
+				9BB24C2D230E5E4700F5E75F /* Param.swift */,
+				9BB24C2F230E84C900F5E75F /* InternetConnectivity.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -677,6 +689,7 @@
 				9BA1B17622F83CE00007C6FE /* AccountRequest.swift in Sources */,
 				25A5263A230B9DB1002D0E35 /* TimeSchedule.swift in Sources */,
 				2527441822F96950002F1694 /* SubjectSchedule.swift in Sources */,
+				9B8209E4230D082E00128607 /* EditStudentInfo.swift in Sources */,
 				9B59B431230A351E007E7B72 /* ScoreTerm.swift in Sources */,
 				25A5263C230B9DB1002D0E35 /* LearningSchedule.swift in Sources */,
 				9BFB93BF23055A4D0001BAD0 /* ScoreProgressView.swift in Sources */,
@@ -684,6 +697,7 @@
 				25A5263B230B9DB1002D0E35 /* DaySchedule.swift in Sources */,
 				9BACC34A22F03C6D008761FC /* TabbarController.swift in Sources */,
 				25688B4823053F9A00DAF406 /* LocalProtocol.swift in Sources */,
+				9BB24C30230E84C900F5E75F /* InternetConnectivity.swift in Sources */,
 				25A52634230B9D9F002D0E35 /* LearningScheduleCell.swift in Sources */,
 				25A5262F230B9D8C002D0E35 /* CustomCalendarView.swift in Sources */,
 				2565AE8922F2D4B70003620A /* UIViewController+.swift in Sources */,
@@ -701,10 +715,12 @@
 				25688B4B23053FE000DAF406 /* StudentLocalDataSource.swift in Sources */,
 				9B59B434230A3624007E7B72 /* AllScoreCell.swift in Sources */,
 				9BA1B18022F83FA80007C6FE /* String+.swift in Sources */,
+				9BB24C2E230E5E4700F5E75F /* Param.swift in Sources */,
 				9B59B42B230A3476007E7B72 /* AllScoreView.swift in Sources */,
 				9BFB93C023055A4D0001BAD0 /* ScoreViewController.swift in Sources */,
 				9BA1B17C22F83D280007C6FE /* InfoAccount.swift in Sources */,
 				2592D1E822FAA52D00285C88 /* Int+.swift in Sources */,
+				9B8209E2230D07E600128607 /* InfoEditResponse.swift in Sources */,
 				9BA1B17722F83CE00007C6FE /* Urls.swift in Sources */,
 				2527441122F968EC002F1694 /* APIServices.swift in Sources */,
 				9BA6940222F179460066A6E0 /* Constant.swift in Sources */,
