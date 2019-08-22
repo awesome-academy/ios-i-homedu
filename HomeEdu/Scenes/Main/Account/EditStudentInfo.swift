@@ -31,18 +31,21 @@ class EditStudentInfo: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpDatePicker()
-        configInfoChange()
+        configView()
     }
     
-    private func configInfoChange() {
+    private func configView() {
+        configInfo()
+        configCheckBoxGender()
+    }
+    
+    private func configInfo() {
         fullnameTextField.text = studentInfoChange?.fullName
         otherMailTextField.text = studentInfoChange?.otherMail
         nationTextField.text = studentInfoChange?.nation
         addressTextField.text = studentInfoChange?.address
         sexValueDefaul = studentInfoChange?.sex ?? ""
         birthdayTextField.text = studentInfoChange?.birthday ?? "0000-00-00"
-        
-        configCheckBoxGender()
     }
     
     private func configCheckBoxGender() {
