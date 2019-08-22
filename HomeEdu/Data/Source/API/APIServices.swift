@@ -12,7 +12,7 @@ import ObjectMapper
 import AlamofireObjectMapper
 
 final class APIServices {
-    
+    static let reachabilityManager = NetworkReachabilityManager()
     static let studentRepository = StudentRepository(local: StudentLocalDataSource())
     
     /// API to get information
@@ -29,6 +29,33 @@ final class APIServices {
         Alamofire.request(url, method: .post, parameters: [:], encoding: JSONEncoding.default, headers: headers).responseObject { (response: DataResponse<T>) in
             guard let dataResponse = response.result.value else { return }
             callback(dataResponse)
+        }
+    }
+    
+    static func putEditInfo(_ param: Parameters,
+                  completion callback: @escaping (Bool, Bool) -> Void) {
+        let headers: HTTPHeaders = [
+            "Authorization": studentRepository.getToken()
+        ]
+        Alamofire.request(Urls.urlEditInfoStudent,
+                          method: .put,
+                          parameters: param,
+                          encoding: JSONEncoding.default,
+                          headers: headers)
+            .responseObject { (response: DataResponse<InfoEditResponse>) in
+                reachabilityManager?.startListening()
+                reachabilityManager?.listener = { _ in
+                    if let isNetworkReachable = reachabilityManager?.isReachable,
+                        isNetworkReachable == true {
+                        print("isNetworkReachable: \(isNetworkReachable)")
+                        let infoStudentResponse = response.result.value
+                        if let success = infoStudentResponse?.success {
+                            callback(true, success)
+                        }
+                    } else {
+                        callback(false, false)
+                    }
+                }
         }
     }
 }

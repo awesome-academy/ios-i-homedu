@@ -21,4 +21,3 @@ class InfoEditResponse: Mappable {
         message <- map["message"]
     }
 }
-

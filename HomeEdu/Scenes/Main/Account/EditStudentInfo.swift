@@ -18,7 +18,6 @@ class EditStudentInfo: UIViewController {
     @IBOutlet weak private var addressTextField: UITextField!
     @IBOutlet weak var checkBoxMale: UIButton!
     @IBOutlet weak var checkBoxFemale: UIButton!
-    private var birthdayValue = ""
     private var sexValueDefaul = ""
     private var sexValueChange = ""
     private var isSuccessEdit = false
@@ -41,13 +40,21 @@ class EditStudentInfo: UIViewController {
         nationTextField.text = studentInfoChange?.nation
         addressTextField.text = studentInfoChange?.address
         sexValueDefaul = studentInfoChange?.sex ?? ""
-        birthdayValue = studentInfoChange?.birthday ?? "0000-00-00"
+        birthdayTextField.text = studentInfoChange?.birthday ?? "0000-00-00"
+        
+        configCheckBoxGender()
+    }
+    
+    private func configCheckBoxGender() {
         if sexValueDefaul == Constant.Sex.male {
             checkBoxMale.setImage(checkBoxImg, for: .normal)
             checkBoxFemale.setImage(unCheckBoxImg, for: .normal)
         } else if sexValueDefaul == Constant.Sex.female {
             checkBoxMale.setImage(unCheckBoxImg, for: .normal)
             checkBoxFemale.setImage(checkBoxImg, for: .normal)
+        } else {
+            checkBoxMale.setImage(unCheckBoxImg, for: .normal)
+            checkBoxFemale.setImage(unCheckBoxImg, for: .normal)
         }
     }
     
@@ -90,7 +97,7 @@ class EditStudentInfo: UIViewController {
     }
     
     @IBAction func buttonSave(_ sender: Any) {
-        if checkIfStudentInfoIsValid() {
+        if checkIfStudentInfoIsChange() {
             confirmChangeInfo()
         } else {
             self.createAlert(title: NSLocalizedString(Constant.Alert.alertTitle, comment: ""),
@@ -99,15 +106,13 @@ class EditStudentInfo: UIViewController {
     }
     
     func requestEditInfo() {
-        let param: Parameters = [
-            "fullname": fullnameTextField.text ?? "",
-            "birthday": birthdayTextField.text ?? "",
-            "sex": sexValueChange,
-            "other_email": otherMailTextField.text ?? "",
-            "nation": nationTextField.text ?? "",
-            "address": addressTextField.text ?? ""
-        ]
-        EditInfoRequest.shared.editInfo(param) {
+         let param = Param.paramEditInfo(fullname: fullnameTextField.text ?? "",
+                            birthday: birthdayTextField.text ?? "",
+                            sex: sexValueChange,
+                            otherMail: otherMailTextField.text ?? "",
+                            nation: otherMailTextField.text ?? "",
+                            address: addressTextField.text ?? "")
+        APIServices.putEditInfo(param) {
             self.isConnect = $0
             self.isSuccessEdit = $1
             if self.isConnect {
@@ -125,17 +130,17 @@ class EditStudentInfo: UIViewController {
         }
     }
     
-    func checkIfStudentInfoIsValid() -> Bool {
+    func checkIfStudentInfoIsChange() -> Bool {
+        var isInfoChange =  false
         if fullnameTextField.text != studentInfoChange?.fullName ||
-            birthdayTextField.text != birthdayValue ||
+            birthdayTextField.text != studentInfoChange?.birthday ||
             sexValueDefaul != sexValueChange ||
             otherMailTextField.text != studentInfoChange?.otherMail ||
             nationTextField.text != studentInfoChange?.nation ||
             addressTextField.text != studentInfoChange?.address {
-            return true
-        } else {
-            return false
+            isInfoChange = true
         }
+        return isInfoChange
     }
     
     func confirmChangeInfo() {
