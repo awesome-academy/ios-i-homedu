@@ -10,20 +10,36 @@ import Foundation
 import Alamofire
 
 final class Param {
-    static func paramEditInfo(fullname: String,
-                       birthday: String,
-                       sex: String,
-                       otherMail: String,
-                       nation: String,
-                       address: String) -> Parameters {
-        let paramInfoChange: Parameters = [
+    private var fullname: String?
+    private var birthday: String?
+    private var sex: String?
+    private var otherMail: String?
+    private var nation: String?
+    private var address: String?
+        
+    init(fullname: String,
+         birthday: String,
+         sex: String,
+         otherMail: String,
+         nation: String,
+         address: String) {
+        self.fullname = fullname
+        self.birthday = birthday
+        self.sex = sex
+        self.otherMail = otherMail
+        self.nation = nation
+        self.address = address
+    }
+    
+    func exportToParameters() -> Parameters {
+        let paras: Parameters = [
             "fullname": fullname,
             "birthday": birthday,
             "sex": sex,
-            "other_email": otherMail,
+            "otherMail": otherMail,
             "nation": nation,
             "address": address
         ]
-        return paramInfoChange
+        return paras
     }
 }

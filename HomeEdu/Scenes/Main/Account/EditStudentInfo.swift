@@ -9,6 +9,7 @@
 import UIKit
 import Reusable
 import Alamofire
+import SAProgressHUB
 
 class EditStudentInfo: UIViewController {
     @IBOutlet weak private var fullnameTextField: UITextField!
@@ -25,6 +26,7 @@ class EditStudentInfo: UIViewController {
     private let checkBoxImg = UIImage(named: Constant.Icon.checkBox)
     private let unCheckBoxImg = UIImage(named: Constant.Icon.unCheckBox)
     private var datePicker = UIDatePicker()
+    var loading = SAProgressHUB(type: .lottie, style: .blurBackground)
     var studentInfoChange: InfoAccount?
     var isChange = false
     
@@ -34,11 +36,6 @@ class EditStudentInfo: UIViewController {
         configView()
     }
     
-    private func configView() {
-        configInfo()
-        configCheckBoxGender()
-    }
-    
     private func configInfo() {
         fullnameTextField.text = studentInfoChange?.fullName
         otherMailTextField.text = studentInfoChange?.otherMail
@@ -46,9 +43,12 @@ class EditStudentInfo: UIViewController {
         addressTextField.text = studentInfoChange?.address
         sexValueDefaul = studentInfoChange?.sex ?? ""
         birthdayTextField.text = studentInfoChange?.birthday ?? "0000-00-00"
+        
+        configCheckBoxGender()
     }
     
     private func configCheckBoxGender() {
+        sexValueChange = sexValueDefaul
         if sexValueDefaul == Constant.Sex.male {
             checkBoxMale.setImage(checkBoxImg, for: .normal)
             checkBoxFemale.setImage(unCheckBoxImg, for: .normal)
@@ -59,6 +59,10 @@ class EditStudentInfo: UIViewController {
             checkBoxMale.setImage(unCheckBoxImg, for: .normal)
             checkBoxFemale.setImage(unCheckBoxImg, for: .normal)
         }
+    }
+    
+    private func configView() {
+        configInfo()
     }
     
     func setUpDatePicker() {
@@ -77,9 +81,8 @@ class EditStudentInfo: UIViewController {
     }
     
     @objc func dateChanged(dataPicker: UIDatePicker) {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        birthdayTextField.text = dateFormatter.string(from: datePicker.date)
+        let dateFormat = Date()
+        birthdayTextField.text = dateFormat.dateToString(datePicker.date)
         view.endEditing(true)
     }
     
@@ -108,14 +111,14 @@ class EditStudentInfo: UIViewController {
         }
     }
     
-    func requestEditInfo() {
-         let param = Param.paramEditInfo(fullname: fullnameTextField.text ?? "",
+    func requestEditInfo(completion: @escaping () -> Void) {
+        let paras = Param(fullname: fullnameTextField.text ?? "",
                             birthday: birthdayTextField.text ?? "",
                             sex: sexValueChange,
                             otherMail: otherMailTextField.text ?? "",
-                            nation: otherMailTextField.text ?? "",
+                            nation: nationTextField.text ?? "",
                             address: addressTextField.text ?? "")
-        APIServices.putEditInfo(param) {
+        APIServices.putEditInfo(paras.exportToParameters()) {
             self.isConnect = $0
             self.isSuccessEdit = $1
             if self.isConnect {
@@ -130,6 +133,7 @@ class EditStudentInfo: UIViewController {
             } else {
                 self.internetNotConnect()
             }
+            completion()
         }
     }
     
@@ -146,6 +150,14 @@ class EditStudentInfo: UIViewController {
         return isInfoChange
     }
     
+    func sendingRequestAnimation() {
+        showIndicator(hub: loading)
+        self.requestEditInfo { [unowned self] in
+            self.configView()
+            self.hideIndicator(hub: self.loading)
+        }
+    }
+    
     func confirmChangeInfo() {
         let alert = UIAlertController(title: NSLocalizedString(Constant.Alert.alertTitle, comment: ""),
                                       message: NSLocalizedString(Constant.Alert.editInfo, comment: ""),
@@ -157,7 +169,7 @@ class EditStudentInfo: UIViewController {
         alert.addAction(UIAlertAction(title: NSLocalizedString(Constant.Alert.alertOK, comment: ""),
                                       style: .default) { (_) in
                                         alert.dismiss(animated: true, completion: nil)
-                                        self.requestEditInfo()
+                                        self.sendingRequestAnimation()
         })
         self.present(alert, animated: true, completion: nil)
     }
