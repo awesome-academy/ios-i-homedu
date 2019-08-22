@@ -31,10 +31,10 @@ class EditStudentInfo: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpDatePicker()
-        configView()
+        configInfoChange()
     }
     
-    private func configView() {
+    private func configInfoChange() {
         fullnameTextField.text = studentInfoChange?.fullName
         otherMailTextField.text = studentInfoChange?.otherMail
         nationTextField.text = studentInfoChange?.nation
