@@ -31,11 +31,7 @@ final class APIServices {
             callback(dataResponse)
         }
     }
-    
-    static func isConnectedToInternet() -> Bool {
-        return NetworkReachabilityManager()?.isReachable ?? false
-    }
-    
+        
     static func putEditInfo(_ param: Parameters,
                   completion callback: @escaping (Bool, Bool) -> Void) {
         let headers: HTTPHeaders = [
@@ -47,7 +43,7 @@ final class APIServices {
                           encoding: JSONEncoding.default,
                           headers: headers)
             .responseObject { (response: DataResponse<InfoEditResponse>) in
-                if isConnectedToInternet() {
+                if InternetConnectivity.isConnectedToInternet() {
                     let infoStudentResponse = response.result.value
                     if let success = infoStudentResponse?.success {
                         callback(true, success)

@@ -13,6 +13,11 @@ import Alamofire
 class TabbarController: UITabBarController {
     
     private let homeduSocket = HomeduSocket.shared
+    private let scoreIcon = UIImage(named: Constant.TabBarIcon.viewScoreIcon)
+    private let scheduleIcon = UIImage(named: Constant.TabBarIcon.scheduleIcon)
+    private let accountIcon = UIImage(named: Constant.TabBarIcon.accountIcon)
+    private let examScheduleIcon = UIImage(named: Constant.TabBarIcon.examScheduleIcon)
+    private let aboutIcon = UIImage(named: Constant.TabBarIcon.aboutIcon)
     private var subjectSchedules = [SubjectSchedule]()
     
     override func viewDidLoad() {
@@ -48,15 +53,15 @@ class TabbarController: UITabBarController {
         let aboutController = about.instantiateViewController(withIdentifier: Constant.aboutId)
         
         viewScoreController.tabBarItem = UITabBarItem(title: NSLocalizedString(Constant.TitleTabBar.viewScoreTitle, comment: ""),
-                                                      image: nil, tag: 0)
+                                                      image: scoreIcon, tag: 0)
         scheduleController.tabBarItem = UITabBarItem(title: NSLocalizedString(Constant.TitleTabBar.scheduleTitle, comment: ""),
-                                                     image: nil, tag: 1)
+                                                     image: scheduleIcon, tag: 1)
         accountController.tabBarItem = UITabBarItem(title: NSLocalizedString(Constant.TitleTabBar.accountTitle, comment: ""),
-                                                    image: nil, tag: 2)
+                                                    image: accountIcon, tag: 2)
         examScheduleController.tabBarItem = UITabBarItem(title: NSLocalizedString(Constant.TitleTabBar.examScheduleTitle, comment: ""),
-                                                         image: nil, tag: 3)
+                                                         image: examScheduleIcon, tag: 3)
         aboutController.tabBarItem = UITabBarItem(title: NSLocalizedString(Constant.TitleTabBar.aboutTitle, comment: ""),
-                                                  image: nil, tag: 4)
+                                                  image: aboutIcon, tag: 4)
         self.viewControllers = [viewScoreController, scheduleController, accountController, examScheduleController, aboutController]
     }
 }

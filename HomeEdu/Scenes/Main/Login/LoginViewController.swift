@@ -8,6 +8,8 @@
 
 import UIKit
 import Alamofire
+import SAProgressHUB
+import Then
 
 final class LoginViewController: UIViewController {
     
@@ -16,9 +18,11 @@ final class LoginViewController: UIViewController {
     private var isLogin = false
     private var isConnect = false
     private var dataAccount: InfoResponse?
+    private let loading = SAProgressHUB(type: .lottie, style: .shadowBackground)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        registerTextField()
         hideNavigationBar()
     }
     
@@ -30,7 +34,17 @@ final class LoginViewController: UIViewController {
     
     @IBAction func buttonLogin(_ sender: Any) {
         if checkValidInput() {
+            showIndicator(hub: loading)
             requestLogin()
+        }
+    }
+    
+    func registerTextField() {
+        userNameTextField.do {
+            $0.delegate = self
+        }
+        passwordTextField.do {
+            $0.delegate = self
         }
     }
     
@@ -49,12 +63,12 @@ final class LoginViewController: UIViewController {
             }
             if !userText.isValidInput(username) {
                 createAlert(title: NSLocalizedString(Constant.Alert.alertTitle, comment: ""),
-                           message: NSLocalizedString(Constant.Alert.usernameError, comment: ""))
+                            message: NSLocalizedString(Constant.Alert.usernameError, comment: ""))
                 return false
             }
             if !passText.isValidInput(password) {
                 createAlert(title: NSLocalizedString(Constant.Alert.alertTitle, comment: ""),
-                           message: NSLocalizedString(Constant.Alert.passwordError, comment: ""))
+                            message: NSLocalizedString(Constant.Alert.passwordError, comment: ""))
                 return false
             }
         }
@@ -67,27 +81,39 @@ final class LoginViewController: UIViewController {
             "username": userNameTextField.text ?? "",
             "password": passwordTextField.text ?? ""
         ]
-        AccountRequest.shared.login(param) {
-            self.isLogin = $0
-            self.isConnect = $1
+        AccountRequest.shared.login(param) { [unowned self] in
+            self.isConnect = $0
+            self.isLogin = $1
             self.dataAccount = $2
             guard let data = self.dataAccount else { return }
             let token = data.token
             let studentId = data.studentId
             UserDefaults.standard.set(token, forKey: "Authorization")
             UserDefaults.standard.set(studentId, forKey: "StudentID")
+            self.hideIndicator(hub: self.loading)
             if self.isConnect {
                 if self.isLogin {
                     let tabBar = TabbarController.instantiate()
                     self.navigationController?.pushViewController(tabBar, animated: true)
                 } else {
                     self.createAlert(title: NSLocalizedString(Constant.Alert.alertTitle, comment: ""),
-                                    message: NSLocalizedString(Constant.Alert.alertLoginFail, comment: ""))
+                                     message: NSLocalizedString(Constant.Alert.alertLoginFail, comment: ""))
                 }
             } else {
                 self.createAlert(title: NSLocalizedString(Constant.Alert.alertTitle, comment: ""),
-                                message: NSLocalizedString(Constant.Alert.internetError, comment: ""))
+                                 message: NSLocalizedString(Constant.Alert.internetError, comment: ""))
             }
         }
+    }
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == userNameTextField {
+            passwordTextField.becomeFirstResponder()
+        } else {
+            textField.resignFirstResponder()
+        }
+        return true
     }
 }

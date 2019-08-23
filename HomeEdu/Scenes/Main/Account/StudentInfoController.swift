@@ -39,6 +39,7 @@ final class StudentInfoController: UIViewController {
             classInfoValue.removeAll()
             addressInfoValue.removeAll()
             getPointAtFirstTime()
+            editInfoView.isChange = false
         }
     }
     

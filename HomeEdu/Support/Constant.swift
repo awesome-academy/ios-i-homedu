@@ -23,6 +23,15 @@ enum Constant {
         static let aboutTitle = "common.about.title"
     }
     
+    //Tabbar Icon
+    enum TabBarIcon {
+        static let accountIcon = "accountIcon"
+        static let examScheduleIcon = "examScheduleIcon"
+        static let scheduleIcon = "scheduleIcon"
+        static let viewScoreIcon = "scoreIcon"
+        static let aboutIcon = "aboutIcon"
+    }
+    
     //Alert
     enum Alert {
         static let alertOK = "common.ok.alert"

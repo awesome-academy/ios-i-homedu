@@ -125,14 +125,16 @@ class EditStudentInfo: UIViewController {
                 if self.isSuccessEdit {
                     self.createAlert(title: NSLocalizedString(Constant.Alert.alertTitle, comment: ""),
                                      message: NSLocalizedString(Constant.Alert.editInfoSuccess, comment: ""))
+                    self.isChange = true
+                    completion()
                     return
                 }
                 self.createAlert(title: NSLocalizedString(Constant.Alert.alertTitle, comment: ""),
                                  message: NSLocalizedString(Constant.Alert.editInfoFail, comment: ""))
+                completion()
                 return
             }
             self.internetNotConnect()
-            completion()
         }
     }
     
@@ -152,7 +154,6 @@ class EditStudentInfo: UIViewController {
     func sendingRequestAnimation() {
         showIndicator(hub: loading)
         self.requestEditInfo { [unowned self] in
-            self.configView()
             self.hideIndicator(hub: self.loading)
         }
     }
